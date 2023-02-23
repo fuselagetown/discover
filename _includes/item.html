@@ -1,0 +1,57 @@
+
+
+
+<div class="carousel-item {% if post.category == 'shop-similar-items' %} shop-similar-item {% endif %} ">		
+
+
+	<svg class="carousel-item--loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(242, 243, 244); display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#81E6D3" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>
+		
+
+	<div class="carousel-item-content">
+
+		<div class="carousel-item__image">
+
+			<img src="{{ post.image }}">
+
+		</div>
+
+		<div class="carousel-item__details">
+
+			<p class="carousel-item__brand">{{ post.brand }}</p>
+			<p class="carousel-item__title">{{ post.title }}</p>
+			<p class="carousel-item__price">{{ post.price }}</p>
+
+
+			<div class="color-swatches">
+				
+				{% for item in post.colors  limit:3 %}
+					<a href="#" class="color-swatch "><span style="background-color: {{ item }};"></span></a>
+				{% endfor %}
+			
+			</div>
+
+		</div>
+
+		<div class="carousel-item__actions">
+
+			<a href="#" class="carousel-item__actions--bookmark">Bookmark</a>
+
+			<div class="carousel-item__actions--ratings">
+				<a href="#" class="carousel-item__actions--ratings--dislike">Dislike</a>
+				<a href="#" class="carousel-item__actions--ratings--like">Like</a>
+			</div>
+
+		</div>
+
+
+
+		<div class="overlay">
+
+			Your dislikes are just as important is your likes..
+
+			<a href="#" class="carousel-item__actions--ratings--dislike--undo">Undo</a>
+		</div>
+
+	</div> 
+
+</div>
