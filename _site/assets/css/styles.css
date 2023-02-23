@@ -1,0 +1,790 @@
+@charset "UTF-8";
+@import url("//hello.myfonts.net/count/2b26e2");
+@font-face {
+  font-family: "BrandonText-Italic";
+  src: url("../webfonts/brandon/Text-Italic/2B26E2_0_0.eot");
+  src: url("../webfonts/brandon/Text-Italic/2B26E2_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/brandon/Text-Italic/2B26E2_0_0.woff") format("woff"), url("../webfonts/brandon/Text-Italic/2B26E2_0_0.ttf") format("truetype"), url("../webfonts/brandon/Text-Italic/2B26E2_0_0.svg#wf") format("svg");
+}
+@font-face {
+  font-family: "BrandonText-Regular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../webfonts/brandon/Text-Regular/2B26E2_1_0.eot");
+  src: url("../webfonts/brandon/Text-Regular/2B26E2_1_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/brandon/Text-Regular/2B26E2_1_0.woff") format("woff"), url("../webfonts/brandon/Text-Regular/2B26E2_1_0.ttf") format("truetype"), url("../webfonts/brandon/Text-Regular/2B26E2_1_0.svg#wf") format("svg");
+}
+@font-face {
+  font-family: "BrandonText-Medium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.eot");
+  src: url("../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.eot?#iefix") format("embedded-opentype"), url("../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.woff") format("woff"), url("../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.ttf") format("truetype"), url("../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.svg#wf") format("svg");
+}
+@font-face {
+  font-family: "BrandonText-Bold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.eot");
+  src: url("../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.eot?#iefix") format("embedded-opentype"), url("../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.woff") format("woff"), url("../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.ttf") format("truetype"), url("../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.svg#wf") format("svg");
+}
+/* Neutrals */ /* 
+ * HTML5 ✰ Boilerplate
+ *
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+  position: relative;
+}
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  list-style: none;
+  position: relative;
+  color: #25282D;
+  background: #fff;
+  margin: 0;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "BrandonText-Medium", sans-serif;
+}
+
+li {
+  list-style: disc outside;
+  margin-bottom: 1em;
+}
+
+::-moz-selection {
+  background: #ed2856;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #ed2856;
+  color: #fff;
+  text-shadow: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.5rem 0;
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+p {
+  margin: 0 0 1rem;
+  clear: both;
+}
+
+a {
+  border-bottom: 1px solid transparent;
+}
+a:hover, a:focus {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+
+abbr[title], p.required {
+  color: red;
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 0 0 1em;
+  font-weight: 400;
+}
+blockquote p {
+  font-style: italic;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp {
+  font-family: monospace, monospace;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/* Improve readability of pre-formatted text in all browsers */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup {
+  font-size: 35%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.6rem;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+p {
+  margin: 0 0 1rem;
+  clear: both;
+}
+
+.small {
+  font-size: 0.85em;
+}
+
+.tiny {
+  font-size: 0.8em;
+}
+
+.right {
+  text-align: right;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0 0 0 40px;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+dd ol li, ol ol li {
+  list-style-type: lower-roman;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+form {
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 2%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 1em;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label {
+  line-height: 1.4em;
+}
+
+legend {
+  border: 0;
+  *margin-left: -7px;
+  padding: 0;
+}
+
+button, input, select, textarea {
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+table button, table input {
+  *overflow: auto;
+}
+
+button, input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  width: auto;
+  display: inline-block;
+}
+
+.checkbox label, .radio label {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.5em 1.2em;
+  text-align: center;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+input:invalid, textarea:invalid {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+form {
+  display: block;
+  position: relative;
+}
+
+input, textarea {
+  font-size: 1em;
+  color: #000;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding: 8px 12px;
+  clear: left;
+  color: #727170;
+  line-height: 1.4em;
+}
+
+select {
+  margin-bottom: 1em;
+}
+
+input.file {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+button.big,
+input.button.big,
+a.button.big {
+  margin: 0 auto;
+  width: auto;
+  font-size: 1.3em;
+  clear: both;
+}
+
+form div {
+  clear: left;
+  position: relative;
+}
+
+input:hover,
+input:focus {
+  outline: 0;
+  border-color: #ccc;
+  color: #000;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.checkbox label {
+  display: inline;
+}
+
+input#submit:hover,
+input#submit:focus {
+  background-color: #e8bb26;
+}
+
+span.radio {
+  display: block;
+  clear: left;
+}
+
+.boolean input, .boolean label {
+  display: inline;
+  width: auto;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+iframe {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.4);
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  margin-bottom: 1em;
+}
+
+th {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+td {
+  vertical-align: top;
+}
+
+th, td {
+  padding: 8px;
+}
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+/* For image replacement */
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+.ir br {
+  display: none;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+/* Contain floats: h5bp.com/q */
+.ordinal {
+  vertical-align: super;
+  font-size: 0.5em;
+}
+
+.module h5 {
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.carousel {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  zoom: 1;
+}
+.carousel:before {
+  content: "";
+  display: table;
+}
+.carousel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  width: max-content;
+  width: 5000px;
+  position: relative;
+  padding: 0 10px;
+}
+
+.carousel-item {
+  float: left;
+  width: 180px;
+  padding: 10px;
+  background: #F2F3F4;
+  margin: 0 5px 0 0;
+  position: relative;
+  font-size: 0.8rem;
+}
+@media (max-width: 410px) {
+  .carousel-item {
+    width: 170px;
+  }
+}
+@media (max-width: 390px) {
+  .carousel-item {
+    width: 160px;
+  }
+}
+@media (max-width: 370px) {
+  .carousel-item {
+    width: 150px;
+  }
+}
+@media (max-width: 350px) {
+  .carousel-item {
+    width: 140px;
+  }
+}
+@media (max-width: 330px) {
+  .carousel-item {
+    width: 180px;
+  }
+}
+.carousel-item p {
+  margin-bottom: 0.2rem;
+  text-transform: lowercase;
+}
+.carousel-item p::first-letter {
+  text-transform: uppercase;
+}
+.carousel-item p.carousel-item__brand {
+  font-weight: bold;
+}
+.carousel-item .overlay {
+  display: none;
+  background: #25282D;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  color: white;
+}
+.carousel-item .overlay a {
+  color: white;
+}
+.carousel-item.disliked .overlay {
+  display: block;
+}
+
+.carousel-item--loading {
+  position: absolute;
+  z-index: 0;
+  top: 100px;
+  left: calc(50% - 25px);
+}
+
+.carousel-item-content {
+  z-index: 1;
+  position: relative;
+}
+
+.carousel-item__details {
+  height: 6rem;
+}
+
+.carousel-item__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+}
+.carousel-item__image img {
+  height: auto;
+}
+
+@-webkit-keyframes thumbsanimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.carousel-item__actions a {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  display: block;
+  border-bottom: 0;
+  background: url("../../assets/images/bookmark.svg") no-repeat 20px 10px;
+}
+.carousel-item__actions a.carousel-item__actions--bookmark {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.carousel-item__actions .carousel-item__actions--ratings {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+}
+.carousel-item__actions .carousel-item__actions--ratings a {
+  float: left;
+  background-image: url("../../assets/images/thumbs-up.svg");
+  background-position: 10px 10px;
+}
+.carousel-item__actions .carousel-item__actions--ratings a.active {
+  background-image: url("../../assets/images/thumbs-up-active.svg");
+  -webkit-animation: thumbsanimation 0.4s ease-out;
+  -webkit-animation-delay: 0s;
+}
+.carousel-item__actions .carousel-item__actions--ratings a.carousel-item__actions--ratings--dislike {
+  background-image: url("../../assets/images/thumbs-down.svg");
+}
+
+.color-swatches {
+  display: none;
+}
+
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  padding: 10px 10px 0 0;
+}
+.color-swatch span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid #F2F3F4;
+}
+.color-swatch:first-child span {
+  box-shadow: 0 0 0px 1px #25282D;
+}
+
+@-webkit-keyframes item-loading {
+  0% {
+    width: 0px;
+  }
+}
+@-webkit-keyframes item-content-loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.similar-items {
+  display: none;
+}
+.similar-items .carousel-item-content {
+  opacity: 0;
+  overflow: none;
+}
+.similar-items.im-loading {
+  display: block;
+}
+.similar-items.im-loading .carousel-item {
+  -webkit-animation: item-loading 0.7s ease-out forwards;
+}
+.similar-items.im-loading .carousel-item:nth-child(2) .carousel-item-content {
+  -webkit-animation-delay: 1.2s;
+}
+.similar-items.im-loading .carousel-item:nth-child(3) .carousel-item-content {
+  -webkit-animation-delay: 1.3s;
+}
+.similar-items.im-loading .carousel-item:nth-child(4) .carousel-item-content {
+  -webkit-animation-delay: 1.4s;
+}
+.similar-items.im-loading .carousel-item--loading {
+  -webkit-animation: loader 1s ease-out forwards;
+}
+.similar-items.im-loading .carousel-item-content {
+  -webkit-animation: item-content-loading 0.5s ease-out forwards;
+  -webkit-animation-delay: 1.1s;
+}
+
+/*# sourceMappingURL=styles.css.map */
