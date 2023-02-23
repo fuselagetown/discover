@@ -1,0 +1,7 @@
+name: Discover
+sass:
+  sass_dir: sass
+permalink: /:categories/:title/
+timezone: America/Los_Angeles
+baseurl: "/discover"
+exclude: [Gemfile, Gemfile.lock]
