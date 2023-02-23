@@ -1,0 +1,328 @@
+/* 
+ * HTML5 ✰ Boilerplate
+ *
+ */ 
+
+// AMENDED BY TORUNN SKROGSTAD TO SUIT STITCH FIX //
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; position: relative; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+// BASE RESET //
+
+html { 
+  font-size: 100%; 
+  overflow-y: scroll; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+  height: 100%; 
+  width: 100%;
+  list-style:none;
+}
+
+body { 
+  width: 100%;
+  list-style:none;
+  position: relative; 
+  color: $charcoal;
+  background: #fff; 
+  margin: 0; 
+  line-height: 1.4; 
+  font-weight: 400; 
+  font-family: "BrandonText-Medium", sans-serif;
+  }
+
+
+
+li { list-style: disc outside; margin-bottom: 1em; }
+
+::-moz-selection { background: #ed2856; color: #fff; text-shadow: none; }
+::selection { background: #ed2856; color: #fff; text-shadow: none; }
+
+html {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.5rem 0;
+  font-weight: 300;
+  
+  text-rendering: optimizelegibility;
+}
+
+h1 { font-size: 2rem;   line-height: 2.4rem;  }
+h2 { font-size: 1.8rem; line-height: 2.2rem;  }
+h3 { font-size: 1.6rem; line-height: 2rem;    }
+h4 { font-size: 1.4rem; line-height: 1.8rem;  }
+h5 { font-size: 1.2rem; line-height: 1.6rem;  }
+h6 { font-size: 1.0rem; line-height: 1.4rem;  }
+
+@media only screen and (max-width : 800px) {
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media only screen and (max-width : 600px) {
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+p { margin: 0 0 1rem; clear: both; }
+
+a {
+
+  border-bottom: 1px solid transparent;
+
+  &:hover, 
+  &:focus {
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; 
+      -webkit-tap-highlight-color: transparent;
+      outline: 0;
+  }
+}
+
+abbr[title], p.required { color: red; font-weight: bold; }
+
+b, strong { }
+
+blockquote { 
+    margin: 0 0 1em;  font-weight: 400; 
+    p { font-style: italic; }
+ }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 35%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.6rem; }
+sub { bottom: -0.25rem; }
+
+p { margin: 0 0 1rem; clear: both; }
+
+.small { font-size: 0.85em; }
+.tiny { font-size: 0.8em; }
+.right { text-align: right; }
+
+// DEFAULT LISTS //
+
+ul, ol { margin: 0 ; padding: 0 0 0 40px; }
+ol li { list-style-type:decimal;  }
+dd ol li, ol ol li { list-style-type: lower-roman; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+// IMAGES //
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width: 100%; }
+
+
+//FORMS //
+
+form { margin: 0; }
+fieldset { 
+  border: 0; 
+  margin: 0; 
+  padding: 2%; 
+  border: 1px solid rgba(255,255,255,0.4); 
+  margin-bottom: 1em; background: rgba(255,255,255,0.3) 
+}
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { line-height: 1.4em; }
+
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+button, input, select, textarea { margin: 0; vertical-align: baseline; *vertical-align: middle; line-height: 1.4em; font-size: 1em; }
+
+button, input { line-height: normal; *overflow: visible; }
+
+table button, table input { *overflow: auto; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; width: auto; display: inline-block;  }
+.checkbox label, .radio label { box-sizing: border-box; display: inline-block; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none;  }
+
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+
+.button {
+  cursor: pointer;
+  padding: 0.5em 1.2em;
+  text-align: center;
+}
+
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background: rgba(255,255,255,0.9) ;}
+
+
+form {
+  display: block;
+  position: relative;
+}
+
+input , textarea {
+  font-size: 1em;
+  color: #000;
+  border: 1px solid #ccc;
+  width: 100%;       
+  background: rgba(255,255,255,1) ;
+  padding: 8px 12px;
+  clear: left;
+  color: #727170;
+  line-height: 1.4em;
+}
+
+select { margin-bottom: 1em; }
+
+input.file {
+  border: 0;
+  padding: 0;
+  background: none;
+} 
+
+button.big,
+input.button.big,
+a.button.big {
+  margin: 0 auto;
+  width: auto;
+  font-size: 1.3em;
+  clear: both;
+}
+
+form div {
+  clear: left;
+  position: relative;
+}
+
+input:hover,
+input:focus {
+  outline: 0;
+  border-color: #ccc;
+  color: #000;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.checkbox label { display: inline; }
+
+input#submit:hover,
+input#submit:focus { background-color: #e8bb26; }
+
+span.radio { display: block; clear: left; }
+.boolean input, .boolean label {  display: inline; width: auto; margin-right: 10px; margin-bottom: 0;}
+
+iframe { 
+border-top-width: 0px;
+border-right-width: 0px;
+border-bottom-width: 0px;
+border-left-width: 0px;
+}
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  background: rgba(255,255,255,0.4); 
+  width: 100%; 
+  border: 1px solid rgba(0,0,0,0.03);
+  margin-bottom: 1em;
+}
+th { text-align: left; background: rgba(0,0,0,0.7);  }
+td { vertical-align: top; }
+th, td { padding: 8px; }
+
+
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+
+
+.ordinal {
+  vertical-align:super;
+  font-size: .5em;
+}
+
+@mixin clear {
+  &:before { content: ""; display: table; }
+  &:after { content: ""; display: table; clear: both; }
+  zoom: 1;
+} 
