@@ -13,6 +13,7 @@ $(function() {
 
   $(".carousel-item__actions--ratings--dislike").click(function() {
     $(this).closest( ".carousel-item" ).addClass("disliked");
+    $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--like").removeClass('active');
     return false;
   });
    

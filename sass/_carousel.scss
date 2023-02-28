@@ -1,10 +1,8 @@
 .module {
 
     h5 {
-
         padding: 10px;
         margin-bottom: 0;
-
     }
 }
 
@@ -73,10 +71,10 @@
         display: none;
         background: $charcoal;
         position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        top: -10px;
+        right: -10px;
+        left: -10px;
+        bottom: -10px;
         padding: 10px;
         color: white;
 

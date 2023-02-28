@@ -629,10 +629,10 @@ th, td {
   display: none;
   background: #25282D;
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  top: -10px;
+  right: -10px;
+  left: -10px;
+  bottom: -10px;
   padding: 10px;
   color: white;
 }
