@@ -1,5 +1,8 @@
-$(document).ready(function() {    
+$(document).ready(function() {   
+
 });
+
+
 
 
 $(function() {
@@ -16,14 +19,44 @@ $(function() {
   $(".carousel-item__actions--ratings--dislike").click(function() {
     $(this).toggleClass("active");
     $(this).closest( ".carousel-item" ).toggleClass("disliked");
-    $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--like").removeClass('active');
-    return false;
+    $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--like").removeClass('active');   
   });
    
   $(".carousel-item__actions--ratings--dislike--undo").click(function() {
     $(this).closest( ".carousel-item" ).removeClass("disliked");
     return false;
   });
+
+
+  var clicks = 0;
+  $('.clicky').on('click', function(){
+      var string;
+      clicks++;
+      switch(clicks){
+          case 1:
+              string = "We're starting to get to know you..";
+              $(this).closest( ".carousel-item" ).find('.clicky').text(string);
+              break;
+          case 2:
+              string = "Your dislikes are just as important as your likes";
+              $(this).closest( ".carousel-item" ).find('.clicky').text(string);
+              break;
+          case 3:
+              string = "We're picking up what you're putting down";
+              $(this).closest( ".carousel-item" ).find('.clicky').text(string);
+              break;
+          case 4:
+              string = "Keep going—We're listening.";
+              $(this).closest( ".carousel-item" ).find('.clicky').text(string);
+              break;
+          case 5:
+              string = "We're taking notes..";
+              $(this).closest( ".carousel-item" ).find('.clicky').text(string);
+              break;
+      }
+  });
    
 
 });
+
+
