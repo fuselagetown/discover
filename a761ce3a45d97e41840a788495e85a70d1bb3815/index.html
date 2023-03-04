@@ -6,38 +6,49 @@ layout: page
 
 <div class="module">
 
-<h5>New arrivals</h5>
+<h5>Version 1: simple ratings</h5>
+
 
 	<div class="carousel">
+		{% include carousel.html %}
+	</div>
 
-			<div class="carousel-container">
-			
-			{% for post in site.categories['items'] reversed %} 
 
-				{% assign item_tag = post.date %}
-
-				
-
-					{% include item.html %}
-
-					<div class="similar-items">
-
-					{% for post in site.categories['shop-similar-items'] reversed %} 
-
-						{% if item_tag ==  post.date %}
-
-							{% include item.html %}
-
-						{% endif %}
-
-					{% endfor %}
-
-					</div>
-
-			{% endfor %}
-		
-		</div>
-
+	<div class="carousel with-color-swatches">
+		{% include carousel.html %}
 	</div>
 
 </div>
+
+
+<div class="module  thumbs-up-shop-similar thumbs-down-playback">
+
+	<h5>Version 2: ratings + immediate playback</h5>
+		
+	<div class="carousel">
+		{% include carousel.html %}
+	</div>
+
+
+	<div class="carousel with-color-swatches">
+		{% include carousel.html %}
+	</div>
+
+</div>
+
+<div class="module see-similar">
+
+	<h5>Version 3: see similar</h5>
+		
+	<div class="carousel">
+		{% include carousel.html %}
+	</div>
+
+	
+	<div class="carousel with-color-swatches">
+		{% include carousel.html %}
+	</div>
+
+</div>
+
+<br /><br /><br />

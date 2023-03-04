@@ -8,23 +8,32 @@ $(document).ready(function() {
 $(function() {
 
   $(".carousel-item__actions--ratings--like").click(function() {
-    $(this).closest( ".carousel-item" ).next(".similar-items").addClass('im-loading');
     $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--dislike").removeClass('active');
     $(this).closest( ".carousel-item" ).removeClass("disliked");
     $(this).toggleClass("active");
-    return false;
+    return(false); 
   });
 
+  $(".thumbs-up-shop-similar .carousel-item__actions--ratings--like, .carousel-item__button--see-similar").click(function() {
+    $(this).closest( ".carousel-item" ).next(".similar-items").addClass('im-loading');
+    return(false); 
+  });  
 
   $(".carousel-item__actions--ratings--dislike").click(function() {
     $(this).toggleClass("active");
-    $(this).closest( ".carousel-item" ).toggleClass("disliked");
-    $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--like").removeClass('active');   
+    $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--like").removeClass('active');  
+    return(false); 
   });
-   
+
+  $(".thumbs-down-playback .carousel-item__actions--ratings--dislike").click(function() {
+    $(this).closest( ".carousel-item" ).toggleClass("disliked");
+    return(false); 
+  });
+
+
   $(".carousel-item__actions--ratings--dislike--undo").click(function() {
     $(this).closest( ".carousel-item" ).removeClass("disliked");
-    return false;
+    return(false); 
   });
 
 

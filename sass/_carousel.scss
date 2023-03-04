@@ -1,5 +1,7 @@
 .module {
 
+    margin-bottom: 2rem;
+
     h5 {
         padding: 10px;
         margin-bottom: 0;
@@ -11,6 +13,7 @@
   	overflow-x: scroll;
   	overflow-y: hidden;
     @include clear;
+    margin-bottom: 5px;
 
         &::-webkit-scrollbar { display: none; }
 
@@ -134,6 +137,7 @@
     justify-content: center;
     align-items: center;
     height: 180px;
+    background: $grey_light;
 
    
     img {
@@ -204,6 +208,10 @@
 
     }
 
+    .see-similar & {
+        display: none;
+    }
+
 }
 
 
@@ -211,27 +219,33 @@
 
 .color-swatches {
     display: none;
+    position: absolute;
+    top: 0;
+
+    .with-color-swatches & {
+        display: block;
+    }
 }
 
 .color-swatch  {
 
-    width: 40px;
-    height: 40px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
-    padding: 10px 10px 0 0;
+    padding: 0;
 
     span {
         width: 100%;
         height:  100%;
         display: block;
         border-radius: 50%;
-        border: 3px solid $grey_light;
+        border: 1px solid $grey_light;
 
     }
 
-    &:first-child {
+   /* &:first-child {
         span {     box-shadow: 0 0 0px 1px $charcoal ;}
-    }
+    }*/
 
 }
 
@@ -294,6 +308,22 @@
         }
     }
 
+}
+
+.carousel-item__button--see-similar { 
+    display:none;  
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    z-index: 2;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
+    border: 1px solid $mint;
+    color: $mint;
+
+    .see-similar & {
+        display: block;
+    }
 }
 
 
