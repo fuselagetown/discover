@@ -551,6 +551,38 @@ th, td {
   font-size: 0.5em;
 }
 
+@-webkit-keyframes toast-saving {
+  0% {
+    top: -50px;
+  }
+  20% {
+    top: 5px;
+  }
+  80% {
+    top: 5px;
+  }
+  100% {
+    top: -50px;
+  }
+}
+.toast {
+  background: #25282D;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  color: #fff;
+  box-shadow: 0px 0px 4px rgba(37, 40, 45, 0.05), 0px 0px 8px rgba(37, 40, 45, 0.05);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  z-index: 3;
+  opacity: 0;
+}
+.toast.saving {
+  opacity: 1;
+  -webkit-animation: toast-saving 2s ease-in-out forwards;
+}
+
 .module {
   margin-bottom: 2rem;
 }
@@ -649,9 +681,9 @@ th, td {
   z-index: 1;
   font-size: 0.9rem;
   font-weight: bold;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .carousel-item .overlay a {
   color: white;
@@ -666,6 +698,7 @@ th, td {
 }
 .carousel-item.disliked .overlay {
   -webkit-animation: overlay 0.5s ease-out forwards;
+  display: flex;
 }
 
 .carousel-item--loading {
@@ -695,18 +728,27 @@ th, td {
   height: auto;
 }
 
+@-webkit-keyframes bookmark {
+  50% {
+    transform: scale(1.2);
+  }
+}
 .carousel-item__action {
   width: 50px;
   height: 50px;
   font-size: 0;
   display: block;
   border-bottom: 0;
-  background: url("../../assets/images/bookmark.svg") no-repeat 20px 10px;
+  background: url("../../assets/images/bookmark.svg") no-repeat center;
 }
 .carousel-item__action.carousel-item__actions--bookmark {
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: -16px;
+  right: -18px;
+}
+.carousel-item__action.active {
+  background-image: url("../../assets/images/bookmark-active.svg");
+  -webkit-animation: bookmark 0.4s ease-out;
 }
 
 @-webkit-keyframes thumbs-up {

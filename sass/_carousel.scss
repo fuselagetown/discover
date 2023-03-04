@@ -86,10 +86,11 @@
         padding: 10px;
         z-index: 1;
         font-size: 0.9rem;
-        font-weight: bold;
-        display: flex;
+        font-weight: bold;        
         justify-content: center;
         align-items: center;
+
+        display: none;
 
         a { color: white; }
     }
@@ -107,6 +108,7 @@
         
         .overlay {
             -webkit-animation: overlay 0.5s ease-out forwards;
+            display: flex;
         }
     }
 
@@ -149,7 +151,9 @@
 }
 
 
-
+@-webkit-keyframes bookmark {
+    50% { transform: scale(1.2); }
+}
 
 .carousel-item__action {
     width: 50px;
@@ -157,12 +161,17 @@
     font-size: 0;
     display: block;
     border-bottom: 0;
-    background: url("../../assets/images/bookmark.svg") no-repeat 20px 10px;
+    background: url("../../assets/images/bookmark.svg") no-repeat center;
 
     &.carousel-item__actions--bookmark {
         position: absolute;
-        top: -10px;
-        right: -10px;
+        top: -16px;
+        right: -18px;
+    }
+
+    &.active {
+        background-image: url("../../assets/images/bookmark-active.svg");  
+        -webkit-animation: bookmark 0.4s ease-out;
     }
 
 }

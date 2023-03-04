@@ -36,6 +36,15 @@ $(function() {
     return(false); 
   });
 
+  $(".carousel-item__actions--bookmark").click(function() {
+    $(this).toggleClass("active");
+    $('.toast').addClass('saving');
+    setTimeout(function () { 
+      $('.toast').removeClass('saving');
+      }, 2000);
+    return(false); 
+  });
+
 
   var clicks = 0;
   $('.clicky').on('click', function(){
