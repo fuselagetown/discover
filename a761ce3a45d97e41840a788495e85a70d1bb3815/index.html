@@ -9,12 +9,7 @@ layout: page
 <h5>Version 1: simple ratings</h5>
 
 
-	<div class="carousel">
-		{% include carousel.html %}
-	</div>
-
-
-	<div class="carousel with-color-swatches">
+	<div class="carousel with-color-swatches ratings-no-playback">
 		{% include carousel.html %}
 	</div>
 
@@ -25,10 +20,6 @@ layout: page
 
 	<h5>Version 2: ratings + immediate playback</h5>
 		
-	<div class="carousel">
-		{% include carousel.html %}
-	</div>
-
 
 	<div class="carousel with-color-swatches">
 		{% include carousel.html %}
@@ -36,14 +27,55 @@ layout: page
 
 </div>
 
-<div class="module see-similar">
 
-	<h5>Version 3: see similar</h5>
+<div class="module thumbs-up-shop-similar thumbs-down-playback playback-at-the-end-of-scroll">
+
+	<h5>Version 3: ratings + playback at the end of scroll</h5>
+
+	<div class="carousel with-color-swatches">
 		
-	<div class="carousel">
-		{% include carousel.html %}
+		<div class="carousel-container">
+			
+			{% for post in site.categories['items'] reversed %} 
+
+				{% assign item_tag = post.date | date: "%d"  %}
+
+					{% include item.html %}
+
+			{% endfor %}
+
+			{% for post in site.categories['items'] reversed %} 
+
+				{% assign item_tag = post.date | date: "%d"  %}
+
+					<div class="similar-items similar-items-{{ item_tag }}">
+
+					{% for post in site.categories['shop-similar-items'] reversed %} 
+
+						{% assign similar_item_tag = post.date | date: "%d" %}
+
+						{% if item_tag ==  similar_item_tag %}
+
+							{% include item.html %}
+
+						{% endif %}
+
+					{% endfor %}
+
+					</div>
+
+			{% endfor %}
+
+		</div>
+
 	</div>
 
+</div>
+
+<div class="module see-similar">
+
+	<h5>Version 4: see similar</h5>
+		
 
 	<div class="carousel with-color-swatches">
 		{% include carousel.html %}

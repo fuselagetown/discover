@@ -3,15 +3,17 @@
 	
 	{% for post in site.categories['items'] reversed %} 
 
-		{% assign item_tag = post.date %}
+		{% assign item_tag = post.date | date: "%d" %}
 
 			{% include item.html %}
 
-			<div class="similar-items">
+			<div class="similar-items similar-items-{{ item_tag }}">
 
 			{% for post in site.categories['shop-similar-items'] reversed %} 
 
-				{% if item_tag ==  post.date %}
+				{% assign similar_item_tag = post.date | date: "%d" %}
+
+				{% if item_tag ==  similar_item_tag %}
 
 					{% include item.html %}
 

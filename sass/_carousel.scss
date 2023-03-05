@@ -15,7 +15,9 @@
     @include clear;
     margin-bottom: 5px;
 
-        &::-webkit-scrollbar { display: none; }
+    &::-webkit-scrollbar { display: none; }
+
+
 
 }
 
@@ -316,6 +318,8 @@
 
         }
     }
+
+    .ratings-no-playback & { display: none !important; }
 
 }
 

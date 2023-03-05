@@ -68,7 +68,7 @@ body {
   margin: 0;
   line-height: 1.4;
   font-weight: 400;
-  font-family: "BrandonText-Medium", sans-serif;
+  font-family: sans-serif;
 }
 
 li {
@@ -877,6 +877,9 @@ th, td {
 .similar-items.im-loading .carousel-item-content {
   -webkit-animation: item-content-loading 0.5s ease-out forwards;
   -webkit-animation-delay: 1.1s;
+}
+.ratings-no-playback .similar-items {
+  display: none !important;
 }
 
 .carousel-item__button--see-similar {

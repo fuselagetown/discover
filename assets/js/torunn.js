@@ -14,10 +14,20 @@ $(function() {
     return(false); 
   });
 
-  $(".thumbs-up-shop-similar .carousel-item__actions--ratings--like, .carousel-item__button--see-similar").click(function() {
+  // $(".thumbs-up-shop-similar .carousel-item__actions--ratings--like, .carousel-item__button--see-similar").click(function() {
+  //   $(this).closest( ".carousel-item" ).next(".similar-items").addClass('im-loading');
+  //   return(false); 
+  // });  
+
+  $(".item-01 .carousel-item__actions--ratings--like").click(function() { $(this).closest( ".carousel" ).find(".similar-items-01").addClass('im-loading'); return(false); });
+  $(".item-02 .carousel-item__actions--ratings--like").click(function() { $(this).closest( ".carousel" ).find(".similar-items-02").addClass('im-loading'); return(false); });
+  $(".item-03 .carousel-item__actions--ratings--like").click(function() { $(this).closest( ".carousel" ).find(".similar-items-03").addClass('im-loading'); return(false); });
+  $(".item-04 .carousel-item__actions--ratings--like").click(function() { $(this).closest( ".carousel" ).find(".similar-items-04").addClass('im-loading'); return(false); });
+
+ $(".carousel-item__button--see-similar").click(function() {
     $(this).closest( ".carousel-item" ).next(".similar-items").addClass('im-loading');
     return(false); 
-  });  
+  }); 
 
   $(".carousel-item__actions--ratings--dislike").click(function() {
     $(this).toggleClass("active");
