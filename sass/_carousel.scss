@@ -131,7 +131,11 @@
 
 
 .carousel-item__details {
-    height: 6rem;
+    height: 6.5rem;
+
+    .interactive-colors & {
+        height: 8rem;
+    }
 }
 
 
@@ -231,11 +235,13 @@
 .color-swatches {
     display: none;
     position: absolute;
-    top: 0;
+    bottom: 0;
 
     .with-color-swatches & {
         display: block;
     }
+
+
 }
 
 .color-swatch  {
@@ -244,6 +250,15 @@
     height: 12px;
     display: inline-block;
     padding: 0;
+
+    .interactive-colors & {
+        width: 24px;
+        height: 24px;
+
+        &:first-child {
+        span {     box-shadow: 0 0 0px 1px $charcoal ;}
+        }
+    }
 
     span {
         width: 100%;
@@ -254,9 +269,7 @@
 
     }
 
-   /* &:first-child {
-        span {     box-shadow: 0 0 0px 1px $charcoal ;}
-    }*/
+    
 
 }
 

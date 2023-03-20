@@ -714,7 +714,10 @@ th, td {
 }
 
 .carousel-item__details {
-  height: 6rem;
+  height: 6.5rem;
+}
+.interactive-colors .carousel-item__details {
+  height: 8rem;
 }
 
 .carousel-item__image {
@@ -802,7 +805,7 @@ th, td {
 .color-swatches {
   display: none;
   position: absolute;
-  top: 0;
+  bottom: 0;
 }
 .with-color-swatches .color-swatches {
   display: block;
@@ -813,9 +816,13 @@ th, td {
   height: 12px;
   display: inline-block;
   padding: 0;
-  /* &:first-child {
-       span {     box-shadow: 0 0 0px 1px $charcoal ;}
-   }*/
+}
+.interactive-colors .color-swatch {
+  width: 24px;
+  height: 24px;
+}
+.interactive-colors .color-swatch:first-child span {
+  box-shadow: 0 0 0px 1px #25282D;
 }
 .color-swatch span {
   width: 100%;

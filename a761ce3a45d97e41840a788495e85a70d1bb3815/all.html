@@ -1,0 +1,102 @@
+---
+layout: page
+--- 
+
+<div class="toast saved-items">Saved!</div>
+
+<!--  simple ratings -->
+<div class="module">
+
+<h5>Original version</h5>
+
+
+	<div class="carousel with-color-swatches interactive-colors ratings-no-playback">
+		{% include carousel.html %}
+	</div>
+
+</div>
+
+<div class="module">
+
+<h5>Version 1</h5>
+
+
+	<div class="carousel with-color-swatches ratings-no-playback">
+		{% include carousel.html %}
+	</div>
+
+</div>
+
+
+<!-- ratings + immediate playback -->
+<div class="module  thumbs-up-shop-similar thumbs-down-playback">
+
+	<h5>Version 2</h5>
+		
+
+	<div class="carousel with-color-swatches">
+		{% include carousel.html %}
+	</div>
+
+</div>
+
+
+<!-- : ratings + playback at the end of scroll -->
+<!-- <div class="module thumbs-up-shop-similar thumbs-down-playback playback-at-the-end-of-scroll">
+
+	<h5>Version 3</h5>
+
+	<div class="carousel with-color-swatches">
+		
+		<div class="carousel-container">
+			
+			{% for post in site.categories['items'] reversed %} 
+
+				{% assign item_tag = post.date | date: "%d"  %}
+
+					{% include item.html %}
+
+			{% endfor %}
+
+			{% for post in site.categories['items'] reversed %} 
+
+				{% assign item_tag = post.date | date: "%d"  %}
+
+					<div class="similar-items similar-items-{{ item_tag }}">
+
+					{% for post in site.categories['shop-similar-items'] reversed %} 
+
+						{% assign similar_item_tag = post.date | date: "%d" %}
+
+						{% if item_tag ==  similar_item_tag %}
+
+							{% include item.html %}
+
+						{% endif %}
+
+					{% endfor %}
+
+					</div>
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+</div>
+ -->
+<!-- : see similar< -->
+
+<!-- <div class="module see-similar">
+
+	<h5>Version 4</h5>
+		
+
+	<div class="carousel with-color-swatches">
+		{% include carousel.html %}
+	</div>
+
+</div> -->
+
+<br /><br /><br />
