@@ -801,6 +801,9 @@ th, td {
 .see-similar .carousel-item__actions--ratings {
   display: none;
 }
+.no-ratings .carousel-item__actions--ratings {
+  display: none;
+}
 
 .color-swatches {
   display: none;
