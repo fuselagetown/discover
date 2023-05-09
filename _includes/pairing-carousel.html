@@ -1,0 +1,17 @@
+
+<div class="carousel-container">
+	
+	{% for post in site.categories['items'] reversed %} 
+
+		{% assign item_tag = post.date | date: "%d" %}
+
+		{% if post.has_pairing ==  true %}
+
+			{% include pair.html %}
+
+		{% endif %}
+	
+	{% endfor %}
+
+</div>
+

@@ -1,0 +1,21 @@
+<div class="carousel-item__image">
+
+	<img src="{{ post.image | replace: 'c_fit,h_512,w_512', 'c_fit,h_512,w_512/e_replace_color:f2f3f4:300:ffffff' }}">
+
+</div>
+
+<div class="carousel-item__details">
+
+	<p class="carousel-item__brand">{{ post.brand }}</p>	
+	<p class="carousel-item__price">{{ post.price }}</p>
+
+
+	<div class="color-swatches">
+		
+		{% for item in post.colors  limit:3 %}
+			<a href="#" class="color-swatch "><span style="background-color: {{ item }};"></span></a>
+		{% endfor %}
+	
+	</div>
+
+</div>

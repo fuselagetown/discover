@@ -907,4 +907,83 @@ th, td {
   display: block;
 }
 
+.style-tips {
+  padding: 20px 10px 0;
+  font-size: 0.95rem;
+  min-height: 8rem;
+  font-style: italic;
+  background: #F2F3F4;
+}
+.style-tips p {
+  margin: 0;
+}
+.style-tips p:first-child:first-letter {
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.carousel-item-pair {
+  width: 300px;
+}
+@media (max-width: 410px) {
+  .carousel-item-pair {
+    width: 370px;
+  }
+}
+@media (max-width: 390px) {
+  .carousel-item-pair {
+    width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .carousel-item-pair {
+    width: 320px;
+  }
+}
+@media (max-width: 350px) {
+  .carousel-item-pair {
+    width: 300px;
+  }
+}
+@media (max-width: 330px) {
+  .carousel-item-pair {
+    width: 300px;
+  }
+}
+
+.carousel-item-pair-item {
+  width: 48%;
+  padding: 0 4%;
+  background: #F2F3F4;
+  float: left;
+  zoom: 1;
+}
+.carousel-item-pair-item:before {
+  content: "";
+  display: table;
+}
+.carousel-item-pair-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.carousel-item-pair {
+  zoom: 1;
+}
+.carousel-item-pair:before {
+  content: "";
+  display: table;
+}
+.carousel-item-pair:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /*# sourceMappingURL=styles.css.map */
