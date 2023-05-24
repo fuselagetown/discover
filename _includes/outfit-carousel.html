@@ -2,17 +2,17 @@
 
 
 
-			<div class="style-tips">
-				
-				{{ post.content | remove_first:'A ' }}
-
-			</div>
-
 			<div class="carousel pairing-carousel thumbs-down-playback">
 
 				<div class="carousel-container">
 
-				{% include outfit.html %}
+					{% for post in site.categories['tips'] reversed %} 
+
+						{% assign tip_tag = post.url | date: "%d" %}
+							
+						{% include outfit.html %}
+		
+					{% endfor %}
 
 				</div>
 

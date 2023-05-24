@@ -3,13 +3,9 @@
 	
 	{% for post in site.categories['tips'] reversed %} 
 
-		{% assign item_tag = post.date | date: "%d" %}
-
-		{% if post.has_pairing ==  true %}
+		{% assign tip_tag = post.date | date: "%d" %} 
 
 			{% include pair.html %}
-
-		{% endif %}
 	
 	{% endfor %}
 

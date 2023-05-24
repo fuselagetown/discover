@@ -363,8 +363,12 @@
     font-style: italic;
     margin: 0;
 
-    .carousel-item-pair & {
+    p { margin: 0 }
+
+    .carousel-item-pair &,
+    .carousel-outfit & {
         margin: 0;
+        height: 10rem;
         background: $grey_light;
     }
 
@@ -385,8 +389,10 @@
 }
 
 
-.carousel-item-pair {
+.carousel-item-pair,
+.carousel-outfit {
     width: 300px;
+    position: relative;
 
     @media (max-width: 410px) {
         width: 370px;
@@ -409,15 +415,42 @@
     }
 }
 
-.carousel-item-pair-item {
-    width: 48%;
+.pair {
+    height: 270px;
+}
+
+.carousel-item-pair-item,
+.carousel-outfit-item {
+    width: 50%;
     padding: 0 4%;
     background: $grey_light;
-    float: left;
-    @include clear;
+    position: absolute;
+
+
+    &.pair-main-item {
+        left: 0;        
+    }
+
+    &.pair-pairing-item,
+    &.outfit-pairing-item {
+        right: 0;
+    }
+
+    &.outfit-item {
+        top: 180px;
+
+        &:last-child {
+            right: 0;
+        }
+    }
 }
 
 .carousel-item-pair {
     @include clear;
 }
 
+
+.outfit {
+    height: 380px;
+    position: relative;
+}

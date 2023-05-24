@@ -1,49 +1,84 @@
-
-
-<div class="carousel-item carousel-item-outfit">	
+<div class="carousel-item carousel-outfit">		
 
 	<svg class="carousel-item--loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(242, 243, 244); display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#81E6D3" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>
-
 
 	<div class="carousel-item-content">
 
 
-		<div class="carousel-item-pair">
-
-			{% for post in site.categories['items'] reversed %} 
-
-				{% assign pairing_tag = post.date | date: "%d" %}
-
-				{% if item_tag ==  pairing_tag %}
-
-					<div class="carousel-item-pair-item">
-
-					{% include pairing-item.html %}
-
-					</div>
-
-				{% endif %}
-
-			{% endfor %}
-
-
-			{% for post in site.categories['pairing-items'] reversed %} 
-
-				{% assign pairing_tag = post.date | date: "%d" %}
-
-				{% if item_tag ==  pairing_tag %}
-
-					<div class="carousel-item-pair-item">
-
-					{% include pairing-item.html %}
-
-					</div>
-
-				{% endif %}
-
-			{% endfor %}
+		<div class="style-tips">
+			
+			{{ post.content }}
 
 		</div>
+
+		
+		<div class="outfit">
+
+			{% for post in site.categories['items'] %} 
+
+				{% assign tip_item_tag = post.url | date: "%m" %}
+				{% assign item_tag = post.date | date: "%m%d" %}
+			
+				{% if tip_item_tag ==  tip_tag %}
+
+				<div class="carousel-outfit-item outfit-main-item">				
+
+					<!-- <div style="position: absolute; z-index: 3; background: yellow"> main-item {{ item_tag }}</div> -->
+
+					{% include outfit-item.html %}
+
+				</div>
+					
+
+					{% for post in site.categories['pairing-items'] %} 
+
+						{% assign pairing_tag = post.date | date: "%m%d" %}
+
+						{% if item_tag ==  pairing_tag %}
+
+							<div class="carousel-outfit-item outfit-pairing-item">				
+
+								<!-- <div style="position: absolute; z-index: 3; background: yellow"> main-item {{ item_tag }} pairing-tag {{ pairing_tag }}	</div> -->
+
+								{% include outfit-item.html %}
+
+							</div>
+
+						{% endif %}
+
+					{% endfor %}
+
+					{% for post in site.categories['outfit-items'] %} 
+
+						{% assign outfit_tag = post.date | date: "%m%d" %}
+
+						{% if item_tag ==  outfit_tag %}
+
+							<div class="carousel-outfit-item outfit-item">				
+
+								<!-- <div style="position: absolute; z-index: 3; background: yellow"> main-item {{ item_tag }} pairing-tag {{ pairing_tag }}	</div> -->
+
+								{% include outfit-item.html %}
+
+							</div>
+
+						{% endif %}
+
+					{% endfor %}
+
+
+				{% endif %}
+
+			{% endfor %}
+
+
+		
+
+			
+
+		</div>
+
+
 
 		<a href="#" class="carousel-item__action carousel-item__actions--bookmark">Bookmark</a>
 
