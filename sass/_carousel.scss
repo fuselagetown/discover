@@ -5,6 +5,20 @@
     h5 {
         padding: 10px;
         margin-bottom: 0;
+
+        span {
+            background: $mint_light;
+            border-radius: 50%;
+            width: 24px;
+            line-height: 24px;
+            display: inline-block;
+            text-align: center;
+            margin-right: 5px;
+            top: -2px;
+            font-size: 0.9rem;
+            position: relative;
+            font-weight: bold;
+        }
     }
 }
 

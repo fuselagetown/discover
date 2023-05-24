@@ -590,6 +590,19 @@ th, td {
   padding: 10px;
   margin-bottom: 0;
 }
+.module h5 span {
+  background: #D8F7F1;
+  border-radius: 50%;
+  width: 24px;
+  line-height: 24px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  top: -2px;
+  font-size: 0.9rem;
+  position: relative;
+  font-weight: bold;
+}
 
 .carousel {
   overflow-x: scroll;
