@@ -1,0 +1,15 @@
+<div class="similar-items similar-items-{{ item_tag }}">
+
+	{% for post in site.categories['shop-similar-items'] reversed %} 
+
+		{% assign similar_item_tag = post.date | date: "%m%d" %} 
+
+		{% if similar_item_tag == item_tag %}
+
+			{% include item.html %}
+
+		{% endif %}
+
+	{% endfor %}
+
+	</div>

@@ -358,12 +358,17 @@
 
 
 .style-tips {
-    padding: 20px 10px 0;
+    padding: 20px 10px 20px;
     font-size: 0.95rem;
-    min-height: 8rem;
     font-style: italic;
-    background: $grey_light;
-    p {
+    margin: 0;
+
+    .carousel-item-pair & {
+        margin: 0;
+        background: $grey_light;
+    }
+
+    /*p {
         margin: 0;
         &:first-child:first-letter {
         float: left;
@@ -373,8 +378,9 @@
         padding-top: 2px;
         padding-right: 8px;
         padding-left: 3px;
+        text-transform: uppercase;
     }
-    }
+    }*/
 
 }
 

@@ -1,7 +1,9 @@
 
 
 
-<div class="carousel-item {% if post.category == 'shop-similar-items' %} shop-similar-item {% endif %} item-{{ item_tag }}">		
+<div class="carousel-item {% if post.category == 'shop-similar-items' %} shop-similar-item {% endif %} ">
+
+<div style="position: absolute; z-index: 3;">{{ tip_tag }} {{ post.url | date: "%m" }}	</div>
 
 
 	<svg class="carousel-item--loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(242, 243, 244); display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#81E6D3" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>
@@ -11,7 +13,7 @@
 
 		<div class="carousel-item__image">
 
-			<img src="{{ post.image }}">
+			<img src="{{ post.image | replace: 'c_fit,h_512,w_512', 'c_fit,h_512,w_512/e_replace_color:f2f3f4:300:ffffff' }}">
 
 		</div>
 
@@ -52,3 +54,4 @@
 	</div> 
 
 </div>
+

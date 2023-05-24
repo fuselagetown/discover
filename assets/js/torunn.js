@@ -14,10 +14,10 @@ $(function() {
     return(false); 
   });
 
-  // $(".thumbs-up-shop-similar .carousel-item__actions--ratings--like, .carousel-item__button--see-similar").click(function() {
-  //   $(this).closest( ".carousel-item" ).next(".similar-items").addClass('im-loading');
-  //   return(false); 
-  // });  
+  $(".thumbs-up-shop-similar .carousel-item__actions--ratings--like, .carousel-item__button--see-similar").click(function() {
+    $(this).closest( ".carousel-item" ).next(".similar-items").addClass('im-loading');
+    return(false); 
+  });  
 
   $(".item-01 .carousel-item__actions--ratings--like").click(function() { $(this).closest( ".carousel" ).find(".similar-items-01").addClass('im-loading'); return(false); });
   $(".item-02 .carousel-item__actions--ratings--like").click(function() { $(this).closest( ".carousel" ).find(".similar-items-02").addClass('im-loading'); return(false); });

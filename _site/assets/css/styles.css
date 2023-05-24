@@ -908,23 +908,27 @@ th, td {
 }
 
 .style-tips {
-  padding: 20px 10px 0;
+  padding: 20px 10px 20px;
   font-size: 0.95rem;
-  min-height: 8rem;
   font-style: italic;
-  background: #F2F3F4;
-}
-.style-tips p {
   margin: 0;
+  /*p {
+      margin: 0;
+      &:first-child:first-letter {
+      float: left;
+      font-family: Georgia;
+      font-size: 75px;
+      line-height: 60px;
+      padding-top: 2px;
+      padding-right: 8px;
+      padding-left: 3px;
+      text-transform: uppercase;
+  }
+  }*/
 }
-.style-tips p:first-child:first-letter {
-  float: left;
-  font-family: Georgia;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 2px;
-  padding-right: 8px;
-  padding-left: 3px;
+.carousel-item-pair .style-tips {
+  margin: 0;
+  background: #F2F3F4;
 }
 
 .carousel-item-pair {

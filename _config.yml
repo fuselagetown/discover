@@ -1,7 +1,7 @@
-name: Discover
+name: discover
 sass:
   sass_dir: sass
-permalink: /:categories/:title/
+permalink: /:categories/:month/:day/:title
 timezone: America/Los_Angeles
 baseurl: "/discover"
 exclude: [Gemfile, Gemfile.lock]

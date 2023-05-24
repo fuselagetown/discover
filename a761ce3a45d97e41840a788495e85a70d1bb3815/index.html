@@ -9,13 +9,27 @@ layout: page
 
 
 
+
+
 <div class="module">
 
 	<h5>Freestyle shuffle</h5>
 
-	<div class="carousel with-color-swatches thumbs-up-shop-similar thumbs-down-playback">
-		{% include item-carousel.html %}
-	</div>
+	{% for post in site.categories['tips'] reversed %} 
+
+		{% assign tip_tag = post.url | date: "%d" %}
+
+		<div class="style-tips">	
+
+			{{ tip_tag }}
+			{{ post.content }}
+		</div>
+
+		<div class="carousel with-color-swatches thumbs-up-shop-similar thumbs-down-playback">
+			{% include item-carousel.html %}
+		</div>
+
+	{% endfor %}
 
 </div>
 
@@ -32,5 +46,18 @@ layout: page
 
 
 
+<div class="module">
+
+	<h5>Outfits with style tips</h5>
+
+	
+		{% include outfit-carousel.html %}
+	
+
+</div>
+
+
+
 
 <br /><br /><br />
+that's it
