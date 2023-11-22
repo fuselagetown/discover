@@ -1070,6 +1070,14 @@ th, td {
   position: relative;
 }
 
+@-webkit-keyframes slideup {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
 .bottom-sheet {
   position: fixed;
   bottom: 0;
@@ -1085,6 +1093,9 @@ th, td {
   bottom: 0;
   left: 5px;
   right: 5px;
+}
+.bottom-sheet.open .bottom-sheet-content {
+  -webkit-animation: slideup 0.4s ease-in forwards;
 }
 .bottom-sheet a {
   background-color: #fff;
