@@ -1,0 +1,68 @@
+---
+layout: page
+--- 
+
+<div class="toast saved-items">Saved!</div>
+
+<!--  simple ratings -->
+<div class="module">
+
+
+
+
+
+<div class="module">
+
+	<h5><span>1</span>Tips with item carousels</h5>
+
+	{% for post in site.categories['tips'] reversed %} 
+
+		{% assign tip_tag = post.url | date: "%d" %}
+
+		<div class="style-tips">	
+
+			<!-- Tip {{ tip_tag }} -->
+			{{ post.content }}
+		</div>
+
+		<div class="carousel with-color-swatches thumbs-up-shop-similar thumbs-down-playback">
+			{% include item-carousel.html %}
+		</div>
+
+	{% endfor %}
+
+</div>
+
+
+<div class="module">
+
+	<h5><span>2</span>Pairings with style tips</h5>
+
+	<div class="carousel pairing-carousel thumbs-down-playback">
+		{% include pairing-carousel.html %}
+	</div>
+
+</div>
+
+
+
+<div class="module">
+
+	<h5><span>3</span>Outfits with style tips</h5>
+
+	
+		{% include outfit-carousel.html %}
+	
+
+
+</div>
+
+
+
+
+
+<div class="module">
+
+	<h5>that's it, folks. ping me with feedback</h5>
+
+</div>
