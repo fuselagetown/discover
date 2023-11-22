@@ -122,10 +122,34 @@
             filter: blur(3px);
         }
         
-        .overlay {
+        .overlay--thumbsdown {
             -webkit-animation: overlay 0.5s ease-out forwards;
             display: flex;
         }
+    }
+
+    &.added-to-fix {
+
+        .overlay--added-to-fix {
+            -webkit-animation: overlay 0.5s ease-out forwards;
+            display: flex;    
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+        }
+
+    }
+
+    &.added-to-closet {
+
+        .overlay--added-to-closet {
+            -webkit-animation: overlay 0.5s ease-out forwards;
+            display: flex;    
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+        }
+
     }
 
 }
@@ -161,6 +185,7 @@
     justify-content: center;
     align-items: center;
     height: 180px;
+    padding: 10px;
     background: $grey_light;
 
    
@@ -185,16 +210,28 @@
     border-bottom: 0;
     background: url("../../assets/images/bookmark.svg") no-repeat center;
 
+    .bottom-sheet & {
+        font-size: 1rem;
+        color: #000;
+        width: 100%;
+        text-decoration: none;
+        line-height: 50px;
+
+    }
+
     &.carousel-item__actions--bookmark {
         position: absolute;
         top: -16px;
         right: -18px;
+
+
     }
 
     &.active {
         background-image: url("../../assets/images/bookmark-active.svg");  
-        -webkit-animation: bookmark 0.4s ease-out;
     }
+
+
 
 }
 
@@ -245,9 +282,21 @@
 
     .no-ratings & { display: none; }
 
+
 }
 
-
+.saved-for-later .carousel-item__actions--bookmark {  
+    background-image: url("../../assets/images/bookmark-active.svg");  
+   
+}
+.carousel-item__actions--already-own {  
+    background-image: url("../../assets/images/hanger.svg");  
+    &.active { background-image: url("../../assets/images/hanger-active.svg"); }
+}
+.carousel-item__actions--add-to-fix {  
+    background-image: url("../../assets/images/fix.svg");  
+    &.active { background-image: url("../../assets/images/fix-active.svg"); }
+}
 
 
 .color-swatches {
@@ -357,8 +406,8 @@
 .carousel-item__button--see-similar { 
     display:none;  
     position: absolute;
-    bottom: -5px;
-    right: -5px;
+    top: 50%;
+    right: 0px;
     z-index: 2;
     padding: 0.2rem 0.5rem;
     text-decoration: none;
@@ -467,4 +516,32 @@
 .outfit {
     height: 380px;
     position: relative;
+}
+
+.bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: 0; 
+    background: rgba(0, 0, 0, 0.35);
+    right: 0;
+    z-index: 10;
+    display: none;
+
+    .bottom-sheet-content {
+        position: absolute;
+        bottom: 0;
+        left: 5px;
+        right: 5px;
+    }
+
+    a {
+        background-color: #fff;
+        padding: 0 20px;
+        background-position:  calc(100% - 10px) center ;
+        &:first-child {
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+    }
 }

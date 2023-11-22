@@ -709,9 +709,23 @@ th, td {
   -ms-filter: blur(3px);
   filter: blur(3px);
 }
-.carousel-item.disliked .overlay {
+.carousel-item.disliked .overlay--thumbsdown {
   -webkit-animation: overlay 0.5s ease-out forwards;
   display: flex;
+}
+.carousel-item.added-to-fix .overlay--added-to-fix {
+  -webkit-animation: overlay 0.5s ease-out forwards;
+  display: flex;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+.carousel-item.added-to-closet .overlay--added-to-closet {
+  -webkit-animation: overlay 0.5s ease-out forwards;
+  display: flex;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
 }
 
 .carousel-item--loading {
@@ -738,6 +752,7 @@ th, td {
   justify-content: center;
   align-items: center;
   height: 180px;
+  padding: 10px;
   background: #F2F3F4;
 }
 .carousel-item__image img {
@@ -757,6 +772,13 @@ th, td {
   border-bottom: 0;
   background: url("../../assets/images/bookmark.svg") no-repeat center;
 }
+.bottom-sheet .carousel-item__action {
+  font-size: 1rem;
+  color: #000;
+  width: 100%;
+  text-decoration: none;
+  line-height: 50px;
+}
 .carousel-item__action.carousel-item__actions--bookmark {
   position: absolute;
   top: -16px;
@@ -764,7 +786,6 @@ th, td {
 }
 .carousel-item__action.active {
   background-image: url("../../assets/images/bookmark-active.svg");
-  -webkit-animation: bookmark 0.4s ease-out;
 }
 
 @-webkit-keyframes thumbs-up {
@@ -816,6 +837,24 @@ th, td {
 }
 .no-ratings .carousel-item__actions--ratings {
   display: none;
+}
+
+.saved-for-later .carousel-item__actions--bookmark {
+  background-image: url("../../assets/images/bookmark-active.svg");
+}
+
+.carousel-item__actions--already-own {
+  background-image: url("../../assets/images/hanger.svg");
+}
+.carousel-item__actions--already-own.active {
+  background-image: url("../../assets/images/hanger-active.svg");
+}
+
+.carousel-item__actions--add-to-fix {
+  background-image: url("../../assets/images/fix.svg");
+}
+.carousel-item__actions--add-to-fix.active {
+  background-image: url("../../assets/images/fix-active.svg");
 }
 
 .color-swatches {
@@ -908,8 +947,8 @@ th, td {
 .carousel-item__button--see-similar {
   display: none;
   position: absolute;
-  bottom: -5px;
-  right: -5px;
+  top: 50%;
+  right: 0px;
   z-index: 2;
   padding: 0.2rem 0.5rem;
   text-decoration: none;
@@ -1029,6 +1068,32 @@ th, td {
 .outfit {
   height: 380px;
   position: relative;
+}
+
+.bottom-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.35);
+  right: 0;
+  z-index: 10;
+  display: none;
+}
+.bottom-sheet .bottom-sheet-content {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+}
+.bottom-sheet a {
+  background-color: #fff;
+  padding: 0 20px;
+  background-position: calc(100% - 10px) center;
+}
+.bottom-sheet a:first-child {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
