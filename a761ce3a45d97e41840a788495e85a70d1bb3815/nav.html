@@ -1,0 +1,113 @@
+---
+layout: page
+--- 
+
+<!--  style senses -->
+
+
+	
+
+{% for post in site.categories['senses'] reversed %} 
+
+
+	{% assign sense_name = post.title | downcase %}
+
+	{% assign sense_tag = post.url | date: "%d" %}
+
+	<div class="sense-page sense-{{ sense_tag }} {{ post.title | downcase }}">
+
+		<div class="search">{{ post.title }}</div>
+
+		<div class="sub-nav">
+
+			{% for item in post.alternatives %}
+			  <a href="#">{{ item }}</a>
+			{% endfor %}
+
+		</div>
+
+
+		<div class="style-tips">	
+
+			{{ post.content }}
+
+		</div>
+	
+		<div class="feed">
+			
+
+			{% for post in site.categories['senses-items'] reversed %} 
+
+
+				{% assign item_tag = post.date | date: "%m%d" %}
+
+				{% if post.senses contains sense_name %}
+
+					{% include item.html %}
+
+				{% endif %}
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+{% endfor %}
+
+
+
+
+
+<div class="sense-page default active">
+
+
+	<div class="search">&nbsp;</div>
+
+	<div class="sub-nav">
+
+		{% for post in site.categories['senses'] reversed %}
+
+		{% assign sense_tag = post.url | date: "%d" %}
+			
+			<a href="#" class="open-sense open-{{ sense_tag }}">{{ post.title | downcase }}</a>
+		
+		{% endfor %}
+
+	</div>
+
+
+
+	<div class="feed">	
+
+		{% for post in site.categories['senses-items'] reversed %} 
+
+				{% include item.html %}
+
+		{% endfor %}
+
+	</div>
+
+
+
+</div>
+
+
+<div class="nav-overlay">
+
+
+	<div class="search">&nbsp;</div>
+
+
+		{% for post in site.categories['senses'] reversed %}
+
+
+		{% assign sense_tag = post.url | date: "%d" %}
+			
+			<p><a href="#" class="open-sense open-{{ sense_tag }}">{{ post.title | downcase }}</a></p>
+		
+		{% endfor %}
+
+
+
+</div>

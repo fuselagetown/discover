@@ -79,6 +79,30 @@ $(function() {
   });
 
 
+  $(".search").click(function() {
+    $(".nav-overlay").addClass("open");
+    return(false); 
+  });
+
+
+  $(".open-sense").click(function() {
+    $(".nav-overlay").removeClass("open");
+    $(".sense-page").removeClass("active");
+    return(false); 
+  });
+
+
+  $(".open-01").click(function() { $(".sense-page.sense-01").addClass("active"); return(false); });
+  $(".open-02").click(function() { $(".sense-page.sense-02").addClass("active"); return(false); });
+  $(".open-03").click(function() { $(".sense-page.sense-03").addClass("active"); return(false); });
+  $(".open-04").click(function() { $(".sense-page.sense-04").addClass("active"); return(false); });
+  $(".open-05").click(function() { $(".sense-page.sense-05").addClass("active"); return(false); });
+  $(".open-06").click(function() { $(".sense-page.sense-06").addClass("active"); return(false); });
+  $(".open-07").click(function() { $(".sense-page.sense-07").addClass("active"); return(false); });
+  $(".open-08").click(function() { $(".sense-page.sense-08").addClass("active"); return(false); });
+  $(".open-09").click(function() { $(".sense-page.sense-09").addClass("active"); return(false); });
+  $(".open-10").click(function() { $(".sense-page.sense-10").addClass("active"); return(false); });
+
 
 
   var clicks = 0;

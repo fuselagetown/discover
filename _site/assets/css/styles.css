@@ -701,6 +701,12 @@ th, td {
 .carousel-item .overlay a {
   color: white;
 }
+.carousel-item .overlay .carousel-item__button--cta {
+  left: 10px;
+  bottom: 10px;
+  top: auto;
+  right: 10px;
+}
 .carousel-item.disliked .carousel-item__image,
 .carousel-item.disliked .carousel-item__details {
   -webkit-filter: blur(3px);
@@ -774,7 +780,7 @@ th, td {
 }
 .bottom-sheet .carousel-item__action {
   font-size: 1rem;
-  color: #000;
+  color: #25282D;
   width: 100%;
   text-decoration: none;
   line-height: 50px;
@@ -944,8 +950,8 @@ th, td {
   display: none !important;
 }
 
-.carousel-item__button--see-similar {
-  display: none;
+.carousel-item__button--see-similar,
+.carousel-item__button--cta {
   position: absolute;
   top: 50%;
   right: 0px;
@@ -954,6 +960,10 @@ th, td {
   text-decoration: none;
   border: 1px solid #00625D;
   color: #00625D;
+}
+
+.carousel-item__button--see-similar {
+  display: none;
 }
 .see-similar .carousel-item__button--see-similar {
   display: block;
@@ -1052,14 +1062,17 @@ th, td {
   right: 0;
 }
 
-.carousel-item-pair {
+.carousel-item-pair,
+.sense-page {
   zoom: 1;
 }
-.carousel-item-pair:before {
+.carousel-item-pair:before,
+.sense-page:before {
   content: "";
   display: table;
 }
-.carousel-item-pair:after {
+.carousel-item-pair:after,
+.sense-page:after {
   content: "";
   display: table;
   clear: both;
@@ -1105,6 +1118,54 @@ th, td {
 .bottom-sheet a:first-child {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+}
+
+.sense-page,
+.nav-overlay {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.sense-page .feed,
+.nav-overlay .feed {
+  padding: 10px;
+}
+.sense-page .carousel-item,
+.nav-overlay .carousel-item {
+  width: 48%;
+  margin: 0 2% 2% 0;
+}
+.sense-page.active,
+.nav-overlay.active {
+  display: block;
+}
+
+.search {
+  padding: 10px 0 10px 40px;
+  background: url("../../assets/images/search.svg") no-repeat 10px center #F2F3F4;
+}
+
+.sub-nav {
+  padding: 10px;
+}
+.sub-nav a {
+  text-decoration: none;
+  background: #F2F3F4;
+  padding: 0.3rem 0.6rem;
+  color: #25282D;
+}
+
+.nav-overlay {
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.nav-overlay.open {
+  display: block;
 }
 
 /*# sourceMappingURL=styles.css.map */

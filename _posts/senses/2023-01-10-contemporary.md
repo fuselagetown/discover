@@ -9,4 +9,4 @@ alternatives:
 ---
 
 
-Embraces minimalistic elements highlighting grays, beiges and shades of white. Sleek, thoughtful, hidden details emphasize an edited aesthetic. 
+Embrace minimalistic elements highlighting grays, beiges and shades of white. Sleek, thoughtful, hidden details emphasize an edited aesthetic. 
