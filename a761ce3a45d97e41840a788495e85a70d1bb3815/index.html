@@ -2,93 +2,53 @@
 layout: page
 --- 
 
-<div class="toast saved-items">Saved!</div>
-
-<!--  style senses -->
-<div class="module">
-
+<style type="text/css">
 	
+	a.prototype {
+		display: block;
+		color: #25282D !important;
+		text-decoration: none;
+		margin-bottom: 20px;
+		padding: 20px;
+		box-shadow: 0 0 10px 1px #000;
+		background: #fff;
+		border-radius: 10px;
 
-	{% for post in site.categories['senses'] reversed %} 
+	}
 
-		<h5>{{ post.title }}</h5>
+	.prototype_title {
+		display: block;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
 
-		{% assign sense_tag = post.title | downcase %}
+	.prototype_rationale {
+		font-size: 0.9rem;
+	}
 
-		<div class="style-tips">	
+</style>
 
-			{{ post.content }}
-		</div>
+<div style="padding: 40px; font-weight: 300; color: #fff; background: #00625D; min-height: 1000px;">
+<h1 style="margin-bottom: 20px;">Prototypes!</h1>
 
+<a href="style-senses" class="prototype">
+	<span class="prototype_title">Style senses on home</span>
+	<span class="prototype_rationale">
+		<b>Goal:</b> Using exisiting modules to create a more personalized AND varied client experience on home, so that clients feel like SFIX understands trends and fashion, how to apply it to their personal style, and with the ability to course-correct. 
+	</span>
+</a>
 
-		
-		<div class="carousel with-color-swatches thumbs-up-shop-similar thumbs-down-playback">
-			
-			<div class="carousel-container">
+<a href="nav" class="prototype">
+	<span class="prototype_title">Freestyle reorg</span>
+	<span class="prototype_rationale">
+		<b>Goal:</b> Create a Freestyle experience that is easy and intriguing for clients to navigate, that align with trends and merch calendar, with streamlined actions across sections, that ties fix and freestyle together in a way that creates client value.
 
-			{% for post in site.categories['senses-items'] reversed %} 
-
-
-				{% assign item_tag = post.date | date: "%m%d" %}
-
-				{% if post.senses contains sense_tag %}
-
-					{% include item.html %}
-
-				{% endif %}
-
-			{% endfor %}
-
-
-
-
-
-			<div class="carousel-item {% if post.category == 'shop-similar-items' %} shop-similar-item {% endif %} ">
-
-			<!-- <div style="position: absolute; z-index: 3;">{{ tip_tag }} {{ post.url | date: "%m" }}	</div> -->
-
-
-				<svg class="carousel-item--loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(242, 243, 244); display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#81E6D3" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>
-					
-
-				<div class="carousel-item-content">
-
-					<div class="carousel-item__image">
-
-					</div>
-
-					<div class="carousel-item__details">
+</span>
+</a>
 
 
 
-					
 
-					</div>
-
-
-
-					
-
-						<a href="#" class="carousel-item__button carousel-item__button--cta">More {{ post.title | downcase }} styles</a>
-
-					<div class="overlay">
-
-						<p class="clicky"></p>
-
-					</div>
-
-				</div> 
-
-			</div>
-
-
-
-			</div>
-
-
-		</div>
-
-
-	{% endfor %}
+Feedback? Ideas? Ping @torunn on slack!
 
 </div>
