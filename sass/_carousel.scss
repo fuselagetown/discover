@@ -727,11 +727,7 @@
     background: $charcoal;
     position: relative;
 
-
-
-    &:nth-child(3n+3) {
-      margin-right: 0;
-    }
+    &:nth-child(3n+3) { margin-right: 0; }
 
     span {
         position: absolute;
@@ -750,6 +746,23 @@
     .carousel-item__title,
     .carousel-item__price { display: none; }
 
-    .carousel-item--loading { z-index:2; }
+}
 
+.hello-greeting {
+    background: #D8F7F1;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+
+    &:after {
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: calc(50% - 10px);
+        transform: rotate(45deg);
+        background: #D8F7F1;
+        bottom: -4px;
+    }
 }
