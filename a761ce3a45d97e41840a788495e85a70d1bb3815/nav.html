@@ -16,15 +16,29 @@ layout: page
 
 	<div class="sense-page sense-{{ sense_tag }} {{ post.title | downcase }}">
 
-		<div class="search">{{ post.title }}</div>
+		<div class="search"><div class="search-input">{{ post.title }}</div></div>
 
 		<div class="sub-nav">
 
-			{% for item in post.alternatives %}
-			  <a href="#">{{ item }}</a>
-			{% endfor %}
+			<div class="sub-nav-container ">
+
+				{% assign i = 0 %}
+				{% for item in post.alternatives %}
+				{% assign i = i | plus:1 %}
+				  <a href="#" class="open-subsense-0{{ i }}">{{ item }}</a>
+				{% endfor %}
+
+			</div>
 
 		</div>
+
+		{% assign x = 0 %}
+		{% for item in post.alternatives %}
+		{% assign x = x | plus:1 %}
+		  {% include subsense.html %}
+		{% endfor %}
+
+		
 
 
 		<div class="style-tips">	
@@ -62,17 +76,21 @@ layout: page
 <div class="sense-page default active">
 
 
-	<div class="search">&nbsp;</div>
+	<div class="search"><div class="search-input">&nbsp;</div></div>
 
 	<div class="sub-nav">
 
-		{% for post in site.categories['senses'] reversed %}
+		<div class="sub-nav-container ">
 
-		{% assign sense_tag = post.url | date: "%d" %}
+			{% for post in site.categories['senses'] reversed %}
+
+			{% assign sense_tag = post.url | date: "%d" %}
+				
+				<a href="#" class="open-sense open-{{ sense_tag }}">{{ post.title | downcase }}</a>
 			
-			<a href="#" class="open-sense open-{{ sense_tag }}">{{ post.title | downcase }}</a>
-		
-		{% endfor %}
+			{% endfor %}
+
+		</div>
 
 	</div>
 
@@ -96,18 +114,21 @@ layout: page
 <div class="nav-overlay">
 
 
-	<div class="search">&nbsp;</div>
+	<div class="search"><div class="search-input">&nbsp;</div></div>
+
+	<div class="promos">
 
 
-		{% for post in site.categories['senses'] reversed %}
+		{% for post in site.categories['senses'] reversed limit: 9 %}
 
 
 		{% assign sense_tag = post.url | date: "%d" %}
 			
-			<p><a href="#" class="open-sense open-{{ sense_tag }}">{{ post.title | downcase }}</a></p>
+			<a href="#" class="open-sense open-{{ sense_tag }} promo"><span>{{ post.title | downcase }}</span></a>
 		
 		{% endfor %}
 
+	</div>
 
 
 </div>

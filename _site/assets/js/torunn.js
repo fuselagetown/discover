@@ -35,7 +35,7 @@ $(function() {
     return(false); 
   });
 
-  $(".thumbs-down-playback .carousel-item__actions--ratings--dislike").click(function() {
+  $(".carousel-item__actions--ratings--dislike").click(function() {
     $(this).closest( ".carousel-item" ).toggleClass("disliked");
     return(false); 
   });
@@ -87,7 +87,7 @@ $(function() {
 
   $(".open-sense").click(function() {
     $(".nav-overlay").removeClass("open");
-    $(".sense-page").removeClass("active");
+    $(".sense-page").delay(500).removeClass("active");
     return(false); 
   });
 
@@ -103,6 +103,27 @@ $(function() {
   $(".open-09").click(function() { $(".sense-page.sense-09").addClass("active"); return(false); });
   $(".open-10").click(function() { $(".sense-page.sense-10").addClass("active"); return(false); });
 
+
+  $(".open-subsense-01").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-01").addClass("active"); return(false); });
+  $(".open-subsense-02").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-02").addClass("active"); return(false); });
+  $(".open-subsense-03").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-03").addClass("active"); return(false); });
+  $(".open-subsense-04").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-04").addClass("active"); return(false); });
+  $(".open-subsense-05").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-05").addClass("active"); return(false); });
+  $(".open-subsense-06").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-06").addClass("active"); return(false); });
+  $(".open-subsense-07").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-07").addClass("active"); return(false); });
+  $(".open-subsense-08").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-08").addClass("active"); return(false); });
+  $(".open-subsense-09").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-09").addClass("active"); return(false); });
+  $(".open-subsense-10").click(function() { 
+    $(this).closest(".sense-page").find(".sense-page.subsense-10").addClass("active"); return(false); });
 
 
   var clicks = 0;
