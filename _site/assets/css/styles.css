@@ -1424,7 +1424,7 @@ th, td {
   top: 100px;
   width: 300px;
   height: 300px;
-  padding: 20px;
+  /*	padding: 20px;*/
   background: #F2F3F4;
 }
 .style-shuffle-item img {
@@ -1442,7 +1442,7 @@ th, td {
 
 .style-shuffle-ratings {
   position: fixed;
-  top: 460px;
+  top: 570px;
   left: calc(50% - 70px);
   background: #fff;
 }
@@ -1479,6 +1479,9 @@ th, td {
   -webkit-animation: thumbs-down 0.4s ease-out;
 }
 
+.carousel-item-cover {
+  overflow: hidden;
+}
 .carousel-item-cover:after {
   content: "";
   position: absolute;
@@ -1493,7 +1496,8 @@ th, td {
 .carousel-cover {
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: -60px;
+  max-width: 250px;
   z-index: 1;
 }
 

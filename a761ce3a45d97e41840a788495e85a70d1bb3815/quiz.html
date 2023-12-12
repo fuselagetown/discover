@@ -21,7 +21,7 @@ layout: page
 					<div class="carousel-item carousel-item-cover">
 
 
-						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}.jpg" class="carousel-cover">
+						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-01.jpeg" class="carousel-cover">
 
 						<h6 class="carousel-title">How {{ post.title | downcase }} is your style? </h6>
 
@@ -55,8 +55,7 @@ layout: page
 
 									<h5 class="style-shuffle-title">Is this your style? </h5>
 
-										{% include image.html %} 
-
+										<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-{{ post.date | date: '%d' }}.jpeg" />
 
 
 										<div class="style-shuffle-ratings">
