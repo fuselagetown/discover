@@ -1,0 +1,242 @@
+.carousel-item-cover {
+
+	height: 300px;
+	background: $charcoal;
+	color: #fff;
+}
+
+@-webkit-keyframes style-shuffle-pack {
+    0% { opacity: 0; top: 100px; left: 50%; right: 50%; bottom: 50%; }
+    100% { opacity: 1; top: 0px; left: 0px; right: 0px; bottom: 0px; }
+}
+@-webkit-keyframes style-shuffle-content {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+.style-shuffle-pack {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	background: #fff;
+	z-index: 5;
+	color: $charcoal;
+	-webkit-animation: style-shuffle-pack 0.5s ease-out backwards;
+}
+
+
+
+.style-shuffle-pack-wrapper {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	opacity: 0;
+
+	.im-active & {
+		opacity: 1;
+		-webkit-animation: style-shuffle-content 0.3s ease-out backwards;
+		-webkit-animation-delay: 0.7s;
+	}
+
+}
+
+.style-shuffle-pack-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    display: block;
+    background: url("../../assets/images/close.svg") no-repeat center;
+}
+
+
+.style-shuffle-title,
+.results-title {
+
+	position: fixed;
+	left: 20px;
+	right: 20px;
+	top: 50px;
+	text-align: center;
+	display: block;
+	background: #fff;
+}
+
+@-webkit-keyframes slide-right {
+    0% { left: calc(50% - 150px); right: auto;  }
+    100% { left: 500px;  right: auto;  }
+}
+
+@-webkit-keyframes slide-left {
+    0% { right: calc(50% - 150px); left: auto;  }
+    100% { right: 500px;left: auto; }
+}
+
+@-webkit-keyframes style-shuffle-loading {
+    0% { opacity: 0;  }
+    100% { opacity: 1; }
+}
+
+.style-shuffle-item {
+
+	position: absolute;
+	left: calc(50% - 150px);
+	right: calc(50% - 150px);
+	top: 100px;
+	width: 300px;
+	height: 300px;
+	padding: 20px;
+	background: $grey_light;
+
+
+	img {  width: 300px; }
+
+	&.im-offscreen { display:none; }
+
+	&.thumbs-up {
+		-webkit-animation: slide-right 0.7s ease-in forwards;
+	}
+	&.thumbs-down {
+		-webkit-animation: slide-left 0.7s ease-in forwards;
+	}
+}
+
+.style-shuffle-ratings {
+	position: fixed;
+	top: 460px;
+	left: calc(50% - 70px);;
+	background: #fff;
+}
+
+
+.style-shuffle-rating {
+
+    background-position: 10px 11px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 0;
+    display: block;
+    float: left;
+    border-bottom: 0;
+    background: $mint ;
+    color: #fff;
+    margin: 5px;
+
+    span {
+    	width: 100%;
+ 		height: 100%;
+ 		display: block;
+		background-color: #fff;
+		-webkit-mask: url("../../assets/images/thumb.svg") no-repeat center;
+		mask: url("../../assets/images/thumb.svg") no-repeat center;
+	}
+
+    &.active {
+    -webkit-animation: thumbs-up 0.4s ease-out;
+    -webkit-animation-delay: 0s;
+    }
+
+
+    &.thumbs-down {
+    	transform: rotate(180deg);
+
+    	&.active {
+                -webkit-animation: thumbs-down 0.4s ease-out;
+            }
+    }
+       
+       
+}
+
+
+
+.carousel-item-cover {
+	&:after {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  z-index: 1;
+	  background: linear-gradient(to bottom, transparent 0%, black 100%);
+	}
+}
+
+.carousel-cover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+
+}
+
+.carousel-title {
+
+	position: absolute;
+	bottom: 40px;
+	z-index: 2;
+	margin-bottom: 0;
+
+}
+.cover-progress-bar {
+	position: absolute !important;
+	bottom: 20px;
+	z-index: 2;
+	  --w: 140px; /* the width*/
+  --background: transparent; /* the background color */
+}
+
+
+.progress-bar {
+	position: absolute;
+	  --w: 300px; /* the width*/
+	  left: calc(50% - 150px);
+	  top: 150px;
+  --background: #25282D; /* the background color */
+}
+
+
+progress[value] {
+
+	
+  --color:  /* the progress color */
+    linear-gradient(90deg,#ff6161,#1ecd1e) 0/var(--w);
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  width: var(--w);
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-bar {
+  border-radius: 10em;
+  background: var(--background);
+}
+progress[value]::-webkit-progress-value {
+  border-radius: 10em;
+  background: var(--color);
+}
+progress[value]::-moz-progress-bar {
+  border-radius: 10em;
+  background: var(--color);
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0;
+}

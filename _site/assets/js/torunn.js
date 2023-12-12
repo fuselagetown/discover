@@ -153,7 +153,44 @@ $(function() {
               break;
       }
   });
+
+
+
+  $(".carousel-item-cover").click(function() {
+    $(this).find(".style-shuffle-pack").show().addClass("im-active");
+    return(false); 
+  });
+
    
+  $(".style-shuffle-pack-close").click(function() {
+    $(this).closest(".style-shuffle-pack").hide().removeClass("im-active");
+    return(false); 
+  });
+
+   
+  $(".style-shuffle-rating").click(function() {
+    $(this).addClass("active");
+    return(false); 
+  });
+
+   
+  $(".thumbs-down").click(function() {
+    $(this).closest(".style-shuffle-item").addClass("thumbs-down").delay(700).queue(function(){
+      $(this).addClass("im-offscreen").dequeue();
+    });
+    return(false); 
+  });
+   
+  $(".thumbs-up").click(function() {
+    $(this).closest(".style-shuffle-item").addClass("thumbs-up").delay(700).queue(function(){
+      $(this).addClass("im-offscreen").dequeue();
+    });
+    
+    return(false);
+  });
+
+
+     
 
 });
 

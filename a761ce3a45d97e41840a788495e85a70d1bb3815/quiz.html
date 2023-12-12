@@ -1,0 +1,89 @@
+---
+layout: page
+--- 
+
+<!--  style senses -->
+
+<div class="module">
+
+	<h5>Style shuffle</h5>
+
+	<div class="carousel">
+
+		<div class="carousel-container">
+
+			{% for post in site.categories['senses'] reversed %} 
+
+				{% assign sense_name = post.title | downcase %}
+
+				{% assign sense_tag = post.url | date: "%d" %}
+
+					<div class="carousel-item carousel-item-cover">
+
+
+						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}.jpg" class="carousel-cover">
+
+						<h6 class="carousel-title">How {{ post.title | downcase }} is your style? </h6>
+
+						<progress class="style-profile-ui__progressbar__progress{{ sense_tag }} cover-progress-bar" value='0' max='100'></progress>
+
+
+
+
+						<div class="style-shuffle-pack style-shuffle-pack{{ sense_tag }}">
+
+
+							<div class="style-shuffle-pack-wrapper">
+
+									<h6 class="results-title">Your results</h6>
+
+									<progress class="style-profile-ui__progressbar__progress{{ sense_tag }} progress-bar" value='0' max='100'></progress>
+
+
+	
+
+									{% for post in site.categories['senses-items'] reversed %} 
+
+									{% assign item_tag = post.date | date: "%m%d" %}
+
+									{% if post.senses contains sense_name %}
+
+									{% if forloop.last == true %}last{% endif %}
+
+									<div class="style-shuffle-item">
+
+
+									<h5 class="style-shuffle-title">Is this your style? </h5>
+
+										{% include image.html %} 
+
+
+
+										<div class="style-shuffle-ratings">
+
+											<a href="#" class="style-shuffle-rating thumbs-down" ><span>Thumbs down</span></a>
+											<a href="#" class="style-shuffle-rating thumbs-up"  data-diff='15'><span>Thumbs up</span></a>
+
+										</div>
+
+									</div>
+
+									{% endif %}
+
+								{% endfor %}
+
+
+							<a href="" class="style-shuffle-pack-close">Close</a>
+
+						</div>
+						</div>
+
+					</div>
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+</div>
