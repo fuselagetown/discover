@@ -1670,4 +1670,44 @@ label {
   color: #fff;
 }
 
+.scale-playback {
+  text-align: center;
+}
+
+.scale-playback-limiter {
+  padding: 0 30px;
+}
+
+.playback-bubble {
+  display: block;
+  display: inline-block;
+  background: #00625D;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  overflow: hidden;
+  display: none;
+  color: #fff;
+}
+.playback-bubble.little {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+}
+.playback-bubble.somewhat {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  font-size: 0.9rem;
+  line-height: 100px;
+}
+.playback-bubble.very {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  font-size: 1.3rem;
+  line-height: 150px;
+}
+
 /*# sourceMappingURL=styles.css.map */

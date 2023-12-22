@@ -196,6 +196,48 @@ $(function() {
     });
     return(false);  
   });
+
+
+  $(".sense-01.rating-little").click(function() { $(".playback-01").addClass("little"); return(false); });
+  $(".sense-01.rating-somewhat").click(function() { $(".playback-01").addClass("somewhat"); return(false); });
+  $(".sense-01.rating-very").click(function() { $(".playback-01").addClass("very"); return(false); });
+
+  $(".sense-02.rating-little").click(function() { $(".playback-02").addClass("little"); return(false); });
+  $(".sense-02.rating-somewhat").click(function() { $(".playback-02").addClass("somewhat"); return(false); });
+  $(".sense-02.rating-very").click(function() { $(".playback-02").addClass("very"); return(false); });
+
+  $(".sense-03.rating-little").click(function() { $(".playback-03").addClass("little"); return(false); });
+  $(".sense-03.rating-somewhat").click(function() { $(".playback-03").addClass("somewhat"); return(false); });
+  $(".sense-03.rating-very").click(function() { $(".playback-03").addClass("very"); return(false); });
+
+  $(".sense-04.rating-little").click(function() { $(".playback-04").addClass("little"); return(false); });
+  $(".sense-04.rating-somewhat").click(function() { $(".playback-04").addClass("somewhat"); return(false); });
+  $(".sense-04.rating-very").click(function() { $(".playback-04").addClass("very"); return(false); });
+
+  $(".sense-05.rating-little").click(function() { $(".playback-05").addClass("little"); return(false); });
+  $(".sense-05.rating-somewhat").click(function() { $(".playback-05").addClass("somewhat"); return(false); });
+  $(".sense-05.rating-very").click(function() { $(".playback-05").addClass("very"); return(false); });
+
+  $(".sense-06.rating-little").click(function() { $(".playback-06").addClass("little"); return(false); });
+  $(".sense-06.rating-somewhat").click(function() { $(".playback-06").addClass("somewhat"); return(false); });
+  $(".sense-06.rating-very").click(function() { $(".playback-06").addClass("very"); return(false); });
+
+  $(".sense-07.rating-little").click(function() { $(".playback-07").addClass("little"); return(false); });
+  $(".sense-07.rating-somewhat").click(function() { $(".playback-07").addClass("somewhat"); return(false); });
+  $(".sense-07.rating-very").click(function() { $(".playback-07").addClass("very"); return(false); });
+
+  $(".sense-08.rating-little").click(function() { $(".playback-08").addClass("little"); return(false); });
+  $(".sense-08.rating-somewhat").click(function() { $(".playback-08").addClass("somewhat"); return(false); });
+  $(".sense-08.rating-very").click(function() { $(".playback-08").addClass("very"); return(false); });
+
+  $(".sense-09.rating-little").click(function() { $(".playback-09").addClass("little"); return(false); });
+  $(".sense-09.rating-somewhat").click(function() { $(".playback-09").addClass("somewhat"); return(false); });
+  $(".sense-09.rating-very").click(function() { $(".playback-09").addClass("very"); return(false); });
+  
+  $(".sense-10.rating-little").click(function() { $(".playback-10").addClass("little"); return(false); });
+  $(".sense-10.rating-somewhat").click(function() { $(".playback-10").addClass("somewhat"); return(false); });
+  $(".sense-10.rating-very").click(function() { $(".playback-10").addClass("very"); return(false); });
+
      
 
 });

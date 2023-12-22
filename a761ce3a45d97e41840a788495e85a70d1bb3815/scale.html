@@ -6,8 +6,29 @@ layout: page
 
 <div class="scale-quiz">
 
-	<h5>Scale quiz</h5>
 
+		<div class="scale-quiz-page scale-playback">
+
+
+						<h6 class="scale-quiz-title">Your taste is unique—only 4% of our clients match your aesthetic</h6>
+
+						<div class="scale-playback-limiter">
+
+						{% for post in site.categories['senses'] reversed %} 
+
+							{% assign sense_name = post.title | downcase %}
+
+							{% assign sense_tag = post.url | date: "%d" %}
+
+							<span class="playback-bubble playback-{{ sense_tag }}">{{ post.title | downcase }}</span>
+
+
+
+						{% endfor %}
+
+						</div>
+
+		</div>
 
 
 
@@ -23,7 +44,7 @@ layout: page
 
 						<div class="scale-quiz-selects">
 
-							<a class="scale-quiz-select">
+							<a class="scale-quiz-select sense-{{ sense_tag }} rating-little">
 
 								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-little.jpeg" >
 
@@ -31,7 +52,7 @@ layout: page
 
 							</a>
 
-							<a class="scale-quiz-select">
+							<a class="scale-quiz-select sense-{{ sense_tag }} rating-somewhat">
 
 								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-somewhat.jpeg" >
 
@@ -39,7 +60,7 @@ layout: page
 
 							</a>
 
-							<a class="scale-quiz-select">
+							<a class="scale-quiz-select sense-{{ sense_tag }} rating-very">
 
 								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpeg" >
 
@@ -52,6 +73,7 @@ layout: page
 					</div>
 
 			{% endfor %}
+
 
 
 </div>

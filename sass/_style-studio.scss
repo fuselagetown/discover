@@ -375,3 +375,53 @@ label {
 	}
 
 }
+
+
+
+.scale-playback {
+	text-align: center;
+}
+
+.scale-playback-limiter {
+
+	padding: 0 30px;
+	
+}
+
+
+
+.playback-bubble {
+	display: block;
+	display: inline-block;
+	background: $mint;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 0.7rem;
+	overflow: hidden;
+	display: none;
+	color: #fff;
+
+	&.little {
+		display: inline-block;
+		height: 50px;
+		line-height: 50px;
+		width: 50px;
+	}
+
+	&.somewhat {
+		display: inline-block;
+		height: 100px;
+		width: 100px;
+		font-size: 0.9rem;
+		line-height: 100px;
+	}
+
+	
+	&.very {
+		display: inline-block;
+		height: 150px;
+		width: 150px;
+		font-size: 1.3rem;
+		line-height: 150px;
+	}
+}
