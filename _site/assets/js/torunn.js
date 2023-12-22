@@ -189,7 +189,13 @@ $(function() {
     return(false);
   });
 
-
+ $(".scale-quiz-select").click(function() {
+    $(this).addClass("selected");
+    $(this).closest(".scale-quiz-page").addClass("rated").delay(2000).queue(function(){
+      $(this).addClass("removing").dequeue();
+    });
+    return(false);  
+  });
      
 
 });
