@@ -1751,72 +1751,50 @@ a.round-3-done-button {
   display: none;
 }
 
-@property --progress-value {
-  syntax: "<integer>";
-  inherits: false;
-  initial-value: 0;
-}
-@keyframes html-progress {
-  to {
-    --progress-value: 92;
-  }
-}
-@keyframes css-progress {
-  to {
-    --progress-value: 87;
-  }
-}
-@keyframes js-progress {
-  to {
-    --progress-value: 73;
-  }
-}
-.progress-bar {
+.style-profile-ui__progressbar {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  /* to center the percentage value */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.progress-bar::before {
-  counter-reset: percentage var(--progress-value);
-  content: counter(percentage) "%";
-}
-
-.html {
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-  animation: html-progress 2s 1 forwards;
-}
-
-.html::before {
-  animation: html-progress 2s 1 forwards;
-}
-
-.css {
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-  animation: css-progress 2s 1 forwards;
-}
-
-.css::before {
-  animation: css-progress 2s 1 forwards;
-}
-
-.js {
-  background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
-  animation: js-progress 2s 1 forwards;
-}
-
-.js::before {
-  animation: js-progress 2s 1 forwards;
+  background: red;
+  border-radius: 50px;
+  transform: rotate(-90deg);
+  -webkit-mask-image: url("../../assets/images/heart-progress-mask.svg");
+  mask-image: url("../../assets/images/heart-progress-mask.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: 90px;
+  -webkit-mask-size: 90px;
 }
 
 progress {
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  border: none;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(90deg, #F2F3F4, #BF0029 340px);
+  background: #BF0029;
+}
+
+progress::-webkit-progress-bar {
+  background: linear-gradient(90deg, #F2F3F4, #BF0029 340px);
+  background: #BF0029;
+}
+
+progress::-moz-progress-bar {
+  background: linear-gradient(90deg, #F2F3F4, #BF0029 340px);
+  background: #BF0029;
+}
+
+progress::-webkit-progress-bar {
+  background: #F2F3F4;
+}
+
+progress[value] {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
