@@ -1,0 +1,31 @@
+
+
+
+
+{% for post in site.categories['senses-items'] reversed %} 
+
+	{% assign item_tag = post.date | date: "%m%d" %}
+
+	{% if post.senses contains sense_name %}
+
+	{% if forloop.last == true %}last{% endif %}
+
+	<div class="style-shuffle-item">
+
+
+	<h5 class="style-shuffle-title">Is this your style? </h5>
+
+		{% include image.html %}
+
+		<div class="style-shuffle-ratings">
+
+			<a href="#" class="style-shuffle-rating thumbs-down" ><span>Thumbs down</span></a>
+			<a href="#" class="style-shuffle-rating thumbs-up"  data-diff='15'><span>Thumbs up</span></a>
+
+		</div>
+
+	</div>
+
+	{% endif %}
+
+{% endfor %}

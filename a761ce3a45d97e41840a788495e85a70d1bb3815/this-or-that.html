@@ -1,0 +1,54 @@
+---
+layout: page
+--- 
+
+<!--  style senses -->
+
+<div class="this-or-that">
+ 
+
+			{% for post in site.categories['senses'] reversed %} 
+
+				{% assign sense_name = post.title | downcase %}
+
+				{% assign sense_tag = post.url | date: "%d" %}
+
+					<div class="scale-quiz-page {{ sense_name }}">
+
+						<h6 class="scale-quiz-title">How <bold>{{ post.title | downcase }}</bold> is your style? </h6>
+
+						<div class="scale-quiz-selects">
+
+							<a class="scale-quiz-select sense-{{ sense_tag }} rating-little">
+
+								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-little.jpeg" >
+
+								<span class="scale-quiz-rating"><span class="scale-quiz-label">A little bit</span></span>
+
+							</a>
+
+							<a class="scale-quiz-select sense-{{ sense_tag }} rating-somewhat">
+
+								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-somewhat.jpeg" >
+
+								<span class="scale-quiz-rating"><span class="scale-quiz-label">Somewhat</span></span>
+
+							</a>
+
+							<a class="scale-quiz-select sense-{{ sense_tag }} rating-very">
+
+								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpeg" >
+
+								<span class="scale-quiz-rating"><span class="scale-quiz-label">Very</span></span>
+
+							</a>
+
+						</div>
+
+					</div>
+
+			{% endfor %}
+
+
+
+</div>

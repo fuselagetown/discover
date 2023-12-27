@@ -10,23 +10,23 @@ layout: page
 		<div class="scale-quiz-page scale-playback">
 
 
-						<h6 class="scale-quiz-title">Your taste is unique—only 4% of our clients match your aesthetic</h6>
+		<h6 class="scale-quiz-title">Your taste is unique—only 4% of our clients match your aesthetic</h6>
 
-						<div class="scale-playback-limiter">
+		<div class="scale-playback-limiter">
 
-						{% for post in site.categories['senses'] reversed %} 
+		{% for post in site.categories['senses'] reversed %} 
 
-							{% assign sense_name = post.title | downcase %}
+			{% assign sense_name = post.title | downcase %}
 
-							{% assign sense_tag = post.url | date: "%d" %}
+			{% assign sense_tag = post.url | date: "%d" %}
 
-							<span class="playback-bubble playback-{{ sense_tag }}">{{ post.title | downcase }}</span>
+			<span class="playback-bubble playback-{{ sense_tag }}">{{ post.title | downcase }}</span>
 
 
 
-						{% endfor %}
+		{% endfor %}
 
-						</div>
+		</div>
 
 		</div>
 

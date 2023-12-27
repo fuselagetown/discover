@@ -9,7 +9,7 @@ alternatives:
 - colorful
 - artisan vintage
 - eclectic
-- artsy
+- maximalist
 ---
 
 
