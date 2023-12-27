@@ -204,7 +204,8 @@
     100% { opacity: 0; }
 }
 
-.scale-quiz-page {
+.scale-quiz-page,
+.this-or-that-page {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -237,21 +238,55 @@
 		display: none;
 	}
 
+	
+
 }
 
-.scale-quiz-title {
+
+.this-or-that-page  {
+
+	&.rated {
+		&:after {
+			display: none;
+		}
+	}
+
+	&.round-3.rated {
+		background: $mint;
+
+		.this-or-that-title,
+		.this-or-that-label {
+			opacity: 0;
+		}
+
+		.this-or-that-select.selected {
+			width: 80%;
+			margin-left: 10%;
+			border-width: 10px;
+		}
+
+	}
+}
+
+
+
+
+.scale-quiz-title,
+.this-or-that-title {
 	padding: 20px 0;
 	text-align: center;
 }
 
 
-.scale-quiz-selects {
+.scale-quiz-selects,
+.this-or-that-selects {
 	margin: 1%;
 
 }
  
 
-.scale-quiz-select {
+.scale-quiz-select,
+.this-or-that-select {
 	width: 33%;
 	height: 405px;
 	position: relative;
@@ -270,7 +305,8 @@
 	}
 
 
-	.scale-quiz-rating {
+	.scale-quiz-rating,
+	.this-or-that-rating {
 		position: absolute;
 		top: 0;
 		bottom: 0;
@@ -279,7 +315,8 @@
 		bottom: 0px;
 		background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
 
-		.scale-quiz-label {
+		.scale-quiz-label,
+		.this-or-that-label {
 			border: 2px solid $charcoal;
     		background: #fff;
     		position: absolute;
@@ -303,8 +340,14 @@
 
 	.rated & {
 		z-index: 1;
-		-webkit-animation: transition-out 0.7s ease-out forwards;
-		
+		-webkit-animation: transition-out 0.7s ease-out forwards;	
+	}
+
+	.round-3.rated & {
+		-webkit-animation: none;
+		display: none !important;
+
+
 	}
 
 
@@ -316,13 +359,63 @@
 		left: calc(66%/2/2);
 		transition-duration: 0.7s;
 
-		.scale-quiz-label { 
+		.scale-quiz-label,
+		.this-or-that-label { 
 			background: $charcoal;
 			color: #fff;
 		}
 
 	}
 
+	.round-3.rated & { 
+
+		&.selected {
+			display: block !important;
+
+		}
+	}
+
+}
+
+a.round-3-done-button {
+	border: 2px solid $charcoal;
+	background: #fff;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	text-align: center;
+	text-transform: uppercase;    
+	padding: 0.5rem 0.7rem;
+	font-size: .7rem;
+	letter-spacing: .04em;    
+	font-weight: 500;
+	display: none;
+	color: $charcoal;
+	text-decoration: none;
+
+	.round-3.rated & {
+		display: block;
+	}
+}
+
+
+.this-or-that-select {
+	width: 50%;
+	height: 510px;
+    position: relative;
+    float: left;
+    left: auto !important;
+    top: auto;
+
+	&.selected {
+		width: 50%;
+	}
+
+	img {
+		left: calc(50% - 340px/2);
+		max-width: 340px;
+	}
 }
 
 
@@ -372,5 +465,13 @@
 		width: 150px;
 		font-size: 1.3rem;
 		line-height: 150px;
+	}
+}
+
+
+.round-2, 
+.round-3 {
+	.this-or-that-select {
+		display: none;
 	}
 }

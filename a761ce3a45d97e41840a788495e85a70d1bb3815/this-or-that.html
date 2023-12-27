@@ -5,49 +5,306 @@ layout: page
 <!--  style senses -->
 
 <div class="this-or-that">
- 
 
-			{% for post in site.categories['senses'] reversed %} 
 
-				{% assign sense_name = post.title | downcase %}
+{% for post in site.categories['senses'] reversed %} 
 
-				{% assign sense_tag = post.url | date: "%d" %}
+	{% assign sense_name = post.title | downcase %}
 
-					<div class="scale-quiz-page {{ sense_name }}">
+	{% assign sense_tag = post.url | date: "%d" %}
 
-						<h6 class="scale-quiz-title">How <bold>{{ post.title | downcase }}</bold> is your style? </h6>
 
-						<div class="scale-quiz-selects">
 
-							<a class="scale-quiz-select sense-{{ sense_tag }} rating-little">
 
-								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-little.jpeg" >
+	
 
-								<span class="scale-quiz-rating"><span class="scale-quiz-label">A little bit</span></span>
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-3">
 
-							</a>
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
 
-							<a class="scale-quiz-select sense-{{ sense_tag }} rating-somewhat">
+			<a href="#" class="round-3-done-button">Nice choice! Next category</a>
 
-								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-somewhat.jpeg" >
+			<div class="this-or-that-selects">
 
-								<span class="scale-quiz-rating"><span class="scale-quiz-label">Somewhat</span></span>
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-very">
 
-							</a>
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpg" >
 
-							<a class="scale-quiz-select sense-{{ sense_tag }} rating-very">
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
 
-								<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpeg" >
+				</a>
 
-								<span class="scale-quiz-rating"><span class="scale-quiz-label">Very</span></span>
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-somewhat">
 
-							</a>
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-somewhat.jpg" >
 
-						</div>
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
 
-					</div>
+				</a>
 
-			{% endfor %}
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-little">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-little.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-1">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-1.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-5">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-5.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-4">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-4.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-3">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-3.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-2">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-2.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+
+			</div>
+
+		</div>
+
+
+	
+
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-2">
+
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
+
+			<div class="this-or-that-selects">
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-5">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-5.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-4">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-4.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-3">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-3.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-2">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-2.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+
+			</div>
+
+		</div>
+	
+
+
+
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-2">
+
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
+
+			<div class="this-or-that-selects">
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-very">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-somewhat">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-somewhat.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-little">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-little.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-1">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-1.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+			</div>
+
+		</div>
+
+
+	
+
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-1">
+
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
+
+			<div class="this-or-that-selects">
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-little">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-little.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-somewhat">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-somewhat.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+
+			</div>
+
+		</div>
+
+
+
+
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-1">
+
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
+
+			<div class="this-or-that-selects">
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-very">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-1">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-1.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+
+			</div>
+
+		</div>
+
+
+
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-1">
+
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
+
+			<div class="this-or-that-selects">
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-2">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-2.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-3">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-3.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+
+			</div>
+
+		</div>
+
+
+
+		<div class="this-or-that-page {{ sense_name }} sense-{{ sense_tag }} round-1">
+
+			<h6 class="this-or-that-title">Which <bold>{{ post.title | downcase }}</bold> style do you prefer? </h6>
+
+			<div class="this-or-that-selects">
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-4">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-4.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">This</span></span>
+
+				</a>
+
+				<a class="this-or-that-select sense-{{ sense_tag }} rating-5">
+
+					<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-5.jpg" >
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">That</span></span>
+
+				</a>
+
+
+			</div>
+
+		</div>
+
+{% endfor %}
 
 
 
