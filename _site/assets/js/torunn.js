@@ -222,13 +222,34 @@ Array.from(circularProgress).forEach((progressBar) => {
     return(false);
   });
 
- $(".scale-quiz-select, .skip-category").click(function() {
+ $(".scale-quiz-select").click(function() {
     $(this).addClass("selected");
     $(this).closest(".scale-quiz-page").addClass("rated").delay(2000).queue(function(){
       $(this).addClass("removing").dequeue();
     });
     return(false);  
   });
+
+  $(".skip-category").click(function() {
+    $(this).addClass("selected");
+    $(this).closest(".scale-quiz-page").addClass("rated").delay(1200).queue(function(){
+      $(this).addClass("removing").dequeue();
+    });
+    return(false);  
+  });
+
+$(".this-or-that-page .skip10").click(function() { $(".this-or-that-page.sense-10").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip09").click(function() { $(".this-or-that-page.sense-09").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip08").click(function() { $(".this-or-that-page.sense-08").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip07").click(function() { $(".this-or-that-page.sense-07").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip06").click(function() { $(".this-or-that-page.sense-06").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip05").click(function() { $(".this-or-that-page.sense-05").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip04").click(function() { $(".this-or-that-page.sense-04").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip03").click(function() { $(".this-or-that-page.sense-03").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip02").click(function() { $(".this-or-that-page.sense-02").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+$(".this-or-that-page .skip01").click(function() { $(".this-or-that-page.sense-01").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+
+
 
 
   $(".sense-01.rating-little").click(function() { $(".playback-01").addClass("little"); return(false); });

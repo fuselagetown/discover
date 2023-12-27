@@ -1574,6 +1574,18 @@ th, td {
   padding: 20px 0;
   text-align: center;
 }
+.scale-quiz-title bold,
+.this-or-that-title bold {
+  font-weight: 600;
+  display: inline-block;
+}
+.scale-quiz-title bold:after,
+.this-or-that-title bold:after {
+  content: " ";
+  background-color: #D8F7F1;
+  height: 5px;
+  display: block;
+}
 
 .scale-quiz-selects,
 .this-or-that-selects {
@@ -1703,6 +1715,11 @@ a.style-shuffle-summary-button {
 }
 .skip-category a {
   color: #25282D;
+  text-decoration: none;
+  border-bottom: 1px solid #25282D;
+}
+.this-or-that-page .skip-category {
+  top: 620px;
 }
 
 .this-or-that-select {

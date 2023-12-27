@@ -69,6 +69,8 @@
 	text-align: center;
 	display: block;
 	background: #fff;
+
+
 }
 
 @-webkit-keyframes slide-right {
@@ -275,6 +277,18 @@
 .this-or-that-title {
 	padding: 20px 0;
 	text-align: center;
+	bold {
+		font-weight: 600;
+	display: inline-block;
+		&:after {
+			content: " ";
+			background-color: $mint_light;
+			height: 5px;
+			display: block;
+
+
+		}
+	}
 }
 
 
@@ -411,6 +425,12 @@ a.style-shuffle-summary-button {
 
 	a {
 		color: $charcoal;
+		text-decoration: none;
+		border-bottom: 1px solid $charcoal;
+	}
+
+	.this-or-that-page & {
+		top: 620px;
 	}
 }
 
