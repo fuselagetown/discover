@@ -5,8 +5,7 @@ layout: page
 <!--  style senses -->
 
 <div class="module">
-
-	<h5>Style shuffle</h5>
+<br /><br /><br /><br />
 
 	
 
@@ -36,7 +35,19 @@ layout: page
 
 							<div class="style-shuffle-pack-wrapper">
 
-									<h6 class="results-title">Your results</h6>
+									<h6 class="results-title">You are <span>{{ post.title | downcase }}</span></h6>
+									<div class="results-feedback">
+
+										<!-- Does that seem right to you?
+
+										<div class="style-shuffle-ratings">
+											<a href="#" class="style-shuffle-rating thumbs-down" ><span>Thumbs down</span></a>
+											<a href="#" class="style-shuffle-rating thumbs-up"><span>Thumbs up</span></a>
+										</div> -->
+
+									<a href="#" class="style-shuffle-summary-button">Next</a>
+
+									</div>
 									
 									<div class="style-profile-ui__progressbar">
 										<progress class="style-profile-ui__progressbar__progress{{ sense_tag }}" value='0' max='100'></progress>

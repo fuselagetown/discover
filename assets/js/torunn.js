@@ -190,8 +190,13 @@ Array.from(circularProgress).forEach((progressBar) => {
   });
 
    
-  $(".style-shuffle-pack-close").click(function() {
+  $(".style-shuffle-pack-close, .style-shuffle-summary-button").click(function() {
     $(this).closest(".style-shuffle-pack").hide().removeClass("im-active");
+    return(false); 
+  });
+
+  $(".style-shuffle-summary-button").click(function() {
+    $(this).closest(".carousel-item").hide();
     return(false); 
   });
 

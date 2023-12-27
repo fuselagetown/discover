@@ -1,17 +1,51 @@
+.results-title {
+  height: 150px;
+  top: 110px;
+  font-size: 1.3rem;
+    span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+}
+
+.results-feedback {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+
+    .style-shuffle-ratings {
+      position: absolute;
+      top: 30px;
+    }
+
+    a.style-shuffle-summary-button {
+          width: 100px;
+          left: calc(50% - 50px);
+          bottom: -80px;
+    }
+}
+
+
 .style-profile-ui__progressbar {
   width: 100px;
   height: 100px;
-  background: red;
-  
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 130px;
   border-radius: 50px;
   transform: rotate(-90deg);
-
   -webkit-mask-image: url("../../assets/images/heart-progress-mask.svg");
   mask-image: url("../../assets/images/heart-progress-mask.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  mask-size: 90px;
-  -webkit-mask-size: 90px;
+  mask-size: 96px;
+  -webkit-mask-size: 96px;
+  mask-position: center;
+  -webkit-mask-position: center;
 }
 
 
@@ -26,27 +60,40 @@ progress {
 }
 
 progress::-webkit-progress-value {
-    background: linear-gradient(90deg, $grey_light, $watermelon 340px );
+    background: linear-gradient(90deg, #FFC6C9, $watermelon 340px );
     background: $watermelon;
 
 }
 
 progress::-webkit-progress-bar {
-    background: linear-gradient(90deg, $grey_light, $watermelon 340px);
+    background: linear-gradient(90deg, #FFC6C9, $watermelon 340px);
     background: $watermelon;
 }
 
 progress::-moz-progress-bar {
-    background: linear-gradient(90deg, $grey_light, $watermelon 340px);
+    background: linear-gradient(90deg, #FFC6C9, $watermelon 340px);
     background: $watermelon;
 }
 
 progress::-webkit-progress-bar {
-  background: $grey_light;
+  background: #FFC6C9;
 }
 
 progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
+}
+
+[value]:before {
+    content: attr(value) '%';
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    line-height: 100px;
+    transform: rotate(90deg);
 }
