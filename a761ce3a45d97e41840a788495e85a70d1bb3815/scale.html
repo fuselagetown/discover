@@ -38,7 +38,7 @@ layout: page
 
 				{% assign sense_tag = post.url | date: "%d" %}
 
-					<div class="scale-quiz-page {{ sense_name }}">
+					<div class="scale-quiz-page {{ sense_name }} sense{{ sense_tag }}">
 
 						<h6 class="scale-quiz-title">How <bold>{{ post.title | downcase }}</bold> is your style? </h6>
 
@@ -69,6 +69,8 @@ layout: page
 							</a>
 
 						</div>
+
+						<div class="skip-category skip{{ sense_tag }}"><a href="#">I don't dress {{ sense_name }}</a></div>
 
 					</div>
 

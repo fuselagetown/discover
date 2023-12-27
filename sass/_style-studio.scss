@@ -401,6 +401,19 @@ a.style-shuffle-summary-button {
 	}
 }
 
+.skip-category {
+	position: absolute;
+	top: 500px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 0.9rem;
+
+	a {
+		color: $charcoal;
+	}
+}
+
 
 .this-or-that-select {
 	width: 50%;
