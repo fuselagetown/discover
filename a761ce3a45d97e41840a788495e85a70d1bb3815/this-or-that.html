@@ -7,6 +7,9 @@ layout: page
 <div class="this-or-that">
 
 
+	{% include wrap-up.html %}
+
+
 {% for post in site.categories['senses'] reversed %} 
 
 	{% assign sense_name = post.title | downcase %}
