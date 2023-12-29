@@ -238,6 +238,8 @@ Array.from(circularProgress).forEach((progressBar) => {
     return(false);  
   });
 
+
+
 $(".this-or-that-page .skip10").click(function() { $(".this-or-that-page.sense-10").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
 $(".this-or-that-page .skip09").click(function() { $(".this-or-that-page.sense-09").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
 $(".this-or-that-page .skip08").click(function() { $(".this-or-that-page.sense-08").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
@@ -248,6 +250,11 @@ $(".this-or-that-page .skip04").click(function() { $(".this-or-that-page.sense-0
 $(".this-or-that-page .skip03").click(function() { $(".this-or-that-page.sense-03").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
 $(".this-or-that-page .skip02").click(function() { $(".this-or-that-page.sense-02").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
 $(".this-or-that-page .skip01").click(function() { $(".this-or-that-page.sense-01").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
+
+$(".playback-button").click(function() { 
+  $(".scale-playback").addClass("removing"); 
+  return(false);  });
+
 
 
 

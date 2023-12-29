@@ -1684,7 +1684,8 @@ th, td {
 
 a.round-3-done-button,
 a.style-shuffle-summary-button,
-a.wrap-up-button {
+a.wrap-up-button,
+a.playback-button {
   border: 2px solid #25282D;
   background: #fff;
   position: absolute;
@@ -1705,7 +1706,9 @@ a.wrap-up-button {
 .round-3.rated a.style-shuffle-summary-button,
 .im-active a.style-shuffle-summary-button,
 .round-3.rated a.wrap-up-button,
-.im-active a.wrap-up-button {
+.im-active a.wrap-up-button,
+.round-3.rated a.playback-button,
+.im-active a.playback-button {
   display: block;
 }
 
