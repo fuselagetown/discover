@@ -25,7 +25,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress01").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress01").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress02(diff) {
@@ -33,7 +33,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress02").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress02").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress03(diff) {
@@ -41,7 +41,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress03").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress03").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress04(diff) {
@@ -49,7 +49,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress04").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress04").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress05(diff) {
@@ -57,7 +57,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress05").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress05").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress06(diff) {
@@ -65,7 +65,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress06").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress06").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress07(diff) {
@@ -73,7 +73,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress07").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress07").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress08(diff) {
@@ -81,7 +81,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress08").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress08").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress09(diff) {
@@ -89,7 +89,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress09").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress09").delay(1000).animate({'value': toValue}, 2);
   }
      
   function animateProgress10(diff) {
@@ -97,7 +97,7 @@ $(function() {
       var toValue = currValue + diff;
       toValue = toValue < 0 ? 0 : toValue;
       toValue = toValue > 100 ? 100 : toValue;
-      $(".style-profile-ui__progressbar__progress10").delay(1).animate({'value': toValue}, 2);
+      $(".style-profile-ui__progressbar__progress10").delay(1000).animate({'value': toValue}, 2);
   }
      
 

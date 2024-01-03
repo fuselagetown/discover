@@ -1869,17 +1869,11 @@ progress[value] {
   appearance: none;
 }
 
-[value]:before {
-  content: attr(value) "%";
-  font-size: 20px;
+progress::-webkit-progress-value::before {
+  content: "80%";
   position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  line-height: 100px;
-  transform: rotate(90deg);
+  right: 0;
+  top: -125%;
 }
 
 /*# sourceMappingURL=styles.css.map */
