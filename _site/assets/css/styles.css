@@ -1368,7 +1368,8 @@ th, td {
   -webkit-animation-delay: 0.7s;
 }
 
-.style-shuffle-pack-close {
+.style-shuffle-pack-close,
+.drilldown-close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1441,7 +1442,8 @@ th, td {
   -webkit-animation: slide-left 0.7s ease-in forwards;
 }
 
-.style-shuffle-ratings {
+.style-shuffle-ratings,
+.only-some-items {
   position: fixed;
   top: 570px;
   left: calc(50% - 70px);
@@ -1478,6 +1480,19 @@ th, td {
 }
 .style-shuffle-rating.thumbs-down.active {
   -webkit-animation: thumbs-down 0.4s ease-out;
+}
+
+.only-some-items {
+  text-align: center;
+  left: calc(50% - 5rem);
+  top: 650px;
+  width: 10rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00625D;
+}
+.only-some-items span {
+  padding: 0.2rem 0.5rem;
 }
 
 .carousel-item-cover {
@@ -1788,6 +1803,79 @@ a.playback-button {
 .round-2 .this-or-that-select,
 .round-3 .this-or-that-select {
   display: none;
+}
+
+@-webkit-keyframes drilldown {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+.item-drilldown {
+  background: #f2f3f4;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 70px 0 20px;
+  height: 1000px;
+  text-align: center;
+  display: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.drilldown-is-open .item-drilldown {
+  display: block;
+  top: 0;
+  -webkit-animation: drilldown 0.5s ease-out backwards;
+}
+
+.item-drilldown__item {
+  width: 50%;
+  display: inline-flex;
+  border: 1px solid #f2f3f4;
+  max-width: 140px;
+  position: relative;
+}
+.item-drilldown__item:after {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  background: url("../../assets/images/thumb.svg") no-repeat center;
+  background-size: 16px;
+}
+.item-drilldown__item.liked:after {
+  background-image: url("../../assets/images/thumb-active.svg");
+  -webkit-animation: thumbs-up 0.4s ease-out;
+  -webkit-animation-delay: 0s;
+}
+
+.fade-out .item-drilldown__item {
+  -webkit-animation: slide-left 0.7s ease-in forwards;
+}
+.fade-out .item-drilldown__item.liked {
+  -webkit-animation: slide-right 0.7s ease-in forwards;
+}
+
+.item-drilldown__next {
+  clear: both;
+  display: block;
+  border: 1px solid #25282D;
+  line-height: 44px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #25282D;
+  margin: 1rem auto;
+  width: 14rem;
 }
 
 .results-title {

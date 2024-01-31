@@ -218,7 +218,7 @@ Array.from(circularProgress).forEach((progressBar) => {
     $(this).closest(".style-shuffle-item").addClass("thumbs-up").delay(700).queue(function(){
       $(this).addClass("im-offscreen").dequeue();
     });
-    
+    $(this).closest(".item-drilldown").hide();
     return(false);
   });
 
@@ -235,6 +235,30 @@ Array.from(circularProgress).forEach((progressBar) => {
     $(this).closest(".scale-quiz-page").addClass("rated").delay(1200).queue(function(){
       $(this).addClass("removing").dequeue();
     });
+    return(false);  
+  });
+
+   
+  $(".only-some-items").click(function() {
+    $(this).closest(".style-shuffle-item").addClass("drilldown-is-open");
+    return(false); 
+  });
+   
+  $(".drilldown-close").click(function() {
+    $(this).closest(".style-shuffle-item").removeClass("drilldown-is-open");
+    return(false); 
+  });
+
+  $(".item-drilldown__next").click(function() {
+    $(this).closest(".style-shuffle-item").addClass("fade-out").delay(1000).queue(function(){
+      $(this).addClass("im-offscreen").dequeue();
+    });
+    return(false);
+  });
+
+
+  $(".item-drilldown__item ").click(function() {
+    $(this).toggleClass("liked");
     return(false);  
   });
 

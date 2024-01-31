@@ -1,0 +1,116 @@
+---
+layout: page
+--- 
+
+<!--  style senses -->
+
+
+	
+
+
+
+	<div class="carousel" style="padding-top: 100px">
+
+		<div style="position: absolute;top: 130px; left: 0; right: 0;">
+
+		{% include wrap-up.html %}
+
+	</div>
+
+		<div class="carousel-container">
+
+			{% for post in site.categories['packs'] reversed %} 
+
+				{% assign pack_number = post.url | date: "%d" %}
+
+				{% assign sense_name = post.title | downcase %}
+
+				{% assign sense_tag = post.url | date: "%d" %}
+
+
+
+					<div class="carousel-item carousel-item-cover pack-{{ pack_number }} {% for item in post.senses %}{{ item }} {% endfor %}">
+
+						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpg" class="carousel-cover">
+
+						<h6 class="carousel-title">Keep rating</h6>
+		
+
+
+						<div class="style-shuffle-pack style-shuffle-pack{{ sense_tag }} {% if pack_number == '01' %} im-active {% endif %}" {% if pack_number == '01' %}style='display: block;' {% endif %}>
+
+
+							<div class="style-shuffle-pack-wrapper">
+
+							
+							{% for item in post.senses %}
+
+							{% assign sense_name = item %}
+
+						
+
+								{% for post in site.categories['senses-outfits'] %} 
+
+
+
+
+									{% if post.url contains sense_name %}
+
+
+										<div class="style-shuffle-item {{ item }}">
+
+											<h5 class="style-shuffle-title">Would you wear this?</h5>
+
+											{% assign outfit_name = post.title | downcase | replace: " ", "-" %}
+
+											<img src="{{ site.baseurl }}/assets/images/style-senses/{{ outfit_name }}.jpg" />
+
+											<div class="style-shuffle-ratings">
+												<a href="#" class="style-shuffle-rating thumbs-down" ><span>Thumbs down</span></a>
+												<a href="#" class="style-shuffle-rating thumbs-up"  data-diff='20'><span>Thumbs up</span></a>
+											</div>
+
+											<a href="#"class="only-some-items"><span>Only some items</span></a>
+
+											<div class="item-drilldown">
+
+
+												{% for sku in post.skus %}
+
+												<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+												
+												{% endfor %}
+
+												<a href="#" class="item-drilldown__next">Next</a>
+
+												<a href="" class="drilldown-close">Close</a>
+
+											</div>
+
+
+										</div>
+
+
+
+									{% endif %}
+
+								{% endfor %}
+
+
+							{% endfor %}
+							
+
+							<!-- <a href="" class="style-shuffle-pack-close">Close</a> -->
+
+						</div>
+						</div>
+
+					</div>
+
+			{% endfor %}
+
+		</div>
+
+	</div>
+
+</div>
