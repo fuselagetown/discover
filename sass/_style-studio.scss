@@ -75,12 +75,12 @@
 }
 
 @-webkit-keyframes slide-right {
-    0% { left: calc(50% - 150px); right: auto;  }
+    0% { left: calc(50% - 130px); right: auto;  }
     100% { left: 500px;  right: auto;  }
 }
 
 @-webkit-keyframes slide-left {
-    0% { right: calc(50% - 150px); left: auto;  }
+    0% { right: calc(50% - 130px); left: auto;  }
     100% { right: 500px;left: auto; }
 }
 
