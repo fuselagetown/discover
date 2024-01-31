@@ -31,7 +31,19 @@ layout: page
 
 					<div class="carousel-item carousel-item-cover pack-{{ pack_number }} {% for item in post.senses %}{{ item }} {% endfor %}">
 
-						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ sense_name }}-very.jpg" class="carousel-cover">
+						{% for item in post.senses %}{% assign sense_name = item %}
+						{% for post in site.categories['senses-outfits'] %} 
+						{% if post.url contains sense_name %}
+						{% assign outfit_name = post.title | downcase | replace: " ", "-" %}
+
+						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ outfit_name }}.jpg" class="carousel-cover">
+
+						{% endif %}
+
+						{% endfor %}
+
+
+						{% endfor %}
 
 						<h6 class="carousel-title">Keep rating</h6>
 		
@@ -50,7 +62,6 @@ layout: page
 						
 
 								{% for post in site.categories['senses-outfits'] %} 
-
 
 
 
