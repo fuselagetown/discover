@@ -92,10 +92,10 @@
 .style-shuffle-item {
 
 	position: absolute;
-	left: calc(50% - 150px);
-	right: calc(50% - 150px);
+	left: calc(50% - 130px);
+	right: calc(50% - 130px);
 	top: 100px;
-	width: 300px;
+	width: 260px;
 	height: 300px;
 /*	padding: 20px;*/
 	background: $grey_light;
@@ -116,7 +116,7 @@
 .style-shuffle-ratings,
 .only-some-items {
 	position: fixed;
-	top: 570px;
+	bottom: 60px;
 	left: calc(50% - 70px);
 	background: #fff;
 }
@@ -166,11 +166,12 @@
 
 	text-align: center;
 	left: calc(50% - 5rem);
-	top: 650px;
+	bottom: 20px;
 	width: 10rem;
 	text-decoration: none;
 	font-size: 1rem;
 	color: $mint;
+	background: #fff;
 
 	span {
 		padding: 0.2rem 0.5rem;

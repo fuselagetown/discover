@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("//hello.myfonts.net/count/2b26e2");
 @font-face {
   font-family: "BrandonText-Italic";
@@ -1421,10 +1420,10 @@ th, td {
 }
 .style-shuffle-item {
   position: absolute;
-  left: calc(50% - 150px);
-  right: calc(50% - 150px);
+  left: calc(50% - 130px);
+  right: calc(50% - 130px);
   top: 100px;
-  width: 300px;
+  width: 260px;
   height: 300px;
   /*	padding: 20px;*/
   background: #F2F3F4;
@@ -1445,7 +1444,7 @@ th, td {
 .style-shuffle-ratings,
 .only-some-items {
   position: fixed;
-  top: 570px;
+  bottom: 60px;
   left: calc(50% - 70px);
   background: #fff;
 }
@@ -1485,11 +1484,12 @@ th, td {
 .only-some-items {
   text-align: center;
   left: calc(50% - 5rem);
-  top: 650px;
+  bottom: 20px;
   width: 10rem;
   text-decoration: none;
   font-size: 1rem;
   color: #00625D;
+  background: #fff;
 }
 .only-some-items span {
   padding: 0.2rem 0.5rem;
@@ -1963,5 +1963,3 @@ progress::-webkit-progress-value::before {
   right: 0;
   top: -125%;
 }
-
-/*# sourceMappingURL=styles.css.map */

@@ -31,6 +31,8 @@ layout: page
 
 					<div class="carousel-item carousel-item-cover pack-{{ pack_number }} {% for item in post.senses %}{{ item }} {% endfor %}">
 
+
+
 						{% for item in post.senses %}{% assign sense_name = item %}
 						{% for post in site.categories['senses-outfits'] %} 
 						{% if post.url contains sense_name %}
@@ -54,11 +56,14 @@ layout: page
 
 							<div class="style-shuffle-pack-wrapper">
 
+							<div style="padding: 100px 20px 0 20px;">{% include wrap-up.html %}</div>
+
 							
 							{% for item in post.senses %}
 
 							{% assign sense_name = item %}
 
+							{% endfor %}
 						
 
 								{% for post in site.categories['senses-outfits'] %} 
@@ -109,7 +114,6 @@ layout: page
 								{% endfor %}
 
 
-							{% endfor %}
 							
 
 							<!-- <a href="" class="style-shuffle-pack-close">Close</a> -->
