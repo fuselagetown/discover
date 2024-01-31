@@ -2,9 +2,6 @@
 category: senses-outfits
 layout: page
 skus:
-- https://dam.stitchfix.com/Assets/V2/X9sGINt@eqk288NUk9_Y4uLb5uhqAr_G2hot7IFNgmUZktArlM3ZB3XYrF3_b9F_5jyK7WeZAW@SrcwaYHUHWqePC6nzgr1xuFuEjZhZAv_Xm6sHRz2kwGeLp3Wr502_/uJ1whEx6zKGYPvDf/3d@GcIoJNKdTQ2tc/S06LQUA.jpg
-- https://dam.stitchfix.com/Assets/V2/X9sGINt@eqk288NUk9_Y4iNeTmYrhqGJcizMDiMOWAluuVtPpA4DXo12Yf@SQQhucClFAXaFVYc2VFcz4V0DpQbsDLXozguUXne2WfRxMOocqo8fBzrgBD_rKWpxhHjF/00zUdiFh02qErPPN/FcBFNHvOPf5G6DXs/S06KLR0.jpg
-- https://dam.stitchfix.com/Assets/V2/X9sGINt@eqk288NUk9_Y4lQg@MK6dtU6hXGfhKFg0uUsZe7aZXJQY18LR_qtB5LZfioC_mbRChIlB9I2dBWkZ3FgEhBz6LrDCALD3HWJh1cdiMVyLnp_slwlabaR_KKO/VOiI629@F1GXT8Lw/qryslFrVLhp7Yt9u/S06JY45.jpg
-- https://dam.stitchfix.com/Assets/V2/X9sGINt@eqk288NUk9_Y4v6nWNsBB9d1mr_5RnWdjhWudvuwsPwZF1gg6TpdyPXCXJrjq5xMQrFcOzcFtf40IOxUOIIZ3Ji9_b831FPCtxpi2EHjMdovSUdzljuEJ7e0/mVH5R8urOAKfh@1G/pzqT7qM_VAIJtyyZ/S0639GL.jpg
+- hard coded
 ---
 
