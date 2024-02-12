@@ -1,0 +1,21 @@
+a.prototype {
+	display: block;
+	color: #25282D !important;
+	text-decoration: none;
+	margin-bottom: 20px;
+	padding: 20px;
+	box-shadow: 0 0 10px 1px #000;
+	background: #fff;
+	border-radius: 10px;
+
+}
+
+.prototype_title {
+	display: block;
+	margin-bottom: 5px;
+	@include bold;
+}
+
+.prototype_rationale {
+	font-size: 0.9rem;
+}

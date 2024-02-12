@@ -6,5 +6,8 @@ font-family: area-normal, sans-serif;
 font-style: normal;
 font-weight: 100;
 }
-
-
+@mixin bold {
+font-family: area-normal, sans-serif;
+font-style: normal;
+font-weight: 700;
+}
