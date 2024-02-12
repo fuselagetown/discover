@@ -1,47 +1,10 @@
 
-// MyFonts Brandon
-@import url("//hello.myfonts.net/count/2b26e2");
 
   
-@font-face {
-  font-family: 'BrandonText-Italic';
-  src: url('../webfonts/brandon/Text-Italic/2B26E2_0_0.eot');
-  src: url('../webfonts/brandon/Text-Italic/2B26E2_0_0.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/brandon/Text-Italic/2B26E2_0_0.woff') format('woff'),
-       url('../webfonts/brandon/Text-Italic/2B26E2_0_0.ttf') format('truetype'),
-       url('../webfonts/brandon/Text-Italic/2B26E2_0_0.svg#wf') format('svg');
+body {
+font-family: area-normal, sans-serif;
+font-style: normal;
+font-weight: 100;
 }
 
-@font-face {
-  font-family: 'BrandonText-Regular';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../webfonts/brandon/Text-Regular/2B26E2_1_0.eot');
-  src: url('../webfonts/brandon/Text-Regular/2B26E2_1_0.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/brandon/Text-Regular/2B26E2_1_0.woff') format('woff'),
-       url('../webfonts/brandon/Text-Regular/2B26E2_1_0.ttf') format('truetype'),
-       url('../webfonts/brandon/Text-Regular/2B26E2_1_0.svg#wf') format('svg');
-}
-
-@font-face {
-  font-family: 'BrandonText-Medium';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.eot');
-  src: url('../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.woff') format('woff'),
-       url('../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.ttf') format('truetype'),
-       url('../webfonts/brandon/Text-Medium/BrandonTextWeb-Medium.svg#wf') format('svg');
-}
- 
-@font-face {
-  font-family: 'BrandonText-Bold'; 
-  font-weight: bold;
-  font-style: normal;
-  src: url('../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.eot');
-  src: url('../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.eot?#iefix') format('embedded-opentype'),
-       url('../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.woff') format('woff'),
-       url('../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.ttf') format('truetype'),
-       url('../webfonts/brandon/Text-Bold/BrandonTextWeb-Bold.svg#wf') format('svg');
-}
 
