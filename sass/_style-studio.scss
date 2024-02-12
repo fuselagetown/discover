@@ -295,7 +295,7 @@
 	padding: 20px 0;
 	text-align: center;
 	bold {
-		font-weight: 600;
+	@include bold;
 	display: inline-block;
 		&:after {
 			content: " ";
@@ -359,7 +359,7 @@
     		padding: 0.5rem 0.7rem;
     		font-size: .7rem;
     		letter-spacing: .04em;    
-    		font-weight: 500;
+    		@include bold;
 		}
 	}
  
@@ -423,7 +423,7 @@ a.playback-button {
 	padding: 0.5rem 0.7rem;
 	font-size: .7rem;
 	letter-spacing: .04em;    
-	font-weight: 500;
+	@include bold;
 	display: none;
 	color: $charcoal;
 	text-decoration: none;

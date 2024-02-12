@@ -601,7 +601,9 @@ a.prototype {
   top: -2px;
   font-size: 0.9rem;
   position: relative;
-  font-weight: bold;
+  font-family: area-normal, sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .carousel {
@@ -681,7 +683,9 @@ a.prototype {
   text-transform: uppercase;
 }
 .carousel-item p.carousel-item__brand {
-  font-weight: bold;
+  font-family: area-normal, sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 .carousel-item .overlay {
   opacity: 0;
@@ -694,7 +698,9 @@ a.prototype {
   padding: 10px;
   z-index: 1;
   font-size: 0.9rem;
-  font-weight: bold;
+  font-family: area-normal, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   justify-content: center;
   align-items: center;
   display: none;
@@ -1593,7 +1599,9 @@ a.prototype {
 }
 .scale-quiz-title bold,
 .this-or-that-title bold {
-  font-weight: 600;
+  font-family: area-normal, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   display: inline-block;
 }
 .scale-quiz-title bold:after,
@@ -1659,7 +1667,9 @@ a.prototype {
   padding: 0.5rem 0.7rem;
   font-size: 0.7rem;
   letter-spacing: 0.04em;
-  font-weight: 500;
+  font-family: area-normal, sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 .scale-quiz-select img,
 .this-or-that-select img {
@@ -1713,7 +1723,9 @@ a.playback-button {
   padding: 0.5rem 0.7rem;
   font-size: 0.7rem;
   letter-spacing: 0.04em;
-  font-weight: 500;
+  font-family: area-normal, sans-serif;
+  font-style: normal;
+  font-weight: 700;
   display: none;
   color: #25282D;
   text-decoration: none;
