@@ -1489,7 +1489,7 @@ a.prototype {
   left: 0;
   right: 0;
   text-align: center;
-  bottom: 0;
+  bottom: 70px;
   height: 140px;
 }
 .style-shuffle-ratings div {
