@@ -1392,7 +1392,7 @@ a.prototype {
   position: absolute;
   left: 20px;
   right: 20px;
-  top: 40px;
+  top: 30px;
   text-align: center;
   display: block;
 }
@@ -1439,7 +1439,7 @@ a.prototype {
   left: calc(50% - 150px);
   right: calc(50% - 150px);
   width: 300px;
-  top: 100px;
+  top: 70px;
 }
 .style-shuffle-item.im-offscreen {
   display: none;
@@ -1454,7 +1454,7 @@ a.prototype {
 .style-shuffle-ratings,
 .only-some-items {
   position: absolute;
-  bottom: 130px;
+  bottom: 170px;
   left: calc(50% - 70px);
   right: calc(50% - 70px);
 }
@@ -1462,7 +1462,7 @@ a.prototype {
 .only-some-items {
   text-align: center;
   left: calc(50% - 5rem);
-  bottom: 100px;
+  bottom: 140px;
   width: 10rem;
   text-decoration: none;
   font-size: 1rem;
@@ -1537,7 +1537,7 @@ a.prototype {
 
 .carousel-title {
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   z-index: 2;
   margin-bottom: 0;
 }
