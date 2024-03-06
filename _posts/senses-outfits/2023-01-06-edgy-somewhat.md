@@ -1,9 +1,0 @@
----
-category: senses-outfits
-layout: page
-skus:
-- https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1694241484/ipagw2bpgybdkwo5uykt.jpg
-- https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1673054680/tzxkcnr5v90mwhcp2zaq.jpg
-- https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1650068216/rme0oge6iatnfwbm5nfk.jpg
----
-
