@@ -1959,7 +1959,7 @@ a.playback-button {
 }
 .item-drilldown__item.liked:after {
   background-image: url("../../assets/images/thumb-active.svg");
-  -webkit-animation: thumbs-up 0.4s ease-out;
+  -webkit-animation: heart 0.4s ease-out;
   -webkit-animation-delay: 0s;
 }
 
