@@ -11,7 +11,7 @@ layout: page
 
 
 
-{% for post in site.categories['senses']  %} 
+{% for post in site.categories['senses'] reversed %} 
 
 	{% assign pack_number = post.url | date: "%d" %}
 
@@ -23,7 +23,7 @@ layout: page
 
 		{% if post.url contains sense_name %}
 
-			<div class="style-shuffle-item {{ item }}">
+			<div class="style-shuffle-item {{ sense_name  }}">
 
 				<h5 class="style-shuffle-title">Would you wear this?</h5>
 
