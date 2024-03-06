@@ -5,9 +5,3 @@ jekyll.save
 _site/
 vendor/
 _site/*
-
-_site/a761ce3a45d97e41840a788495e85a70d1bb3815/give-get.html
-_site/a761ce3a45d97e41840a788495e85a70d1bb3815/index.html
-_site/assets/css/styles.css
-_site/assets/css/styles.css.map
-_site/feed.xml
