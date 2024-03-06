@@ -1,0 +1,49 @@
+{% for post in site.categories['senses'] reversed %} 
+
+	{% assign pack_number = post.url | date: "%d" %}
+
+	{% assign sense_name = post.title | downcase %}
+
+	{% assign sense_tag = post.url | date: "%d" %}
+
+	{% for post in site.categories['senses-outfits'] %} 
+
+		{% if post.url contains sense_name %}
+
+			<div class="style-shuffle-item {{ sense_name  }}">
+
+				<h5 class="style-shuffle-title">Would you wear this?</h5>
+
+				<img src="{{ post.image }}" alt=" {{ post.title }}" class="style-shuffle__outfit" />		
+
+				<div class="style-shuffle-ratings">
+					<a href="#" class="style-shuffle-rating thumbs-down" ><span>Thumbs down</span></a>
+					<a href="#" class="style-shuffle-rating thumbs-up"  data-diff='20'><span>Thumbs up</span></a>
+				</div>
+
+				<a href="#"class="only-some-items"><span>Only some items</span></a>
+
+				<div class="item-drilldown">
+
+					<h5 class="style-shuffle-title">Which items would you wear?</h5>
+
+					{% for sku in post.skus %}
+
+						<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+
+					{% endfor %}
+
+					<a href="#" class="item-drilldown__next">Next</a>
+
+					<a href="" class="drilldown-close">Close</a>
+
+				</div>
+
+			</div>
+
+		{% endif %}
+
+	{% endfor %}
+
+{% endfor %}
+

@@ -1389,18 +1389,17 @@ a.prototype {
 
 .style-shuffle-title,
 .results-title {
-  position: fixed;
+  position: absolute;
   left: 20px;
   right: 20px;
-  top: 50px;
+  top: 40px;
   text-align: center;
   display: block;
-  background: #fff;
 }
 
 @-webkit-keyframes slide-right {
   0% {
-    left: calc(50% - 130px);
+    left: calc(50% - 150px);
     right: auto;
   }
   100% {
@@ -1410,7 +1409,7 @@ a.prototype {
 }
 @-webkit-keyframes slide-left {
   0% {
-    right: calc(50% - 130px);
+    right: calc(50% - 150px);
     left: auto;
   }
   100% {
@@ -1428,33 +1427,36 @@ a.prototype {
 }
 .style-shuffle-item {
   position: absolute;
-  left: calc(50% - 130px);
-  right: calc(50% - 130px);
-  top: 100px;
-  width: 260px;
-  height: 1000px;
-  /*	padding: 20px;*/
-  background: #F2F3F4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  height: 100vh;
 }
-.style-shuffle-item img {
+.style-shuffle-item .style-shuffle__outfit {
+  position: absolute;
+  left: calc(50% - 150px);
+  right: calc(50% - 150px);
   width: 300px;
+  top: 100px;
 }
 .style-shuffle-item.im-offscreen {
   display: none;
 }
-.style-shuffle-item.thumbs-up {
+.style-shuffle-item.thumbs-up img {
   -webkit-animation: slide-right 0.7s ease-in forwards;
 }
-.style-shuffle-item.thumbs-down {
+.style-shuffle-item.thumbs-down img {
   -webkit-animation: slide-left 0.7s ease-in forwards;
 }
 
 .style-shuffle-ratings,
 .only-some-items {
-  position: fixed;
-  bottom: 60px;
+  position: absolute;
+  bottom: 90px;
   left: calc(50% - 70px);
-  background: #fff;
+  right: calc(50% - 70px);
 }
 
 .style-shuffle-rating {
@@ -1489,15 +1491,23 @@ a.prototype {
   -webkit-animation: thumbs-down 0.4s ease-out;
 }
 
+.iconography .style-shuffle-rating span {
+  -webkit-mask-image: url("../../assets/images/heart.svg");
+  mask-image: url("../../assets/images/heart.svg");
+}
+.iconography .style-shuffle-rating.thumbs-down span {
+  -webkit-mask-image: url("../../assets/images/x.svg");
+  mask-image: url("../../assets/images/x.svg");
+}
+
 .only-some-items {
   text-align: center;
   left: calc(50% - 5rem);
-  bottom: 20px;
+  bottom: 60px;
   width: 10rem;
   text-decoration: none;
   font-size: 1rem;
   color: #00625D;
-  background: #fff;
 }
 .only-some-items span {
   padding: 0.2rem 0.5rem;
@@ -1836,12 +1846,15 @@ a.playback-button {
   left: 0;
   right: 0;
   z-index: 1;
-  padding: 70px 0 20px;
-  height: 1000px;
+  padding: 100px 0 20px;
+  height: 100vh;
   text-align: center;
   display: none;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+.item-drilldown .style-shuffle-title {
+  background: none;
 }
 .drilldown-is-open .item-drilldown {
   display: block;
@@ -1871,6 +1884,13 @@ a.playback-button {
   background-image: url("../../assets/images/thumb-active.svg");
   -webkit-animation: thumbs-up 0.4s ease-out;
   -webkit-animation-delay: 0s;
+}
+
+.iconography .item-drilldown__item:after {
+  background-image: url("../../assets/images/heart.svg");
+}
+.iconography .item-drilldown__item.liked:after {
+  background-image: url("../../assets/images/heart-active.svg");
 }
 
 .fade-out .item-drilldown__item {

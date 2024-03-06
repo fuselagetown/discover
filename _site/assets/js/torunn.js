@@ -218,7 +218,6 @@ Array.from(circularProgress).forEach((progressBar) => {
     $(this).closest(".style-shuffle-item").addClass("thumbs-up").delay(700).queue(function(){
       $(this).addClass("im-offscreen").dequeue();
     });
-    $(this).closest(".item-drilldown").hide();
     return(false);
   });
 

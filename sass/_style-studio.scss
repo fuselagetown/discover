@@ -63,25 +63,24 @@
 .style-shuffle-title,
 .results-title {
 
-	position: fixed;
+	position: absolute;
 	left: 20px;
 	right: 20px;
-	top: 50px;
+	top: 40px;
 	text-align: center;
 	display: block;
-	background: #fff;
 
 
 }
 
 @-webkit-keyframes slide-right {
-    0% { left: calc(50% - 130px); right: auto;  }
+    0% { left: calc(50% - 150px); right: auto;  }
     100% { left: 500px;  right: auto;  }
 }
 
 @-webkit-keyframes slide-left {
-    0% { right: calc(50% - 130px); left: auto;  }
-    100% { right: 500px;left: auto; }
+    0% { right: calc(50% - 150px); left: auto;  }
+    100% { right: 500px; left: auto; }
 }
 
 @-webkit-keyframes style-shuffle-loading {
@@ -92,33 +91,38 @@
 .style-shuffle-item {
 
 	position: absolute;
-	left: calc(50% - 130px);
-	right: calc(50% - 130px);
-	top: 100px;
-	width: 260px;
-	height: 1000px;
-/*	padding: 20px;*/
-	background: $grey_light;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	height: 100vh;
 
 
-	img {  width: 300px; }
+	.style-shuffle__outfit {  
+		position: absolute;
+		left: calc(50% - 150px);
+		right: calc(50% - 150px);
+		width: 300px; 
+		top: 100px;
+	}
 
 	&.im-offscreen { display:none; }
 
 	&.thumbs-up {
-		-webkit-animation: slide-right 0.7s ease-in forwards;
+		img { -webkit-animation: slide-right 0.7s ease-in forwards; }
 	}
 	&.thumbs-down {
-		-webkit-animation: slide-left 0.7s ease-in forwards;
+		img { -webkit-animation: slide-left 0.7s ease-in forwards; }
 	}
 }
 
 .style-shuffle-ratings,
 .only-some-items {
-	position: fixed;
-	bottom: 60px;
+	position: absolute;
+	bottom: 90px;
 	left: calc(50% - 70px);
-	background: #fff;
+	right: calc(50% - 70px);
 }
 
 
@@ -158,20 +162,42 @@
                 -webkit-animation: thumbs-down 0.4s ease-out;
             }
     }
+
+   
        
        
 }
+
+
+ .iconography  {
+
+ 	.style-shuffle-rating {
+
+    	span {
+			-webkit-mask-image: url("../../assets/images/heart.svg");
+			mask-image: url("../../assets/images/heart.svg");
+    	}
+
+    	&.thumbs-down {
+
+    		span {
+				-webkit-mask-image: url("../../assets/images/x.svg");
+				mask-image: url("../../assets/images/x.svg");
+			}
+    	}
+    }
+}
+
 
 .only-some-items {
 
 	text-align: center;
 	left: calc(50% - 5rem);
-	bottom: 20px;
+	bottom: 60px;
 	width: 10rem;
 	text-decoration: none;
 	font-size: 1rem;
 	color: $mint;
-	background: #fff;
 
 	span {
 		padding: 0.2rem 0.5rem;
@@ -543,12 +569,16 @@ a.playback-button {
 	left: 0;
 	right: 0;
 	z-index: 1;
-	padding: 70px 0 20px;
-	height: 1000px;
+	padding: 100px 0 20px;
+	height: 100vh;
 	text-align: center;
 	display: none;
     overflow-y:scroll;
     overflow-x:hidden;
+
+    & .style-shuffle-title {
+    	background: none;
+    }
 
 	.drilldown-is-open & {
 		display: block;
@@ -583,8 +613,21 @@ a.playback-button {
 		}
 
 	}
+}
 
 
+.iconography {
+
+	.item-drilldown__item {
+		&:after {
+			background-image: url("../../assets/images/heart.svg") 
+		}
+		&.liked {
+			&:after {
+				background-image: url("../../assets/images/heart-active.svg");
+			}
+		}
+	}
 }
 
 .fade-out {
