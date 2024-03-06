@@ -168,10 +168,9 @@
 		margin: 0 auto;
 	}
 
-	.fullbleed & {
-		background: black;
-	}
+	
 }
+
 
 .only-some-items {
 
@@ -185,6 +184,34 @@
 
 	span {
 		padding: 0.2rem 0.5rem;
+	}
+}
+
+.fullbleed {
+
+	.style-shuffle-ratings {
+		
+		background: linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.5) 30%, white 100%);
+
+		> div {    
+			right: 20px;
+			position: absolute;
+			left: auto;
+			margin: 0;
+
+		}
+	}
+
+	.only-some-items {
+		position: absolute;
+		bottom: auto;
+		left: 20px;
+
+    border-radius: 40px;
+    border: 2px solid $mint;
+    line-height: 60px;
+    padding: 0 1.5rem;
+		
 	}
 }
 
