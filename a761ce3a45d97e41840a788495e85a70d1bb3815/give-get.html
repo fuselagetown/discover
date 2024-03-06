@@ -9,78 +9,27 @@ layout: page
 
 
 
-	<div class="carousel" style="padding-top: 100px">
-
-		<div style="position: absolute;top: 130px; left: 0; right: 0;">
-
-		{% include wrap-up.html %}
-
-	</div>
-
-		<div class="carousel-container">
-
-			{% for post in site.categories['packs'] reversed %} 
-
-				{% assign pack_number = post.url | date: "%d" %}
-
-				{% assign sense_name = post.title | downcase %}
-
-				{% assign sense_tag = post.url | date: "%d" %}
 
 
+{% for post in site.categories['senses'] reversed %} 
 
-					<div class="carousel-item carousel-item-cover pack-{{ pack_number }} {% for item in post.senses %}{{ item }} {% endfor %}">
+	{% assign pack_number = post.url | date: "%d" %}
+
+	{% assign sense_name = post.title | downcase %}
+
+	{% assign sense_tag = post.url | date: "%d" %}
+
+	{% for post in site.categories['senses-outfits'] %} 
+
+	{% if post.url contains sense_name %}
+
+	<div class="style-shuffle-item {{ item }}">
+
+								<h5 class="style-shuffle-title">Would you wear this?</h5>
 
 
 
-						{% for item in post.senses %}{% assign sense_name = item %}
-						{% for post in site.categories['senses-outfits'] %} 
-						{% if post.url contains sense_name %}
-						{% assign outfit_name = post.title | downcase | replace: " ", "-" %}
-
-						<img src="{{ site.baseurl }}/assets/images/style-senses/{{ outfit_name }}.jpg" class="carousel-cover">
-
-						{% endif %}
-
-						{% endfor %}
-
-
-						{% endfor %}
-
-						<h6 class="carousel-title">Keep rating</h6>
-		
-
-
-						<div class="style-shuffle-pack style-shuffle-pack{{ sense_tag }} {% if pack_number == '01' %} im-active {% endif %}" {% if pack_number == '01' %}style='display: block;' {% endif %}>
-
-
-							<div class="style-shuffle-pack-wrapper">
-
-							<div style="padding: 100px 20px 0 20px;">{% include wrap-up.html %}</div>
-
-							
-							{% for item in post.senses %}
-
-							{% assign sense_name = item %}
-
-							{% endfor %}
-						
-
-								{% for post in site.categories['senses-outfits'] %} 
-
-
-
-
-
-										<div class="style-shuffle-item {{ item }}">
-
-											<h5 class="style-shuffle-title">Would you wear this?</h5>
-
-											{% assign outfit_name = post.title | downcase | replace: " ", "-" %}
-
-											
-
-											<img src="{{ site.baseurl }}/assets/images/style-senses/{{ outfit_name }}.jpg" />
+	<img src="{{ post.image }}" alt=" {{ post.title }}" />
 
 											
 
@@ -91,60 +40,10 @@ layout: page
 
 											<a href="#"class="only-some-items"><span>Only some items</span></a>
 
-											<div class="item-drilldown">
-
-
-												{% for sku in post.skus %}
-
-												{% if post.url contains 'contemporary-little' %}
-
-												<div class="item-drilldown__item"><img src="{{ site.baseurl }}/assets/images/style-senses/contemporary-little-items/item-1.jpg" ></div>
-												<div class="item-drilldown__item"><img src="{{ site.baseurl }}/assets/images/style-senses/contemporary-little-items/item-2.jpg" ></div>
-												<div class="item-drilldown__item"><img src="{{ site.baseurl }}/assets/images/style-senses/contemporary-little-items/item-3.jpg" ></div>
-												<div class="item-drilldown__item"><img src="{{ site.baseurl }}/assets/images/style-senses/contemporary-little-items/item-4.jpg" ></div>
-									
-												{% else if post.url contains 'coastal-little' %}
-
-												<div class="item-drilldown__item"><img src="{{ site.baseurl }}/assets/images/style-senses/coastal-little-items/item-1.jpg" ></div>
-												<div class="item-drilldown__item"><img src="https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1663194966/fftgw62chuzzprgn4v4d.jpg" ></div>
-									
-												{% else %}
-
-												<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
-
-												{% endif %}
-												
-												{% endfor %}
-
-												<a href="#" class="item-drilldown__next">Next</a>
-
-												<a href="" class="drilldown-close">Close</a>
-
-											</div>
-
-
-										</div>
-
-									
-
-									
-
-								{% endfor %}
-
-
-							
-
-							<!-- <a href="" class="style-shuffle-pack-close">Close</a> -->
-
-						</div>
-						</div>
-
-					</div>
-
-			{% endfor %}
-
-		</div>
-
-	</div>
-
 </div>
+{% endif %}
+
+
+{% endfor %}
+{% endfor %}
+
