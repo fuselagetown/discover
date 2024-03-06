@@ -1454,9 +1454,22 @@ a.prototype {
 .style-shuffle-ratings,
 .only-some-items {
   position: absolute;
-  bottom: 90px;
+  bottom: 130px;
   left: calc(50% - 70px);
   right: calc(50% - 70px);
+}
+
+.only-some-items {
+  text-align: center;
+  left: calc(50% - 5rem);
+  bottom: 100px;
+  width: 10rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #00625D;
+}
+.only-some-items span {
+  padding: 0.2rem 0.5rem;
 }
 
 .style-shuffle-rating {
@@ -1498,19 +1511,6 @@ a.prototype {
 .iconography .style-shuffle-rating.thumbs-down span {
   -webkit-mask-image: url("../../assets/images/x.svg");
   mask-image: url("../../assets/images/x.svg");
-}
-
-.only-some-items {
-  text-align: center;
-  left: calc(50% - 5rem);
-  bottom: 60px;
-  width: 10rem;
-  text-decoration: none;
-  font-size: 1rem;
-  color: #00625D;
-}
-.only-some-items span {
-  padding: 0.2rem 0.5rem;
 }
 
 .carousel-item-cover {
