@@ -29,13 +29,13 @@
 
 					</div>
 
-					<div class="item-drilldown">
+					<div class="item-drilldown{% for sku in post.skus %}{% if forloop.index == 5 %} grid-of-five{% endif %}{% endfor %}">
 
 						<h5 class="style-shuffle-title">Which items would you wear?</h5>
 
 						{% for sku in post.skus %}
 
-							<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+							<div class="item-drilldown__item {% if forloop.index == 5 %}grid-of-five{% endif %}"><img src="{{ sku }}" ></div>
 
 						{% endfor %}
 
@@ -46,7 +46,7 @@
 					</div>
 
 				</div>
-				
+
 			</div>
 
 		{% endif %}
