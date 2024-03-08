@@ -698,7 +698,8 @@ a.playback-button {
 
 .item-drilldown__items {
 	@include clear;
-	margin-bottom: 20px;
+	max-width: 300px;
+    margin: 0 auto 20px;
 	background: #fff;
 }
 
