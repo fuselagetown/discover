@@ -29,15 +29,33 @@
 
 					</div>
 
-					<div class="item-drilldown{% for sku in post.skus %}{% if forloop.index == 5 %} grid-of-five{% endif %}{% endfor %}">
+					<div class="item-drilldown {% for sku in post.skus %} grid-of-{{ forloop.length }} {% endfor %}">
 
 						<h5 class="style-shuffle-title">Which items would you wear?</h5>
 
-						{% for sku in post.skus %}
+						<div class="item-drilldown__items">
 
-							<div class="item-drilldown__item {% if forloop.index == 5 %}grid-of-five{% endif %}"><img src="{{ sku }}" ></div>
+							<div class="item-drilldown__items--column">
 
-						{% endfor %}
+								{% for sku in post.skus limit: 2 %}
+
+									<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+
+								{% endfor %}
+
+							</div>
+
+							<div class="item-drilldown__items--column">
+
+								{% for sku in post.skus offset: 2 %}
+
+									<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+
+								{% endfor %}
+
+							</div>
+
+						</div>
 
 						<a href="#" class="item-drilldown__next">Next</a>
 
