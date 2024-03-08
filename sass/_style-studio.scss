@@ -699,12 +699,13 @@ a.playback-button {
 .item-drilldown__items {
 	@include clear;
 	margin-bottom: 20px;
+	background: #fff;
 }
 
 .item-drilldown__item {
 	width: 50%;
 	display: inline-flex;
-	border: 1px solid #f2f3f4;
+	border: 2.5px solid #f2f3f4;
 	float: left;
 	position: relative;
 	&:after {
@@ -735,12 +736,14 @@ a.playback-button {
 
 
 	.item-drilldown__items--column {
-		width: 60%;
+		width: 59%;
 		display: block;
 		float: left;
 
+
 		&:nth-child(2) {
-			width: 40%;
+			width: 41%;
+			border-left: 5px solid #f2f3f4;
 		}
 	}
 
@@ -748,6 +751,8 @@ a.playback-button {
 		width: 100%;
 		max-width: 100%;
 		display: block;
+		border: 0;
+		border-top: 5px solid #f2f3f4;
 		
 	}	
 
@@ -755,10 +760,15 @@ a.playback-button {
 
 .grid-of-3 {
 	.item-drilldown__items--column {
-		width: 33.3%;
+		width: 42%;
+
+		&:nth-child(1) {
+			border-right: 5px solid #f2f3f4;
+		}
 
 		&:nth-child(2) {
-			width: 66.6%;
+			width: 58%;
+			border: 0;
 		}
 	}
 
