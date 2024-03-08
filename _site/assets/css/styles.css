@@ -2001,6 +2001,10 @@ a.playback-button {
   -webkit-animation-delay: 0s;
 }
 
+.grid-of-5 .item-drilldown__items,
+.grid-of-3 .item-drilldown__items {
+  max-width: 260px;
+}
 .grid-of-5 .item-drilldown__items--column,
 .grid-of-3 .item-drilldown__items--column {
   width: 59%;

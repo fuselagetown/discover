@@ -734,6 +734,10 @@ a.playback-button {
 .grid-of-5,
 .grid-of-3 {
 
+	.item-drilldown__items {
+		max-width: 260px;
+	}
+
 
 
 	.item-drilldown__items--column {
