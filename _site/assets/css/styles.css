@@ -2072,6 +2072,11 @@ a.playback-button {
 .fade-out .style-shuffle__outfit {
   opacity: 0;
 }
+.fade-out .style-shuffle-title,
+.fade-out .item-drilldown__next,
+.fade-out .drilldown-close {
+  -webkit-animation: drilldown-fading 0.5s ease-in forwards;
+}
 .fade-out .item-drilldown__item {
   -webkit-animation: slide-left 0.7s ease-in forwards;
 }

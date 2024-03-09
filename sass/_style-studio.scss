@@ -822,7 +822,11 @@ a.playback-button {
 		opacity: 0;
 	}
 
-	.item-drilldown {
+	.style-shuffle-title,
+	.item-drilldown__next,
+	.drilldown-close {
+		
+		-webkit-animation: drilldown-fading 0.5s ease-in forwards;
 
 	}
 
