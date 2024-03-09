@@ -816,6 +816,18 @@ a.playback-button {
 }
 
 
+@-webkit-keyframes slide-right-item {
+    0% { left: calc(50% - 150px); right: auto; opacity: 1; }
+    100% { left: 300px;  right: auto; opacity: 0; }
+}
+
+@-webkit-keyframes slide-left-item {
+    0% { right: calc(50% - 150px); left: auto; opacity: 1; }
+    100% { right: 300px; left: auto; opacity: 0; }
+}
+
+
+
 
 .fade-out {
 
@@ -833,10 +845,10 @@ a.playback-button {
 
 	.item-drilldown__item {
 
-		-webkit-animation: slide-left 0.7s ease-in forwards;
+		-webkit-animation: slide-left-item 0.7s ease-in forwards;
 
 		&.liked {
-		-webkit-animation: slide-right 0.7s ease-in forwards;
+		-webkit-animation: slide-right-item 0.7s ease-in forwards;
 		}
 
 	}
