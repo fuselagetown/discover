@@ -701,6 +701,10 @@ a.playback-button {
 	max-width: 300px;
     margin: 0 auto 20px;
 	background: #fff;
+
+	.fade-out & {
+		background: none;
+	}
 }
 
 .item-drilldown__item {
@@ -768,7 +772,7 @@ a.playback-button {
 	.item-drilldown__items {
 		max-width: 360px;
 	}
-	
+
 	.item-drilldown__items--column {
 		width: 42%;
 

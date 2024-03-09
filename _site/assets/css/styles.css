@@ -1976,6 +1976,9 @@ a.playback-button {
   display: table;
   clear: both;
 }
+.fade-out .item-drilldown__items {
+  background: none;
+}
 
 .item-drilldown__item {
   width: 50%;
