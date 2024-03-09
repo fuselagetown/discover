@@ -2025,6 +2025,9 @@ a.playback-button {
   border-top: 5px solid #f2f3f4;
 }
 
+.grid-of-3 .item-drilldown__items {
+  max-width: 360px;
+}
 .grid-of-3 .item-drilldown__items--column {
   width: 42%;
 }

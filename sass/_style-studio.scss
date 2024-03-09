@@ -764,6 +764,11 @@ a.playback-button {
 }
 
 .grid-of-3 {
+
+	.item-drilldown__items {
+		max-width: 360px;
+	}
+	
 	.item-drilldown__items--column {
 		width: 42%;
 
