@@ -794,6 +794,26 @@ a.playback-button {
 
 }
 
+.grid-of-2 {
+
+	.item-drilldown__items {
+		max-width: 100%;
+		height: 500px;
+		position: relative;
+		background: transparent;
+	}
+
+	.item-drilldown__item {
+		width: 55%;
+		border: 5px solid #f2f3f4;
+
+		&:nth-child(2) {
+			position: absolute;
+    		right: 0;
+    		bottom: 0;
+		}
+	}
+}
 
 .iconography {
 
