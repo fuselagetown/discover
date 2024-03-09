@@ -1395,10 +1395,12 @@ a.prototype {
   top: 30px;
   text-align: center;
   display: block;
+  background: #fff;
 }
 .item-drilldown .style-shuffle-title,
 .item-drilldown .results-title {
   top: 60px;
+  background: none;
 }
 
 @-webkit-keyframes slide-right {
@@ -1455,7 +1457,6 @@ a.prototype {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #fff;
   height: 100vh;
 }
 .style-shuffle-item .style-shuffle__outfit {
@@ -1464,6 +1465,7 @@ a.prototype {
   right: calc(50% - 150px);
   width: 300px;
   top: 70px;
+  border: 1px solid #fff;
 }
 .style-shuffle-item.im-offscreen {
   display: none;
@@ -1495,6 +1497,7 @@ a.prototype {
   text-align: center;
   bottom: 100px;
   height: 140px;
+  background: #fff;
 }
 .style-shuffle-ratings div {
   left: calc(50% - 70px);
@@ -1928,7 +1931,7 @@ a.playback-button {
   display: none;
 }
 
-@-webkit-keyframes drilldown {
+@-webkit-keyframes drilldown-opening {
   0% {
     opacity: 0;
     top: 100px;
@@ -1938,27 +1941,36 @@ a.playback-button {
     top: 0;
   }
 }
+@-webkit-keyframes drilldown-closing {
+  0% {
+    opacity: 1;
+    top: 0;
+  }
+  100% {
+    opacity: 0;
+    top: 100px;
+  }
+}
 .item-drilldown {
   background: #f2f3f4;
-  position: fixed;
-  top: 100px;
+  position: absolute;
+  top: 1000px;
   left: 0;
   right: 0;
   z-index: 1;
   padding: 100px 20px 20px;
   height: 100vh;
   text-align: center;
-  display: none;
+  display: block;
   overflow-y: scroll;
   overflow-x: hidden;
 }
-.item-drilldown .style-shuffle-title {
-  background: none;
-}
 .drilldown-is-open .item-drilldown {
   display: block;
-  top: 0;
-  -webkit-animation: drilldown 0.5s ease-out backwards;
+  -webkit-animation: drilldown-opening 0.5s ease-out forwards;
+}
+.drilldown-is-closing .item-drilldown {
+  -webkit-animation: drilldown-closing 0.5s ease-out forwards;
 }
 
 .item-drilldown__items {
@@ -2049,6 +2061,17 @@ a.playback-button {
   background-image: url("../../assets/images/heart-active.svg");
 }
 
+@-webkit-keyframes drilldown-fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-out .style-shuffle__outfit {
+  opacity: 0;
+}
 .fade-out .item-drilldown__item {
   -webkit-animation: slide-left 0.7s ease-in forwards;
 }
