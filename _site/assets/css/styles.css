@@ -1515,6 +1515,7 @@ a.prototype {
   clear: both;
   display: block;
   padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.4);
 }
 .only-some-items span {
   padding: 0.2rem 0.5rem;
