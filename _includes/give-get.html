@@ -6,7 +6,7 @@
 
 	{% assign sense_tag = post.url | date: "%d" %}
 
-	{% for post in site.categories['senses-outfits'] %} 
+	{% for post in site.categories['senses-outfits'] limit: 20 %} 
 
 		{% if post.url contains sense_name %}
 
