@@ -1,0 +1,35 @@
+---
+layout: page
+--- 
+
+<!--  style senses -->
+
+
+	
+<div class="style-shuffle-item ">
+	{% include wrap-up.html %}
+</div>
+
+<div class="style-shuffle-item playback">
+	
+		<h3 style="font-weight: 600;">That's it! </h3>
+
+		{% for post in site.categories['senses'] reversed %} 
+
+		{% assign sense_name = post.title | downcase %}
+
+		{% assign sense_tag = post.url | date: "%d" %}
+
+		<div class="playback-bubble playback-bubble-{{ sense_tag }}" value='0' max='100' width='0' height='0'><span>{{ post.title | downcase }}</span></div>
+
+
+
+		{% endfor %}
+</div>
+
+
+
+
+
+{% include give-get.html %}
+

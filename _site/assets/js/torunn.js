@@ -4,7 +4,6 @@ $(document).ready(function() {
 
 
 
-
 $(function() {
 
   const circularProgress = document.querySelectorAll(".circular-progress");
@@ -34,6 +33,7 @@ Array.from(circularProgress).forEach((progressBar) => {
     }
   }, speed);
 });
+
 
   $(".carousel-item__actions--ratings--like").click(function() {
     $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--dislike").removeClass('active');
@@ -199,6 +199,50 @@ Array.from(circularProgress).forEach((progressBar) => {
     $(this).closest(".carousel-item").hide();
     return(false); 
   });
+
+
+  // animate progress by a step indicated by diff
+  function animateProgress01(diff) {
+      var currValue = $(".playback-bubble-01").width();
+      var toValue = currValue + diff;
+      toValue = toValue < 0 ? 0 : toValue;
+      toValue = toValue > 100 ? 100 : toValue;
+      $(".playback-bubble-01").animate({'width': toValue}, 500).animate({'height': toValue}, 500);
+  }
+  function animateProgress02(diff) { var currValue = $(".playback-bubble-02").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-02").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress03(diff) { var currValue = $(".playback-bubble-03").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-03").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress04(diff) { var currValue = $(".playback-bubble-04").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-04").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress05(diff) { var currValue = $(".playback-bubble-05").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-05").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress06(diff) { var currValue = $(".playback-bubble-06").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-06").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress07(diff) { var currValue = $(".playback-bubble-07").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-07").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress08(diff) { var currValue = $(".playback-bubble-08").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-08").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress09(diff) { var currValue = $(".playback-bubble-09").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-09").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+  function animateProgress10(diff) { var currValue = $(".playback-bubble-10").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 100 ? 100 : toValue; $(".playback-bubble-10").animate({'width': toValue}, 500).animate({'height': toValue}, 500); }
+
+
+
+  $(".style-shuffle-rating-01, .item-drilldown__item-01").click(function() { animateProgress01(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-02, .item-drilldown__item-02").click(function() { animateProgress02(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-03, .item-drilldown__item-03").click(function() { animateProgress03(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-04, .item-drilldown__item-04").click(function() { animateProgress04(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-05, .item-drilldown__item-05").click(function() { animateProgress05(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-06, .item-drilldown__item-06").click(function() { animateProgress06(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-07, .item-drilldown__item-07").click(function() { animateProgress07(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-08, .item-drilldown__item-08").click(function() { animateProgress08(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-09, .item-drilldown__item-09").click(function() { animateProgress09(parseInt($(this).data('diff'))); });
+  $(".style-shuffle-rating-10, .item-drilldown__item-10").click(function() { animateProgress10(parseInt($(this).data('diff'))); });
+
+  $(".thumbs-up.style-shuffle-rating-01").click(function() { $(".playback-bubble-01").show();});
+  $(".thumbs-up.style-shuffle-rating-02").click(function() { $(".playback-bubble-02").show();});
+  $(".thumbs-up.style-shuffle-rating-03").click(function() { $(".playback-bubble-03").show();});
+  $(".thumbs-up.style-shuffle-rating-04").click(function() { $(".playback-bubble-04").show();});
+  $(".thumbs-up.style-shuffle-rating-05").click(function() { $(".playback-bubble-05").show();});
+  $(".thumbs-up.style-shuffle-rating-06").click(function() { $(".playback-bubble-06").show();});
+  $(".thumbs-up.style-shuffle-rating-07").click(function() { $(".playback-bubble-07").show();});
+  $(".thumbs-up.style-shuffle-rating-08").click(function() { $(".playback-bubble-08").show();});
+  $(".thumbs-up.style-shuffle-rating-09").click(function() { $(".playback-bubble-09").show();});
+  $(".thumbs-up.style-shuffle-rating-10").click(function() { $(".playback-bubble-10").show();});
+
 
    
   $(".style-shuffle-rating").click(function() {
@@ -536,5 +580,6 @@ $(".playback-button").click(function() {
   $(".round-2 .sense-10.rating-5").click(function() { $(".round-3.sense-10").find(".rating-5").css({'display':'block'}); return(false); });
 
 });
+
 
 

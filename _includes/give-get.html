@@ -21,8 +21,8 @@
 					<div class="style-shuffle-ratings">
 
 						<div>
-							<a href="#" class="style-shuffle-rating thumbs-down" ><span>Thumbs down</span></a>
-							<a href="#" class="style-shuffle-rating thumbs-up"  data-diff='20'><span>Thumbs up</span></a>
+							<a href="#" class="style-shuffle-rating thumbs-down style-shuffle-rating-{{ sense_tag }}" data-diff='-10'><span>Thumbs down</span></a>
+							<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ sense_tag }}" data-diff='50'><span>Thumbs up</span></a>
 						</div>
 
 						<a href="#"class="only-some-items"><span>Only some items</span></a>
@@ -39,7 +39,7 @@
 
 								{% for sku in post.skus limit: 2 %}
 
-									<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='10'><img src="{{ sku }}" ></div>
 
 								{% endfor %}
 
@@ -49,7 +49,7 @@
 
 								{% for sku in post.skus offset: 2 %}
 
-									<div class="item-drilldown__item"><img src="{{ sku }}" ></div>
+									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='10'><img src="{{ sku }}" ></div>
 
 								{% endfor %}
 
