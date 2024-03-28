@@ -628,7 +628,9 @@ a.playback-button {
 	
 }
 
-
+.playback-bubbles {
+	@include clear;
+}
 
 .playback-bubble {
 	display: block;

@@ -14,6 +14,8 @@ layout: page
 	
 		<h3 style="font-weight: 600;">Your style is multi-layered!</h3>
 
+		<div class="playback-bubbles">
+
 		{% for post in site.categories['senses'] reversed %} 
 
 		{% assign sense_name = post.title | downcase %}
@@ -22,9 +24,20 @@ layout: page
 
 		<div class="playback-bubble playback-bubble-{{ sense_tag }}" value='0' width='0' height='0'><span>{{ post.title | downcase }}</span></div>
 
+	
 
 
 		{% endfor %}
+
+		</div>
+
+		<div style="display: block; clear: both; background: lemonchiffon;
+    padding: 20px; margin-top: 30px;">
+
+		<h3 style="font-weight: 600;">That's it! </h3>
+
+	<p>Please go to the next task. </p>
+	</div>
 </div>
 
 

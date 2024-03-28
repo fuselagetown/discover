@@ -1899,6 +1899,19 @@ a.playback-button {
   padding: 0 30px;
 }
 
+.playback-bubbles {
+  zoom: 1;
+}
+.playback-bubbles:before {
+  content: "";
+  display: table;
+}
+.playback-bubbles:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .playback-bubble {
   display: block;
   display: inline-block;
