@@ -1932,7 +1932,7 @@ a.playback-button {
   background-size: 100%;
 }
 .playback-bubble.playback-bubble-classic {
-  background-image: url("../../assets/images/playback/playback-bubble-contemporary.jpg");
+  background-image: url("../../assets/images/playback/playback-bubble-classic.jpg");
 }
 .playback-bubble.playback-bubble-active {
   background-image: url("../../assets/images/playback/playback-bubble-active.jpg");
