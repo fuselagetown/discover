@@ -6,7 +6,7 @@
 
 	{% assign sense_tag = post.url | date: "%d" %}
 
-	{% for post in site.categories['senses-outfits'] limit: 20 %} 
+	{% for post in site.categories['senses-outfits'] limit: 30 %} 
 
 		{% if post.url contains sense_name %}
 
@@ -22,7 +22,7 @@
 
 						<div>
 							<a href="#" class="style-shuffle-rating thumbs-down style-shuffle-rating-{{ sense_tag }}" data-diff='0'><span>Thumbs down</span></a>
-							<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ sense_tag }}" data-diff='40'><span>Thumbs up</span></a>
+							<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ sense_tag }}" data-diff='30'><span>Thumbs up</span></a>
 						</div>
 
 						<a href="#"class="only-some-items only-some-items-{{ sense_tag }}"><span>Only some items</span></a>
@@ -39,7 +39,7 @@
 
 								{% for sku in post.skus limit: 2 %}
 
-									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='10'><img src="{{ sku }}" ></div>
+									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
 
 								{% endfor %}
 
@@ -49,7 +49,7 @@
 
 								{% for sku in post.skus offset: 2 %}
 
-									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='10'><img src="{{ sku }}" ></div>
+									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
 
 								{% endfor %}
 

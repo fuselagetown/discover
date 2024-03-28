@@ -647,12 +647,28 @@ a.playback-button {
 	position: relative;
 	float: left;
     border: 2px solid #fff;
+	background: url("../../assets/images/playback/playback-bubble-classic.jpg") no-repeat center;
+
+	&.playback-bubble-classic { background-image: url("../../assets/images/playback/playback-bubble-contemporary.jpg");  }
+	&.playback-bubble-active { background-image: url("../../assets/images/playback/playback-bubble-active.jpg"); }
+	&.playback-bubble-boho { background-image: url("../../assets/images/playback/playback-bubble-boho.jpg"); }
+	&.playback-bubble-coastal { background-image: url("../../assets/images/playback/playback-bubble-coastal.jpg"); }
+	&.playback-bubble-preppy { background-image: url("../../assets/images/playback/playback-bubble-preppy.jpg"); }
+	&.playback-bubble-bold { background-image: url("../../assets/images/playback/playback-bubble-bold.jpg"); }
+	&.playback-bubble-maximalist { background-image: url("../../assets/images/playback/playback-bubble-maximalist.jpg"); }
+	&.playback-bubble-americana { background-image: url("../../assets/images/playback/playback-bubble-americana.jpg"); }
+	&.playback-bubble-romantic { background-image: url("../../assets/images/playback/playback-bubble-romantic.jpg"); }
+	&.playback-bubble-contemporary { background-image: url("../../assets/images/playback/playback-bubble-contemporary.jpg"); }
+
+
+	background-size: 100%;
 
 	span {
 		position: absolute;
 		top: calc(50% - 10px);
 		left: 0;
 		right: 0;
+		display: none;
 	}
 
 	&.little {
