@@ -179,6 +179,7 @@
 		right: calc(50% - 70px);
 		width: 140px;
 		margin: 0 auto;
+		height: 80px;
 	}
 
 	
@@ -198,7 +199,10 @@
 	background: rgba(255,255,255,0.4);
 
 	span {
-		padding: 0.2rem 0.5rem;
+		padding: 0.4rem 0.7rem;
+		border: 1px solid $mint;
+		border-radius: 30px;
+		font-size: 0.9rem;
 	}
 }
 

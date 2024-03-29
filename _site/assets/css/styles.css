@@ -1509,6 +1509,7 @@ a.prototype {
   right: calc(50% - 70px);
   width: 140px;
   margin: 0 auto;
+  height: 80px;
 }
 
 .only-some-items {
@@ -1523,7 +1524,10 @@ a.prototype {
   background: rgba(255, 255, 255, 0.4);
 }
 .only-some-items span {
-  padding: 0.2rem 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #00625D;
+  border-radius: 30px;
+  font-size: 0.9rem;
 }
 
 .fullbleed .style-shuffle-ratings {
