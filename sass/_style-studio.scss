@@ -652,18 +652,18 @@ a.playback-button {
 	position: relative;
 	float: left;
     border: 2px solid #fff;
-	background: url("../../assets/images/playback/playback-bubble-classic.jpg") no-repeat center;
+	background: url("../../assets/images/playback/playback-bubble-default.png") no-repeat center;
 
-	&.playback-bubble-classic { background-image: url("../../assets/images/playback/playback-bubble-classic.jpg");  }
-	&.playback-bubble-active { background-image: url("../../assets/images/playback/playback-bubble-active.jpg"); }
-	&.playback-bubble-boho { background-image: url("../../assets/images/playback/playback-bubble-boho.jpg"); }
-	&.playback-bubble-coastal { background-image: url("../../assets/images/playback/playback-bubble-coastal.jpg"); }
-	&.playback-bubble-preppy { background-image: url("../../assets/images/playback/playback-bubble-preppy.jpg"); }
-	&.playback-bubble-bold { background-image: url("../../assets/images/playback/playback-bubble-bold.jpg"); }
-	&.playback-bubble-maximalist { background-image: url("../../assets/images/playback/playback-bubble-maximalist.jpg"); }
-	&.playback-bubble-americana { background-image: url("../../assets/images/playback/playback-bubble-americana.jpg"); }
-	&.playback-bubble-romantic { background-image: url("../../assets/images/playback/playback-bubble-romantic.jpg"); }
-	&.playback-bubble-contemporary { background-image: url("../../assets/images/playback/playback-bubble-contemporary.jpg"); }
+	&.playback-bubble-classic { background-image: url("../../assets/images/playback/playback-bubble-classic.png");  }
+	&.playback-bubble-active { background-image: url("../../assets/images/playback/playback-bubble-active.png"); }
+	&.playback-bubble-boho { background-image: url("../../assets/images/playback/playback-bubble-boho.png"); }
+	&.playback-bubble-coastal { background-image: url("../../assets/images/playback/playback-bubble-coastal.png"); }
+	&.playback-bubble-preppy { background-image: url("../../assets/images/playback/playback-bubble-preppy.png"); }
+	&.playback-bubble-edgy { background-image: url("../../assets/images/playback/playback-bubble-edgy.png"); }
+	&.playback-bubble-bold { background-image: url("../../assets/images/playback/playback-bubble-bold.png"); }
+	&.playback-bubble-heritage { background-image: url("../../assets/images/playback/playback-bubble-heritage.png"); }
+	&.playback-bubble-romantic { background-image: url("../../assets/images/playback/playback-bubble-romantic.png"); }
+	&.playback-bubble-contemporary { background-image: url("../../assets/images/playback/playback-bubble-contemporary.png"); }
 
 
 	background-size: 100%;
