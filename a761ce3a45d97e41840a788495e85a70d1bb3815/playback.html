@@ -4,17 +4,60 @@ layout: page
 
 <!--  style senses -->
 
-
 	
 
 
-<div class="style-shuffle-item playback" >
+
+<div class="style-shuffle-item playback"  >
 <!-- 
 	<h3 style="font-weight: 600;">All done!</h3>
 	<p>Please return to the survey<br /> to continue.</p> -->
 	
 	<h3 style="font-weight: 600; margin-bottom: 0.6rem;">Your style is multi-layered!</h3>
-	<p style="font-size: 0.8rem">(Please take a screenshot of your results below if you can, then go back to the survey)</p>
+	<div class="personality">You're a
+
+		{% for post in site.categories['senses'] reversed %} 
+
+			{% assign main_sense_name = post.title | downcase %}
+
+			{% assign sense_name = post.title | downcase %}
+
+			{% assign main_sense_tag = post.url | date: "%d" %}
+
+			{% assign sense_tag = post.url | date: "%d" %}
+
+
+		<div class="style-sense personality-{{ sense_tag }}">
+			
+
+				{% for post in site.categories['senses'] reversed %} 
+
+
+				{% assign sense_name = post.title | downcase %}
+
+				{% assign sense_tag = post.url | date: "%d" %}
+
+
+				{% unless sense_tag contains main_sense_tag %}
+
+
+				<div class="style-sense personality-{{ sense_tag }}">
+
+					{{ main_sense_name }} {{ sense_name }}
+
+				</div>
+
+				{% endunless %}
+
+				{% endfor %}
+		
+		</div>
+
+		{% endfor %}
+	</div>
+
+
+
 
 	<div class="playback-bubbles">
 

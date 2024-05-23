@@ -2203,6 +2203,21 @@ a.playback-button {
   width: 14rem;
 }
 
+.personality {
+  background: red;
+  position: relative;
+  display: block;
+}
+.personality .style-sense {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background: rgba(255, 255, 0, 0.9);
+  z-index: 1;
+}
+
 .results-title {
   height: 150px;
   top: 110px;

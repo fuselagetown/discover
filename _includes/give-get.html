@@ -1,4 +1,4 @@
-{% for post in site.categories['senses'] reversed %} 
+{% for post in site.categories['senses']  %} 
 
 	{% assign pack_number = post.url | date: "%d" %}
 
@@ -21,7 +21,7 @@
 					<div class="style-shuffle-ratings">
 
 						<div>
-							<a href="#" class="style-shuffle-rating thumbs-down style-shuffle-rating-{{ sense_tag }}" data-diff='0'><span>Thumbs down</span></a>
+							<a href="#" class="style-shuffle-rating thumbs-down " data-diff='0'><span>Thumbs down</span></a>
 							<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ sense_tag }}" data-diff='30'><span>Thumbs up</span></a>
 						</div>
 
