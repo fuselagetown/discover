@@ -220,7 +220,10 @@ Array.from(circularProgress).forEach((progressBar) => {
   function animateProgress09(diff) { var currValue = $(".playback-bubble-09").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 200 ? 200 : toValue; $(".playback-bubble-09").animate({'width': toValue}, 500).animate({'height': toValue}, 500); $(".personality-09").animate({'z-index': toValue}, 1); }
   function animateProgress10(diff) { var currValue = $(".playback-bubble-10").width(); var toValue = currValue + diff; toValue = toValue < 0 ? 0 : toValue; toValue = toValue > 200 ? 200 : toValue; $(".playback-bubble-10").animate({'width': toValue}, 500).animate({'height': toValue}, 500); $(".personality-10").animate({'z-index': toValue}, 1); }
 
-
+  $(".style-shuffle-rating.thumbs-up").click(function() {
+    $(".personality").show();
+      return(false); 
+  });
 
   $(".style-shuffle-rating-01, .item-drilldown__item-01").click(function() { animateProgress01(parseInt($(this).data('diff'))); });
   $(".style-shuffle-rating-02, .item-drilldown__item-02").click(function() { animateProgress02(parseInt($(this).data('diff'))); });
