@@ -1458,9 +1458,10 @@ a.prototype {
   right: 0;
   bottom: 0;
   height: 100vh;
+  z-index: 1;
 }
 .style-shuffle-item.playback {
-  padding: 70px 50px;
+  padding: 70px 20px;
   background: #fff;
 }
 .style-shuffle-item .style-shuffle__outfit {
@@ -2204,10 +2205,8 @@ a.playback-button {
 }
 
 .personality {
-  background: red;
   position: relative;
   display: block;
-  display: none;
 }
 .personality .style-sense {
   position: absolute;
@@ -2215,8 +2214,9 @@ a.playback-button {
   left: 0;
   right: 0;
   display: block;
-  background: rgba(255, 255, 0, 0.9);
+  background: #fff;
   z-index: 1;
+  height: 1000px;
 }
 
 .results-title {

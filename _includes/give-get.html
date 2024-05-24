@@ -10,7 +10,7 @@
 
 		{% if post.url contains sense_name %}
 
-			<div class="style-shuffle-item {{ sense_name  }}">
+			<div class="style-shuffle-item {{ sense_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} ">
 
 				<h5 class="style-shuffle-title">Would you wear this?</h5>
 

@@ -4,6 +4,15 @@ layout: page
 
 <!--  style senses -->
 
+<style type="text/css">
+	
+
+
+	.playback {
+		display: none;
+/*z-index: 2;*/
+	}
+</style>
 	
 
 
@@ -13,14 +22,33 @@ layout: page
 	<h3 style="font-weight: 600;">All done!</h3>
 	<p>Please return to the survey<br /> to continue.</p> -->
 	
-	<h3 style="font-weight: 600; margin-bottom: 0.6rem;">Your style is multi-layered!</h3>
-	<div class="personality">You're a
+	<h3 style="font-weight: 600; font-size: 1.5rem; margin-bottom: 1rem;">Your style is multi-layered!</h3>
+	
+
+
+
+
+	<div class="playback-bubbles">
 
 		{% for post in site.categories['senses'] reversed %} 
 
+			{% assign secondary_sense_name = post.title | downcase %}
+
+			{% assign sense_tag = post.url | date: "%d" %}
+
+			<div class="playback-bubble playback-bubble-{{ sense_tag }} playback-bubble-{{ secondary_sense_name }}" value='0' width='0' height='0'><span>{{ post.title | downcase }}</span></div>
+
+		{% endfor %}
+
+	</div>
+
+	<div class="personality">
+
+		{% for post in site.categories['senses'] %} 
+
 			{% assign main_sense_name = post.title | downcase %}
 
-			{% assign sense_name = post.title | downcase %}
+			{% assign secondary_sense_name = post.title | downcase %}
 
 			{% assign main_sense_tag = post.url | date: "%d" %}
 
@@ -30,20 +58,43 @@ layout: page
 		<div class="style-sense personality-{{ sense_tag }}">
 			
 
-				{% for post in site.categories['senses'] reversed %} 
+				{% for post in site.categories['senses'] %} 
 
 
-				{% assign sense_name = post.title | downcase %}
+				{% assign secondary_sense_name = post.title | downcase %}
 
 				{% assign sense_tag = post.url | date: "%d" %}
 
 
-				{% unless sense_tag contains main_sense_tag %}
+				{% unless sense_tag < main_sense_tag or sense_tag contains main_sense_tag %}
 
 
 				<div class="style-sense personality-{{ sense_tag }}">
 
-					{{ main_sense_name }} {{ sense_name }}
+					<!-- {{ main_sense_name }} {{ secondary_sense_name }}  -->
+
+					{% for personality in site.data.personalities %}
+
+						{% assign primary_sense_downcase = personality.primary_sense | downcase %}
+						{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
+
+						
+							{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}
+
+						      	<!-- {{ primary_sense_downcase }} 
+						      	{{ secondary_sense_downcase }} -->
+
+						      	<h3 style="font-weight: 600; margin-bottom: 1rem;">You're a
+
+						      	{{ personality.name }} </h3>
+
+						      	{{ personality.blurb }}
+
+					      	{% endif %}
+
+					
+					    
+					{% endfor %}
 
 				</div>
 
@@ -54,23 +105,6 @@ layout: page
 		</div>
 
 		{% endfor %}
-	</div>
-
-
-
-
-	<div class="playback-bubbles">
-
-		{% for post in site.categories['senses'] reversed %} 
-
-			{% assign sense_name = post.title | downcase %}
-
-			{% assign sense_tag = post.url | date: "%d" %}
-
-			<div class="playback-bubble playback-bubble-{{ sense_tag }} playback-bubble-{{ sense_name }}" value='0' width='0' height='0'><span>{{ post.title | downcase }}</span></div>
-
-		{% endfor %}
-
 	</div>
 
 <!-- 	<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px;">

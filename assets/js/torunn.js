@@ -248,6 +248,13 @@ Array.from(circularProgress).forEach((progressBar) => {
   $(".thumbs-up.style-shuffle-rating-10").click(function() { $(".playback-bubble-10").show();});
 
 
+$(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next").click(function() {
+    $(".playback").show();
+      return(false); 
+  });
+
+
+
    
   $(".style-shuffle-rating").click(function() {
     $(this).addClass("active");
