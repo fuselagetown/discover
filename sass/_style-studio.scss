@@ -655,8 +655,10 @@ a.playback-button {
 	float: left;
     border: 2px solid #fff;
 	background: url("../../assets/images/playback/playback-bubble-default.png") no-repeat center;
+	background: #86C8BC;
+	color: #001E60;
 
-	&.playback-bubble-classic { background-image: url("../../assets/images/playback/playback-bubble-classic.png");  }
+/*	&.playback-bubble-classic { background-image: url("../../assets/images/playback/playback-bubble-classic.png");  }
 	&.playback-bubble-active { background-image: url("../../assets/images/playback/playback-bubble-active.png"); }
 	&.playback-bubble-boho { background-image: url("../../assets/images/playback/playback-bubble-boho.png"); }
 	&.playback-bubble-coastal { background-image: url("../../assets/images/playback/playback-bubble-coastal.png"); }
@@ -665,8 +667,18 @@ a.playback-button {
 	&.playback-bubble-bold { background-image: url("../../assets/images/playback/playback-bubble-bold.png"); }
 	&.playback-bubble-heritage { background-image: url("../../assets/images/playback/playback-bubble-heritage.png"); }
 	&.playback-bubble-romantic { background-image: url("../../assets/images/playback/playback-bubble-romantic.png"); }
-	&.playback-bubble-contemporary { background-image: url("../../assets/images/playback/playback-bubble-contemporary.png"); }
+	&.playback-bubble-contemporary { background-image: url("../../assets/images/playback/playback-bubble-contemporary.png"); }*/
 
+	&.playback-bubble-classic { background: #8DA6DD; }
+	&.playback-bubble-active { background: #D2E137;}
+	&.playback-bubble-boho { background: #DFE6A3; }
+	&.playback-bubble-coastal { background: #86C8BC; }
+	&.playback-bubble-preppy { background: #001E60; color: #fff;  }
+	&.playback-bubble-edgy { background: #2E6BF1; color: #fff; }
+	&.playback-bubble-bold { background: #FF5955; }
+	&.playback-bubble-heritage { background: #246358; color: #fff;  }
+	&.playback-bubble-romantic { background: #DCB6B5; }
+	&.playback-bubble-contemporary { background: #F3ECD3; }
 
 	background-size: 100%;
 
@@ -675,7 +687,6 @@ a.playback-button {
 		top: calc(50% - 10px);
 		left: 0;
 		right: 0;
-		display: none;
 	}
 
 	&.little {
