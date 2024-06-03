@@ -16,12 +16,12 @@
 
 - primary_sense: Active
   secondary_sense: Coastal
-  name: Seashore Sprinter, Breez
+  name: Seashore Sprinter
   blurb: Your style embodies the perfect blend of sporty comfort and beachy relaxation; as a Seashore Sprinter, you effortlessly fuse the practicality of active wear with the laid-back vibes of the coast. Whether you're hitting the pavement or strolling along the beach, your attire is always effortlessly cool and comfortable.
 
 - primary_sense: Active
   secondary_sense: Contemporary
-  name: Modern Movement Maestro, Casua
+  name: Modern Movement Maestro
   blurb: In your world, comfort meets cutting-edge, where your sporty, casual attire effortlessly blends with the minimal and fashion-forward. Your style is a testament to your active lifestyle, yet it subtly whispers the language of modern aesthetics.
 
 - primary_sense: Active
@@ -66,7 +66,7 @@
 
 - primary_sense: Boho
   secondary_sense: Edgy
-  name: Bohemian Edge, Urba
+  name: Bohemian Edge
   blurb: Your style is a seamless blend of the Bohemian Edge, effortlessly combining the free-spirited nature of boho with the daring individuality of edgy. As an Urban Nomad, you feel at home in flowy, eclectic looks, but you're not afraid to make a statement with bold animal prints and sharp silhouettes. Your wardrobe is a testament to the Free-Spirited Rebel in you, a unique mix of unconventional layering and textures with a touch of leather and lace.
 
 - primary_sense: Boho
@@ -76,7 +76,7 @@
 
 - primary_sense: Boho
   secondary_sense: Preppy
-  name: Bohemian Scholar, Prepp
+  name: Bohemian Scholar
   blurb: Your style is a harmonious blend of the unconventional and the classic, effortlessly merging the relaxed, eclectic charm of Boho with the structured sophistication of Preppy. Your wardrobe is a testament to your love for flowy silhouettes, layered prints and textures, combined with the timeless appeal of plaids, loafers and button-downs. It's clear you're a Bohemian Scholar, a Preppy Nomad, a Free-Spirited Traditionalist, who isn't afraid to redefine fashion norms.
 
 - primary_sense: Boho
@@ -106,7 +106,7 @@
 
 - primary_sense: Bold
   secondary_sense: Heritage
-  name: Artistic Pioneer, Heritag
+  name: Artistic Pioneer
   blurb: Your style is a captivating blend of the eclectic and the traditional, effortlessly fusing vivid colors and artsy patterns from your bold side with the rustic charm of your heritage spirit. The result is a unique look that is both striking and grounded, a testament to your courage in pushing boundaries while honoring your roots.
 
 - primary_sense: Bold
@@ -161,7 +161,7 @@
 
 - primary_sense: Coastal
   secondary_sense: Heritage
-  name: Seaside Traditionalist, Coastlin
+  name: Seaside Traditionalist
   blurb: Your relaxed and beach-inspired fashion choices effortlessly blend with your fondness for outdoorsy elements, creating an intriguing fusion of coastal and heritage styles. Your wardrobe is a harmonious blend of breezy fabrics and classic denim, capturing the essence of a seaside traditionalist, a coastline pioneer, or a maritime heritage enthusiast.
 
 - primary_sense: Coastal
@@ -196,7 +196,7 @@
 
 - primary_sense: Edgy
   secondary_sense: Heritage
-  name: Rustic Edge, Trailblaze
+  name: Rustic Edge
   blurb: You effortlessly blend the outdoorsy spirit of heritage style with the audacious flair of the edgy, creating a unique fusion where flannels and denim meet sharp silhouettes and daring prints. Your taste in fashion is a trailblazing journey, making you a pioneer in piquancy.
 
 - primary_sense: Edgy
@@ -221,5 +221,5 @@
 
 - primary_sense: Preppy
   secondary_sense: Romantic
-  name: Classic Charmer, Whimsica
+  name: Classic Charmer
   blurb: Your wardrobe is a delightful blend of traditional plaids and soft ruffles, where your love for button-downs and florals meet. You effortlessly balance the allure of timeless classics with the ethereal touch of dreamy, feminine details, creating a style that is both sophisticated and enchantingly soft.
