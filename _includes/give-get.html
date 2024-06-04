@@ -1,5 +1,7 @@
 {% for post in site.categories['senses']   %} 
 
+	{% if post.lob contains page.lob %}
+
 	{% assign pack_number = post.url | date: "%d" %}
 
 	{% assign sense_name = post.title | downcase %}
@@ -70,6 +72,8 @@
 		{% endif %}
 
 	{% endfor %}
+
+	{% endif %}
 
 {% endfor %}
 
