@@ -7,12 +7,16 @@ lob: women
 
 <style type="text/css">
 	
-
-
 	.playback {
 		display: none;
-/*z-index: 2;*/
 	}
+
+/*	.playback {
+		display: block;
+		z-index: 2;
+		right: 70%;
+	}*/
+
 </style>
 	
 
@@ -23,7 +27,7 @@ lob: women
 	<h3 style="font-weight: 600;">All done!</h3>
 	<p>Please return to the survey<br /> to continue.</p> -->
 	
-	<h3 style="font-weight: 600; font-size: 1.5rem; margin-bottom: 1rem;">Your style is multi-layered!</h3>
+	<h3 style="font-weight: 600; font-size: 1.5rem; margin-bottom: 20px;">Your style is multi-layered!</h3>
 	
 
 
@@ -47,16 +51,17 @@ lob: women
 
 		{% for post in site.categories['senses'] %} 
 
-			{% assign main_sense_name = post.title | downcase %}
-
-			{% assign secondary_sense_name = post.title | downcase %}
 
 			{% assign main_sense_tag = post.url | date: "%d" %}
 
+			{% assign main_sense_name = post.title | downcase %}
+
 			{% assign sense_tag = post.url | date: "%d" %}
 
+			{% assign secondary_sense_name = post.title | downcase %}
 
-		<div class="style-sense personality-{{ sense_tag }}">
+
+			<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }}">
 			
 
 				{% for post in site.categories['senses'] %} 
@@ -67,12 +72,12 @@ lob: women
 				{% assign sense_tag = post.url | date: "%d" %}
 
 
-				{% unless sense_tag < main_sense_tag or sense_tag contains main_sense_tag %}
+				{% unless sense_tag contains main_sense_tag %}
 
 
-				<div class="style-sense personality-{{ sense_tag }}">
+				<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }} {{ secondary_sense_name }}">
 
-					<!-- {{ main_sense_name }} {{ secondary_sense_name }}  -->
+					<!-- {{ main_sense_name }} {{ secondary_sense_name }} -->
 
 					{% for personality in site.data.personalities %}
 
@@ -80,41 +85,65 @@ lob: women
 						{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
 
 						
-							{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}
+							{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
 
-						      	<!-- {{ primary_sense_downcase }} 
-						      	{{ secondary_sense_downcase }} -->
 
 						      	<h3 style="font-weight: 600; margin-bottom: 1rem;">You're a
 
 						      	{{ personality.name }} </h3>
 
-						      	{{ personality.blurb }}
+						     	{{ personality.blurb }}
+					      	
+						      	
+							{% else %}
 
-					      	{% endif %}
 
-					
+							{% assign secondary_sense_downcase = personality.primary_sense | downcase %}
+							{% assign primary_sense_downcase = personality.secondary_sense | downcase %}
+
+
+								{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
+
+						      	<h3 style="font-weight: 600; margin-bottom: 1rem;">You're a
+
+						      	{{ personality.name }} </h3>
+
+						     	{{ personality.blurb }}
+		
+
+					      	{% endif %}	
+					      	{% endif %}			
 					    
 					{% endfor %}
 
+						<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px; font-size: 0.8rem;">
+
+
+
+		<p style="font-weight: bold">Please take a screenshot of your personalized results and send to @torunn on slack!  </p>
+
+		<p>This is a work-in-progress prototype. If you got more than 5 bubbles, we'd trim it to your 5 biggest bubbles so it doesn't get overwhelming</p>
+
+	</div>
+
 				</div>
 
+
+
+				
+
 				{% endunless %}
+
+
 
 				{% endfor %}
 		
 		</div>
 
 		{% endfor %}
+	
+
 	</div>
-
-<!-- 	<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px;">
-
-		<h3 style="font-weight: 600;">That's it! </h3>
-
-		<p>Please go to the next task. </p>
-
-	</div> -->
 
 </div>
 

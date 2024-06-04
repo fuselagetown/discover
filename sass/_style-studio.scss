@@ -637,6 +637,7 @@ a.playback-button {
 
 .playback-bubbles {
 	@include clear;
+	margin-bottom: 20px;
 }
 
 .playback-bubble {

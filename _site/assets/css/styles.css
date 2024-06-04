@@ -1907,6 +1907,7 @@ a.playback-button {
 
 .playback-bubbles {
   zoom: 1;
+  margin-bottom: 20px;
 }
 .playback-bubbles:before {
   content: "";

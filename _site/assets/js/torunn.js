@@ -236,16 +236,16 @@ Array.from(circularProgress).forEach((progressBar) => {
   $(".style-shuffle-rating-09, .item-drilldown__item-09").click(function() { animateProgress09(parseInt($(this).data('diff'))); });
   $(".style-shuffle-rating-10, .item-drilldown__item-10").click(function() { animateProgress10(parseInt($(this).data('diff'))); });
 
-  $(".thumbs-up.style-shuffle-rating-01").click(function() { $(".playback-bubble-01").show();});
-  $(".thumbs-up.style-shuffle-rating-02").click(function() { $(".playback-bubble-02").show();});
-  $(".thumbs-up.style-shuffle-rating-03").click(function() { $(".playback-bubble-03").show();});
-  $(".thumbs-up.style-shuffle-rating-04").click(function() { $(".playback-bubble-04").show();});
-  $(".thumbs-up.style-shuffle-rating-05").click(function() { $(".playback-bubble-05").show();});
-  $(".thumbs-up.style-shuffle-rating-06").click(function() { $(".playback-bubble-06").show();});
-  $(".thumbs-up.style-shuffle-rating-07").click(function() { $(".playback-bubble-07").show();});
-  $(".thumbs-up.style-shuffle-rating-08").click(function() { $(".playback-bubble-08").show();});
-  $(".thumbs-up.style-shuffle-rating-09").click(function() { $(".playback-bubble-09").show();});
-  $(".thumbs-up.style-shuffle-rating-10").click(function() { $(".playback-bubble-10").show();});
+  $(".thumbs-up.style-shuffle-rating-01, .item-drilldown__item-01").click(function() { $(".playback-bubble-01").show();});
+  $(".thumbs-up.style-shuffle-rating-02, .item-drilldown__item-02").click(function() { $(".playback-bubble-02").show();});
+  $(".thumbs-up.style-shuffle-rating-03, .item-drilldown__item-03").click(function() { $(".playback-bubble-03").show();});
+  $(".thumbs-up.style-shuffle-rating-04, .item-drilldown__item-04").click(function() { $(".playback-bubble-04").show();});
+  $(".thumbs-up.style-shuffle-rating-05, .item-drilldown__item-05").click(function() { $(".playback-bubble-05").show();});
+  $(".thumbs-up.style-shuffle-rating-06, .item-drilldown__item-06").click(function() { $(".playback-bubble-06").show();});
+  $(".thumbs-up.style-shuffle-rating-07, .item-drilldown__item-07").click(function() { $(".playback-bubble-07").show();});
+  $(".thumbs-up.style-shuffle-rating-08, .item-drilldown__item-08").click(function() { $(".playback-bubble-08").show();});
+  $(".thumbs-up.style-shuffle-rating-09, .item-drilldown__item-09").click(function() { $(".playback-bubble-09").show();});
+  $(".thumbs-up.style-shuffle-rating-10, .item-drilldown__item-10").click(function() { $(".playback-bubble-10").show();});
 
 
 $(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next").click(function() {
