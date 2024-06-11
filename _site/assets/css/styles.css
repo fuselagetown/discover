@@ -43,7 +43,7 @@ body {
   width: 100%;
   list-style: none;
   position: relative;
-  color: #25282D;
+  color: #001E60;
   background: #fff;
   margin: 0;
   line-height: 1.4;
@@ -544,7 +544,7 @@ th, td {
   }
 }
 .toast {
-  background: #25282D;
+  background: #001E60;
   position: fixed;
   top: 5px;
   left: 5px;
@@ -794,7 +794,7 @@ a.prototype {
 }
 .bottom-sheet .carousel-item__action {
   font-size: 1rem;
-  color: #25282D;
+  color: #001E60;
   width: 100%;
   text-decoration: none;
   line-height: 50px;
@@ -898,7 +898,7 @@ a.prototype {
   height: 24px;
 }
 .interactive-colors .color-swatch:first-child span {
-  box-shadow: 0 0 0px 1px #25282D;
+  box-shadow: 0 0 0px 1px #001E60;
 }
 .color-swatch span {
   width: 100%;
@@ -973,8 +973,8 @@ a.prototype {
   z-index: 2;
   padding: 0.2rem 0.5rem;
   text-decoration: none;
-  border: 1px solid #00625D;
-  color: #00625D;
+  border: 1px solid #86C8BC;
+  color: #86C8BC;
 }
 
 .carousel-item__button--see-similar {
@@ -1181,7 +1181,7 @@ a.prototype {
   text-decoration: none;
   background: #F2F3F4;
   padding: 0.3rem 0.6rem;
-  color: #25282D;
+  color: #001E60;
   border-radius: 3px;
 }
 
@@ -1282,7 +1282,7 @@ a.prototype {
   display: block;
   float: left;
   height: 150px;
-  background: #25282D;
+  background: #001E60;
   position: relative;
 }
 .promo:nth-child(3n+3) {
@@ -1294,7 +1294,7 @@ a.prototype {
   left: 0;
   background: #fff;
   text-decoration: none;
-  color: #25282D;
+  color: #001E60;
   padding: 0.2rem 0.4rem 0.2rem 0;
 }
 
@@ -1323,7 +1323,7 @@ a.prototype {
 
 .carousel-item-cover {
   height: 300px;
-  background: #25282D;
+  background: #001E60;
   color: #fff;
 }
 
@@ -1360,7 +1360,7 @@ a.prototype {
   display: none;
   background: #fff;
   z-index: 5;
-  color: #25282D;
+  color: #001E60;
   -webkit-animation: style-shuffle-pack 0.5s ease-out backwards;
 }
 
@@ -1525,7 +1525,7 @@ a.prototype {
   bottom: -30px;
   text-decoration: none;
   font-size: 1rem;
-  color: #00625D;
+  color: #fff;
   clear: both;
   display: block;
   padding: 0.5rem 0;
@@ -1533,7 +1533,7 @@ a.prototype {
 }
 .only-some-items span {
   padding: 0.4rem 0.7rem;
-  border: 1px solid #00625D;
+  background: #001E60;
   border-radius: 30px;
   font-size: 0.9rem;
 }
@@ -1553,7 +1553,7 @@ a.prototype {
   bottom: auto;
   left: 20px;
   border-radius: 40px;
-  border: 2px solid #00625D;
+  border: 2px solid #86C8BC;
   line-height: 60px;
   padding: 0 1.5rem;
 }
@@ -1567,7 +1567,7 @@ a.prototype {
   display: block;
   float: left;
   border-bottom: 0;
-  background: #00625D;
+  background: #001E60;
   color: #fff;
   margin: 5px;
 }
@@ -1711,7 +1711,7 @@ a.prototype {
   display: none;
 }
 .this-or-that-page.round-3.rated {
-  background: #00625D;
+  background: #86C8BC;
 }
 .this-or-that-page.round-3.rated .this-or-that-title,
 .this-or-that-page.round-3.rated .this-or-that-label {
@@ -1787,7 +1787,7 @@ a.prototype {
 .this-or-that-select .scale-quiz-rating .this-or-that-label,
 .this-or-that-select .this-or-that-rating .scale-quiz-label,
 .this-or-that-select .this-or-that-rating .this-or-that-label {
-  border: 2px solid #25282D;
+  border: 2px solid #001E60;
   background: #fff;
   position: absolute;
   bottom: 10px;
@@ -1831,7 +1831,7 @@ a.prototype {
 .scale-quiz-select.selected .this-or-that-label,
 .this-or-that-select.selected .scale-quiz-label,
 .this-or-that-select.selected .this-or-that-label {
-  background: #25282D;
+  background: #001E60;
   color: #fff;
 }
 .round-3.rated .scale-quiz-select.selected,
@@ -1843,7 +1843,7 @@ a.round-3-done-button,
 a.style-shuffle-summary-button,
 a.wrap-up-button,
 a.playback-button {
-  border: 2px solid #25282D;
+  border: 2px solid #001E60;
   background: #fff;
   position: absolute;
   bottom: 10px;
@@ -1858,7 +1858,7 @@ a.playback-button {
   font-style: normal;
   font-weight: 700;
   display: none;
-  color: #25282D;
+  color: #001E60;
   text-decoration: none;
 }
 .round-3.rated a.round-3-done-button, .im-active a.round-3-done-button,
@@ -1880,9 +1880,9 @@ a.playback-button {
   font-size: 0.9rem;
 }
 .skip-category a {
-  color: #25282D;
+  color: #001E60;
   text-decoration: none;
-  border-bottom: 1px solid #25282D;
+  border-bottom: 1px solid #001E60;
 }
 .this-or-that-page .skip-category {
   top: 620px;
@@ -1929,7 +1929,7 @@ a.playback-button {
 .playback-bubble {
   display: block;
   display: inline-block;
-  background: #00625D;
+  background: #86C8BC;
   text-align: center;
   border-radius: 50%;
   font-size: 0.7rem;
@@ -2014,6 +2014,51 @@ a.playback-button {
   width: 150px;
   font-size: 1.3rem;
   line-height: 150px;
+}
+
+@-webkit-keyframes interstitial-fading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes progressbar {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200px;
+  }
+}
+.interstitial {
+  background: #86C8BC;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 200;
+  padding: 40% 40px 0;
+  -webkit-animation: drilldown-fading 0.5s ease-in forwards;
+  -webkit-animation-delay: 3s;
+}
+.interstitial h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+.interstitial .progress {
+  background: url("../../assets/images/progress.svg") no-repeat -30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  font-size: 0;
+  -webkit-animation: progressbar 4s ease-in forwards;
 }
 
 .round-2 .this-or-that-select,
@@ -2217,11 +2262,11 @@ a.playback-button {
 .item-drilldown__next {
   clear: both;
   display: block;
-  border: 1px solid #25282D;
+  border: 1px solid #001E60;
   line-height: 44px;
   text-decoration: none;
   font-size: 1rem;
-  color: #25282D;
+  color: #001E60;
   margin: 1rem auto;
   width: 14rem;
 }

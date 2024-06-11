@@ -249,7 +249,7 @@ Array.from(circularProgress).forEach((progressBar) => {
 
 
 $(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next").click(function() {
-    $(".playback").show();
+    $(".playback").addClass("interstital").show();
       return(false); 
   });
 

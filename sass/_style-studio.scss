@@ -198,7 +198,7 @@
 	bottom: -30px;
 	text-decoration: none;
 	font-size: 1rem;
-	color: $mint;
+	color: #fff;
 	clear: both;
 	display: block;
 	padding: 0.5rem 0;
@@ -206,7 +206,7 @@
 
 	span {
 		padding: 0.4rem 0.7rem;
-		border: 1px solid $mint;
+		background: $charcoal;
 		border-radius: 30px;
 		font-size: 0.9rem;
 	}
@@ -253,7 +253,7 @@
     display: block;
     float: left;
     border-bottom: 0;
-    background: $mint ;
+    background: $charcoal ;
     color: #fff;
     margin: 5px;
 
@@ -716,6 +716,49 @@ a.playback-button {
 		width: 150px;
 		font-size: 1.3rem;
 		line-height: 150px;
+	}
+}
+
+@-webkit-keyframes interstitial-fading {
+    0% { opacity: 1; }
+    100% { opacity: 0;  }
+}
+@-webkit-keyframes progressbar {
+    0% { left: -0; }
+    100% { left: -200px;  }
+}
+
+
+.interstitial {
+	background: $mint;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	z-index: 200;
+	padding: 40% 40px 0;
+	-webkit-animation: drilldown-fading 0.5s ease-in forwards;
+	-webkit-animation-delay: 3s;
+
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 3.5rem;
+	}
+
+	.progress {
+
+			background: url("../../assets/images/progress.svg") no-repeat -30px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 50px;
+			font-size: 0;
+			-webkit-animation: progressbar 4s ease-in forwards;
+
 	}
 }
 
