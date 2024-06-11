@@ -1,6 +1,6 @@
 
-<!-- <span style="font-size: 0,.8rem">({{ main_sense_name }}, {{ secondary_sense_name }})</span> -->
-<h3>You're a {{ personality.name }} </h3>
+
+<h3>You're a {{ personality.name }} <span style="font-size: 0.8rem; display: none;">({{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
 
 <p>{{ personality.blurb }}</p>
 
@@ -14,8 +14,9 @@
 
 {% for gallery_item in personality.gallery %}
 
-
-<img class="carousel-item" src="{{ gallery_item }}" />
+<div class="carousel-item">
+<img  src="{{ gallery_item }}" />
+</div>
 
 {% endfor %}
 
