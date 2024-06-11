@@ -14,8 +14,31 @@ lob: women
 /*	.playback {
 		display: block;
 		z-index: 2;
-		right: 70%;
+	}
+
+	.personality .style-sense {
+		position: relative;
+		height: inherit;
 	}*/
+
+	h3 {
+		font-weight: 600; 
+		font-size: 1.5rem; 
+		margin-bottom: 20px;
+	}
+
+	h6.eyebrow {
+		font-family: "Area Normal";
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 800;
+		line-height: 16px; 
+		letter-spacing: 0.18px;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+
+
 
 </style>
 	
@@ -26,10 +49,11 @@ lob: women
 <!-- 
 	<h3 style="font-weight: 600;">All done!</h3>
 	<p>Please return to the survey<br /> to continue.</p> -->
-	
-	<h3 style="font-weight: 600; font-size: 1.5rem; margin-bottom: 20px;">Your style is multi-layered!</h3>
-	
 
+	<h6 class="eyebrow">StyleFile</h6>
+	
+	<h3>Your style is multi-layered!</h3>
+	
 
 
 
@@ -88,11 +112,7 @@ lob: women
 							{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
 
 
-						      	<h3 style="font-weight: 600; margin-bottom: 1rem;">You're a
-
-						      	{{ personality.name }} </h3>
-
-						     	{{ personality.blurb }}
+						      	{% include personality_and_gallery.html %}
 					      	
 						      	
 							{% else %}
@@ -104,13 +124,10 @@ lob: women
 
 								{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
 
-						      	<h3 style="font-weight: 600; margin-bottom: 1rem;">You're a
+						      	{% include personality_and_gallery.html %}
 
-						      	{{ personality.name }} </h3>
-
-						     	{{ personality.blurb }}
-		
-
+						     	
+									
 					      	{% endif %}	
 					      	{% endif %}			
 					    

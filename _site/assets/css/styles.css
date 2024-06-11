@@ -628,7 +628,6 @@ a.prototype {
 
 .carousel-container {
   width: max-content;
-  width: 1900px;
   position: relative;
   padding: 0 10px;
 }
@@ -643,8 +642,7 @@ a.prototype {
 }
 .carousel-item {
   float: left;
-  width: 180px;
-  padding: 10px;
+  width: 280px;
   background: #F2F3F4;
   margin: 0;
   border-right: 5px solid #fff;
@@ -653,27 +651,32 @@ a.prototype {
 }
 @media (max-width: 410px) {
   .carousel-item {
-    width: 170px;
+    width: 270px;
   }
 }
 @media (max-width: 390px) {
   .carousel-item {
-    width: 160px;
+    width: 260px;
   }
 }
 @media (max-width: 370px) {
   .carousel-item {
-    width: 150px;
+    width: 250px;
   }
 }
 @media (max-width: 350px) {
   .carousel-item {
-    width: 140px;
+    width: 240px;
   }
 }
 @media (max-width: 330px) {
   .carousel-item {
-    width: 180px;
+    width: 280px;
+  }
+}
+@media (min-width: 1000px) {
+  .carousel-item {
+    width: 190px;
   }
 }
 .carousel-item p {
@@ -1461,8 +1464,12 @@ a.prototype {
   z-index: 1;
 }
 .style-shuffle-item.playback {
-  padding: 70px 20px;
+  padding: 70px 0px;
   background: #fff;
+}
+.style-shuffle-item.playback h6, .style-shuffle-item.playback h3, .style-shuffle-item.playback .playback-bubbles, .style-shuffle-item.playback p {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .style-shuffle-item .style-shuffle__outfit {
   position: absolute;

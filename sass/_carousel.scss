@@ -37,7 +37,6 @@
 
 .carousel-container {
 	width: max-content;
-    width: 1900px;
 	position: relative;
     padding: 0 10px;
 }
@@ -50,8 +49,7 @@
 
 .carousel-item {
     float: left;
-    width: 180px;
-    padding: 10px;
+    width: 280px;
     background: $grey_light;
     margin: 0;
     border-right: 5px solid #fff;
@@ -59,23 +57,27 @@
     font-size: 0.8rem;
 
     @media (max-width: 410px) {
-        width: 170px;
+        width: 270px;
     }
 
     @media (max-width: 390px) {
-        width: 160px;
+        width: 260px;
     }
 
     @media (max-width: 370px) {
-        width: 150px;
+        width: 250px;
     }
 
     @media (max-width: 350px) {
-        width: 140px;
+        width: 240px;
     }
 
     @media (max-width: 330px) {
-        width: 180px;
+        width: 280px;
+    }
+
+    @media (min-width: 1000px) {
+        width: 190px;
     }
 
 

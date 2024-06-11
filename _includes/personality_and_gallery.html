@@ -1,0 +1,25 @@
+
+<!-- <span style="font-size: 0,.8rem">({{ main_sense_name }}, {{ secondary_sense_name }})</span> -->
+<h3>You're a {{ personality.name }} </h3>
+
+<p>{{ personality.blurb }}</p>
+
+<h6 class="eyebrow">{{ personality.name }}</h6>
+
+<h3>Style inspiration </h3>
+
+<div class="carousel">
+
+<div class="carousel-container">
+
+{% for gallery_item in personality.gallery %}
+
+
+<img class="carousel-item" src="{{ gallery_item }}" />
+
+{% endfor %}
+
+</div>
+
+</div>
+					
