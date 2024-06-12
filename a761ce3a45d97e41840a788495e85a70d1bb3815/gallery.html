@@ -1,0 +1,21 @@
+---
+layout: page
+--- 
+<div class="style-shuffle-item playback"  >
+
+
+{% for personality in site.data.personalities %}
+
+	{% assign primary_sense_downcase = personality.primary_sense | downcase %}
+	{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
+
+			      	
+	<div class="personality_and_gallery" style="height: 2000px; padding: 60px 0 2000px;">
+
+  		{% include personality_and_gallery.html %}
+
+  	</div>
+	
+	   	
+    
+{% endfor %}</div>
