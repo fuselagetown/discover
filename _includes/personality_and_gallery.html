@@ -15,7 +15,7 @@
 {% for gallery_item in personality.gallery limit: 8 %}
 
 <div class="carousel-item">
-<img  src="{{ gallery_item  }}" />
+<img src="{{ gallery_item | replace: 'image/upload/','image/upload/w_550,q_auto/' }}" />
 </div>
 
 
