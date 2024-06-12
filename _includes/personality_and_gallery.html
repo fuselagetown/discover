@@ -1,6 +1,6 @@
 
 
-<h3>You're a {{ personality.name }} <span style="font-size: 0.8rem; display: none;">({{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
+<h3 style="padding-top: 60px;">You're a <a name="{{ personality.name | downcase | remove: ' ' }}">{{ personality.name }}</a> <span style="font-size: 0.8rem; display: none;">({{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
 
 <p>{{ personality.blurb }}</p>
 
@@ -14,7 +14,10 @@
 
 {% for gallery_item in personality.gallery limit: 8 %}
 
-/
+<div class="carousel-item">
+<img  src="{{ gallery_item | replace: 'upload/', 'upload/w_550,q_auto/' }}" />
+</div>
+
 
 
 {% endfor %}

@@ -11,7 +11,7 @@ lob: women
 		display: none;
 	}
 
-/*
+
 	.playback {
 		display: block;
 		z-index: 2;
@@ -28,7 +28,7 @@ lob: women
 
 		h3 span { display: inline-block !important; }
 	}
-*/
+
 
 
 
@@ -111,6 +111,12 @@ lob: women
 
 
 						      	{% include personality_and_gallery.html %}
+
+						      	<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px; font-size: 0.8rem;">
+
+						      		Please review your results above, and answer the follow up quesitons about them. Once prompted, go to your <a href="gallery.html#{{ personality.name | downcase | remove: ' ' }}">gallery</a>
+
+						      	</div>
 					      	
 						      	
 							{% else %}
@@ -123,6 +129,12 @@ lob: women
 								{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
 
 						      	{% include personality_and_gallery.html %}
+
+						      	<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px; font-size: 0.8rem;">
+
+						      		Please review your results above, and answer the follow up quesitons about them. Once prompted, go to your <a href="gallery.html#{{ personality.name | downcase | remove: ' ' }}">gallery</a>
+
+						      	</div>
 
 						     	
 									
