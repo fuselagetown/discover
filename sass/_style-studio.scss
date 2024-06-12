@@ -760,6 +760,10 @@ a.playback-button {
 			-webkit-animation: progressbar 4s ease-in forwards;
 
 	}
+
+	.im-offscreen & {
+		display: none;
+	}
 }
 
 

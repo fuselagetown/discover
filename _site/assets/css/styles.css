@@ -2070,6 +2070,9 @@ a.playback-button {
   font-size: 0;
   -webkit-animation: progressbar 4s ease-in forwards;
 }
+.im-offscreen .interstitial {
+  display: none;
+}
 
 .round-2 .this-or-that-select,
 .round-3 .this-or-that-select {

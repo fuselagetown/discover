@@ -249,7 +249,9 @@ Array.from(circularProgress).forEach((progressBar) => {
 
 
 $(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next").click(function() {
-    $(".playback").addClass("interstital").show();
+    $(".playback").addClass("interstital").show().delay(4000).queue(function(){
+      $(this).addClass("im-offscreen").dequeue();
+    });
       return(false); 
   });
 
