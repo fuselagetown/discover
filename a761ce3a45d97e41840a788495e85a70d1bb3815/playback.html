@@ -11,8 +11,8 @@ lob: women
 		display: none;
 	}
 
-/*
-	.playback {
+
+/*	.playback {
 		display: block;
 		z-index: 2;
 		width: 100%;
@@ -27,8 +27,8 @@ lob: women
 		padding: 30px 0;
 
 		h3 span { display: inline-block !important; }
-	}
-*/
+	}*/
+
 
 
 
@@ -112,11 +112,7 @@ lob: women
 
 						      	{% include personality.html %}
 
-						      	<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px; font-size: 0.8rem;">
-
-						      		Please review your results above, then <a href="gallery.html#{{ personality.name | downcase | remove: ' ' }}">check out some examples</a> of this blend of styles.</a>
-
-						      	</div>
+						      	{% include disclaimer.html %}
 					      	
 						      	
 							{% else %}
@@ -129,14 +125,10 @@ lob: women
 								{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
 
 						      	{% include personality.html %}
+						      	
+						      	{% include disclaimer.html %}
 
-						      	<div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px; font-size: 0.8rem;">
-
-						      		Please review your results above, then <a href="gallery.html#{{ personality.name | downcase | remove: ' ' }}">check out some examples</a> of this blend of styles.</a>
-
-						      	</div>
-
-						     	
+						      	
 									
 					      	{% endif %}	
 					      	{% endif %}			
