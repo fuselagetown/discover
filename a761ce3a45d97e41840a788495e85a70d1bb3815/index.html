@@ -20,10 +20,10 @@ layout: page
 <div style="padding: 40px; font-weight: 300; color: #fff; background: #00625D; min-height: 1000px;">
 
 
-<p>Today we’ll be asking your thoughts as a Stitch Fix client about a new way to describe your style interests.</p> 
+<!-- <p>Today we’ll be asking your thoughts as a Stitch Fix client about a new way to describe your style interests.</p> 
 <p>First, you’ll complete a short exercise that will show you personalized results describing your style!</p>
 <p>Second, you’ll log into your Stitch Fix account and answer questions about how those results might be included in your Stitch Fix experience. To protect your identity, we will not collect or document any of your personal or login information as a Stitch Fix client. </p>
-<p>Thanks in advance for sharing your thoughts! Please click the button to continue to the Style Quiz. </p>
+<p>Thanks in advance for sharing your thoughts! Please click the button to continue to the Style Quiz. </p> -->
 
 	<!-- You're logged in.<br /> Please go to the next task. --><!-- 
 <h1 style="margin-bottom: 20px;">Prototypes with style studio assets:</h1> -->
@@ -44,28 +44,6 @@ layout: page
 </a>
 
 
-</p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-</p><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-
-{% for post in site.categories['senses-outfits'] limit: 30 %} 
-
-<img src="{{ post.image }}">
-	{% endfor %}
-
-
-
-	{% for personality in site.data.personalities %}
-
-	{% for gallery_item in personality.gallery limit: 8 %}
-
-
-		<img  src="{{ gallery_item }}" />
-
-
-		{% endfor %}>
-
-	{% endfor %}
 
 <!-- <a href="#" class="prototype">
 	<span class="prototype_title" style="color: #aaa">Coming soon: Men's Style Quiz</span>
