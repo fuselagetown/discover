@@ -319,6 +319,13 @@ $(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next").clic
   });
 
 
+  $(".playback-bubble").click(function() {
+    $(this).addClass("expanded");
+    $('.playback-bubble').not(this).removeClass("expanded");  
+  });
+
+
+
 
 $(".this-or-that-page .skip10").click(function() { $(".this-or-that-page.sense-10").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });
 $(".this-or-that-page .skip09").click(function() { $(".this-or-that-page.sense-09").addClass("rated").delay(1000).queue(function(){ $(this).addClass("removing").dequeue(); }); return(false);  });

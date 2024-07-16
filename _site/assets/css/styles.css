@@ -1936,6 +1936,16 @@ a.playback-button {
   clear: both;
 }
 
+@-webkit-keyframes expand {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+  }
+}
 .playback-bubble {
   display: block;
   display: inline-block;
@@ -1982,9 +1992,17 @@ a.playback-button {
   background: #001E60;
   color: #fff;
 }
+.playback-bubble.playback-bubble-preppy a {
+  border-color: #fff !important;
+  color: #fff !important;
+}
 .playback-bubble.playback-bubble-edgy {
   background: #2E6BF1;
   color: #fff;
+}
+.playback-bubble.playback-bubble-edgy a {
+  border-color: #fff !important;
+  color: #fff !important;
 }
 .playback-bubble.playback-bubble-bold {
   background: #FF5955;
@@ -1992,6 +2010,10 @@ a.playback-button {
 .playback-bubble.playback-bubble-heritage {
   background: #246358;
   color: #fff;
+}
+.playback-bubble.playback-bubble-heritage a {
+  border-color: #fff !important;
+  color: #fff !important;
 }
 .playback-bubble.playback-bubble-romantic {
   background: #DCB6B5;
@@ -2024,6 +2046,39 @@ a.playback-button {
   width: 150px;
   font-size: 1.3rem;
   line-height: 150px;
+}
+.playback-bubble .sense-details {
+  display: none;
+}
+.playback-bubble.expanded {
+  position: absolute;
+  top: 200px;
+  left: calc(50% - 150px);
+  right: calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+  z-index: 10000;
+  -webkit-animation: expand 0.5s ease-in forwards;
+}
+.playback-bubble.expanded > span {
+  display: none;
+}
+.playback-bubble.expanded .sense-details {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 30px;
+}
+.playback-bubble.expanded a {
+  padding: 10px 20px;
+  border: 1px solid #001E60;
+  border-radius: 44px;
+  line-height: 44px;
+  text-decoration: none;
+  color: #001E60;
 }
 
 @-webkit-keyframes interstitial-fading {

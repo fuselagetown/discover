@@ -18,5 +18,4 @@ gallery:
 
 ---
 
-
-Embrace minimalistic elements highlighting grays, beiges and shades of white. Sleek, thoughtful, hidden details emphasize an edited aesthetic. 
+You’re a modernist—you favor minimal and fashion-forward styles. Mixing the timeless with the trending is just your speed.
