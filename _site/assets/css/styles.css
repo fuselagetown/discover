@@ -2120,6 +2120,19 @@ a.playback-button {
   -webkit-animation: expand 0.5s ease-in forwards;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
+.playback-bubble.expanded .sense-details h5 span {
+  position: relative;
+  padding-right: 20px;
+}
+.playback-bubble.expanded .sense-details h5 span:after {
+  background: url("../../assets/images/minus.svg") no-repeat;
+  content: " ";
+  position: absolute;
+  top: 8px;
+  right: 0;
+  width: 16px;
+  height: 16px;
+}
 .playback-bubble.expanded .sense-details .sense-details-fadein {
   display: block;
   -webkit-animation: fade-in 0.2s ease-in forwards;
