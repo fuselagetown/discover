@@ -320,7 +320,7 @@ $(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next").clic
 
 
   $(".playback-bubble").click(function() {
-    $(this).addClass("expanded");
+    $(this).toggleClass("expanded");
     $('.playback-bubble').not(this).removeClass("expanded");  
   });
 
