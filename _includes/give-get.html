@@ -1,4 +1,4 @@
-{% for post in site.categories['senses']   %} 
+{% for post in site.categories['senses']  %} 
 
 	{% if post.lob contains page.lob %}
 
@@ -8,7 +8,7 @@
 
 	{% assign sense_tag = post.url | date: "%d" %}
 
-	{% for post in site.categories['senses-outfits'] limit: 30 %} 
+	{% for post in site.categories['senses-outfits'] %} 
 
 		{% if post.url contains sense_name %}
 
@@ -18,8 +18,27 @@
 
 				<div class="style-shuffle-outfit-and-items">
 
-					<img src="{{ post.image  | replace: 'upload/', 'upload/w_600,q_auto/' }}" alt=" {{ post.title }}" class="style-shuffle__outfit" />		
+					{% if page.lob == 'women' %}
 
+						{% assign outfit-image =  post.womens-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
+
+					{% else %}
+
+						{% if sense_name == 'bold' %}
+
+							{% assign outfit-image = '../assets/images/style-senses/bold/bold-outfit-1.jpg' %}
+
+						{% else %}
+
+							{% assign outfit-image =  post.mens-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
+
+						{% endif %}
+
+					{% endif %}
+
+					<img src="{{ outfit-image }}" alt=" {{ post.title }}" class="style-shuffle__outfit" />	
+
+					
 					<div class="style-shuffle-ratings">
 
 						<div>
@@ -31,7 +50,27 @@
 
 					</div>
 
-					<div class="item-drilldown {% for sku in post.skus %} grid-of-{{ forloop.length }} {% endfor %}">
+
+
+					{% if page.lob == 'women' %}
+
+						{% for sku in post.women-skus %} 
+
+							{% assign grid-length = forloop.length %} 
+
+						{% endfor %}						
+
+					{% else %}
+
+						{% for sku in post.mens-skus %} 
+
+							{% assign grid-length = forloop.length %} 
+
+						{% endfor %}							
+
+					{% endif %}
+
+					<div class="item-drilldown grid-of-{{ grid-length }}">
 
 						<h5 class="style-shuffle-title">Which items would you wear?</h5>
 
@@ -39,21 +78,49 @@
 
 							<div class="item-drilldown__items--column">
 
-								{% for sku in post.skus limit: 2 %}
+								{% if page.lob == 'women' %}
 
-									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+									{% for sku in post.womens-skus limit: 2 %}
 
-								{% endfor %}
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+									{% endfor %}
+
+
+								{% else %}
+
+									{% for sku in post.mens-skus limit: 2 %}
+
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+									{% endfor %}
+
+
+								{% endif %}
+
+								
 
 							</div>
 
 							<div class="item-drilldown__items--column">
 
-								{% for sku in post.skus offset: 2 %}
+								{% if page.lob == 'women' %}
 
-									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+									{% for sku in post.womens-skus offset: 2 %}
 
-								{% endfor %}
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+									{% endfor %}
+
+								{% else %}
+
+									{% for sku in post.mens-skus offset: 2 %}
+
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+									{% endfor %}
+
+								{% endif %}
 
 							</div>
 

@@ -1,48 +1,45 @@
----
-layout: page
-lob: women
---- 
 
 <!--  style senses -->
 
 <style type="text/css">
 	
-	.playback {
-		display: none;
-	}
+.playback {
+	display: none;
+}
+
 /* Keep the above when live */
 
 
 
-/*	.playback {
-		display: block;
-		z-index: 2;
-		width: 100%;
+/*.playback {
+	display: block;
+	z-index: 2;
+	width: 100%;
 
-		.interstitial { display:none; }
-	}
+	.interstitial { display:none; }
+}
 
-	.personality .style-sense {
-		position: relative;
-		height: inherit;
-		border-bottom: 5px solid #ccc;
-		padding: 30px 0;
+.personality .style-sense {
+	position: relative;
+	height: inherit;
+	border-bottom: 5px solid #ccc;
+	padding: 30px 0;
 
-		h3 span { display: inline-block !important; }
-	}
+	h3 span { display: inline-block !important; }
+}
 
-	.playback-bubble {
-		display: block;
-		width: 170px;
-		height: 170px;
-	}*/
+.playback-bubble {
+	display: block;
+	width: 170px;
+	height: 170px;
+}
 
 
-
+*/
 
 </style>
 	
-
+<!-- <div class="lob" style="position: absolute; top: 0; background: red; z-index: 1000">{{ page.lob }}</div> -->
 
 
 <div class="style-shuffle-item playback"  >
@@ -66,28 +63,40 @@ lob: women
 
 		{% for post in site.categories['senses'] reversed %} 
 
-			{% assign secondary_sense_name = post.title | downcase %}
+			{% if post.lob contains page.lob %}
 
-			{% assign sense_tag = post.url | date: "%d" %}
+				{% assign secondary_sense_name = post.title | downcase %}
 
-			<div class="playback-bubble playback-bubble-{{ sense_tag }} playback-bubble-{{ secondary_sense_name }}" value='0' width='0' height='0'>
+				{% assign sense_tag = post.url | date: "%d" %}
 
-				<span><span>{{ post.title | downcase }}</span></span>
-				
-				<div class="sense-details">
+				<div class="playback-bubble playback-bubble-{{ sense_tag }} playback-bubble-{{ secondary_sense_name }}" value='0' width='0' height='0'>
 
-					<div class="sense-details-fadein">
+					<span><span>{% if page.lob == 'men' and secondary_sense_name  == 'heritage' %}rugged{% else %}{{ post.title | downcase }}{% endif%}</span></span>
+					
+					<div class="sense-details">
 
-						<h5><span>{{ post.title | downcase }}</span></h5>
+						<div class="sense-details-fadein">
 
-						{{ post.content }}
+							<h5><span>{% if page.lob == 'men' and secondary_sense_name  == 'heritage' %}rugged{% else %}{{ post.title | downcase }}{% endif%}</span></h5>
 
-						<a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a>
+							{% if page.lob == 'women' %}
+
+								<p>{{ post.womens-description }}</p>
+
+							{% else %}
+								
+								<p>{{ post.mens-description }}</p>
+
+							{% endif %}
+
+							<a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a>
+
+						</div>
 
 					</div>
-
 				</div>
-			</div>
+
+			{% endif %}
 
 		{% endfor %}
 
