@@ -32,10 +32,10 @@
 	display: block;
 	width: 170px;
 	height: 170px;
-}
+}*/
 
 
-*/
+
 
 </style>
 	
@@ -106,93 +106,67 @@
 
 		{% for post in site.categories['senses'] %} 
 
+			{% if post.lob contains page.lob %}
 
-			{% assign main_sense_tag = post.url | date: "%d" %}
+				{% assign main_sense_tag = post.url | date: "%d" %}
 
-			{% assign main_sense_name = post.title | downcase %}
-
-			{% assign sense_tag = post.url | date: "%d" %}
-
-			{% assign secondary_sense_name = post.title | downcase %}
-
-
-			<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }}">
-			
-
-				{% for post in site.categories['senses'] %} 
-
-
-				{% assign secondary_sense_name = post.title | downcase %}
+				{% assign main_sense_name = post.title | downcase %}
 
 				{% assign sense_tag = post.url | date: "%d" %}
 
+				{% assign secondary_sense_name = post.title | downcase %}
 
-				{% unless sense_tag contains main_sense_tag %}
+				<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }}">	
 
+					{% for post in site.categories['senses'] %} 
 
-				<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }} {{ secondary_sense_name }}">
+						{% assign secondary_sense_name = post.title | downcase %}
 
-					<!-- {{ main_sense_name }} {{ secondary_sense_name }} -->
+						{% assign sense_tag = post.url | date: "%d" %}
 
-					{% for personality in site.data.personalities %}
+						{% unless sense_tag contains main_sense_tag %}
 
-						{% assign primary_sense_downcase = personality.primary_sense | downcase %}
-						{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
+							<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }} {{ secondary_sense_name }}">
 
-						
-							{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
+								<!-- {{ main_sense_name }} {{ secondary_sense_name }} -->
 
+								{% for personality in site.data.personalities %}
 
-						      	{% include personality.html %}
-
-						      	{% include disclaimer.html %}
-					      	
-						      	
-							{% else %}
-
-
-							{% assign secondary_sense_downcase = personality.primary_sense | downcase %}
-							{% assign primary_sense_downcase = personality.secondary_sense | downcase %}
-
-
-								{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
-
-						      	{% include personality.html %}
-						      	
-						      	{% include disclaimer.html %}
-
-						      	
+									{% assign primary_sense_downcase = personality.primary_sense | downcase %}
+									{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
 									
-					      	{% endif %}	
-					      	{% endif %}			
-					    
+										{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
+
+									      	{% include personality.html %}
+									      	{% include disclaimer.html %}
+								   	      	
+										{% else %}
+
+										{% assign secondary_sense_downcase = personality.primary_sense | downcase %}
+										{% assign primary_sense_downcase = personality.secondary_sense | downcase %}
+
+											{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
+
+									      	{% include personality.html %}
+									      	{% include disclaimer.html %}				      	
+												
+								      	{% endif %}	
+								      	{% endif %}			
+								    
+								{% endfor %}
+
+							</div>
+
+						{% endunless %}
+
 					{% endfor %}
-
-						<!-- <div style="display: block; clear: both; background: lemonchiffon; padding: 20px; margin-top: 30px; font-size: 0.8rem;">
-
-						<p style="font-weight: bold">Please take a screenshot of your personalized results and send to @torunn on slack!  </p>
-
-						<p>This is a work-in-progress prototype. If you got more than 5 bubbles, we'd trim it to your 5 biggest bubbles so it doesn't get overwhelming</p>
-
-						</div> -->
-
+			
 				</div>
 
-
-
-				
-
-				{% endunless %}
-
-
-
-				{% endfor %}
-		
-		</div>
+			{% endif %}
 
 		{% endfor %}
 	
-
 	</div>
 
 </div>
