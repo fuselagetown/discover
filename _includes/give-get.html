@@ -12,6 +12,8 @@
 
 		{% if post.url contains sense_name %}
 
+		{% assign outfit_tag = post.url | date: "%d" %}
+
 			<div class="style-shuffle-item  {{ sense_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} ">
 
 				<h5 class="style-shuffle-title">Would you wear this?</h5>
@@ -26,7 +28,7 @@
 
 						{% if sense_name == 'bold' %}
 
-							{% assign outfit-image = '../assets/images/style-senses/bold/bold-outfit-1.jpg' %}
+							{% assign outfit-image = '../assets/images/style-senses/bold/bold-outfit-' | append: outfit_tag | append : '.jpg' %}
 
 						{% else %}
 
@@ -62,11 +64,19 @@
 
 					{% else %}
 
-						{% for sku in post.mens-skus %} 
+						{% if sense_name == 'bold' %}
 
-							{% assign grid-length = forloop.length %} 
+							{% assign grid-length = 4 %} 
 
-						{% endfor %}							
+						{% else %}
+
+							{% for sku in post.mens-skus %} 
+
+								{% assign grid-length = forloop.length %} 
+
+							{% endfor %}							
+
+						{% endif %}
 
 					{% endif %}
 
@@ -89,12 +99,21 @@
 
 								{% else %}
 
-									{% for sku in post.mens-skus limit: 2 %}
+									{% if sense_name == 'bold' %}
 
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-01.jpg" ></div>
+									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-02.jpg" ></div>
 
-									{% endfor %}
 
+									{% else %}
+
+										{% for sku in post.mens-skus limit: 2 %}
+
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+										{% endfor %}
+
+									{% endif %}
 
 								{% endif %}
 
@@ -114,11 +133,20 @@
 
 								{% else %}
 
-									{% for sku in post.mens-skus offset: 2 %}
+									{% if sense_name == 'bold' %}
 
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-03.jpg" ></div>
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-04.jpg" ></div>
 
-									{% endfor %}
+									{% else %}
+
+										{% for sku in post.mens-skus offset: 2 %}
+
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+										{% endfor %}
+
+									{% endif %}
 
 								{% endif %}
 

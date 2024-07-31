@@ -11,7 +11,6 @@ mens-outfit: https://res.cloudinary.com/stitch-fix/image/upload/v1718384037/onbo
 mens-skus: 
 - https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1582760951/fwvjmsh1ijr5vfa2exkp.jpg
 - https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1649338120/zzhn1hc2qrijoaxefwua.jpg
-- https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1638331373/mni1xcaulmwldngbdrts.jpg
+- https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1691075552/hiajej5cwbxm4qzrmja4.jpg
 - https://d3n78nkjl8tizo.cloudfront.net/stitch-fix/image/upload/c_fit,h_720,w_862/v1676014508/dvp9suwadekedrg4gp2b.jpg
 ---
-
