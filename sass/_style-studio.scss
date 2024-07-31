@@ -692,7 +692,7 @@ a.playback-button {
 	&.playback-bubble-preppy { background: #001E60; color: #fff; .sense-details { background: #001E60; }  }
 	&.playback-bubble-edgy { background: #2E6BF1; color: #fff; .sense-details { background: #2E6BF1; } }
 	&.playback-bubble-bold { background: #FF5955; .sense-details { background: #FF5955; } }
-	&.playback-bubble-heritage { background: #246358; color: #fff; .sense-details { background: #246358; } }
+	&.playback-bubble-heritage { background: #246358; color: #fff; .sense-details { background: #246358; } &.m { background: #595E2D; .sense-details { background: #595E2D; } }}
 	&.playback-bubble-romantic { background: #DCB6B5; .sense-details { background: #DCB6B5; } }
 	&.playback-bubble-contemporary { background: #F3ECD3; .sense-details { background: #F3ECD3; } }
 
@@ -703,6 +703,7 @@ a.playback-button {
 		&.expanded .sense-details h5 span:after {
 			background-image: url("../../assets/images/minus-darkmode.svg") ;
 		}
+
 	}
 
 	background-size: 100%;

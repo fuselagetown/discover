@@ -2035,6 +2035,12 @@ a.playback-button {
 .playback-bubble.playback-bubble-heritage .sense-details {
   background: #246358;
 }
+.playback-bubble.playback-bubble-heritage.m {
+  background: #595E2D;
+}
+.playback-bubble.playback-bubble-heritage.m .sense-details {
+  background: #595E2D;
+}
 .playback-bubble.playback-bubble-romantic {
   background: #DCB6B5;
 }
