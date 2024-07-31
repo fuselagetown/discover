@@ -10,8 +10,8 @@
 /* Keep the above when live */
 
 
-
-/*.playback {
+/*
+.playback {
 	display: block;
 	z-index: 2;
 	width: 100%;
@@ -32,14 +32,16 @@
 	display: block;
 	width: 170px;
 	height: 170px;
-}*/
+}
+
+.lob-callout { display:block !important; }*/
 
 
 
 
 </style>
 	
-<!-- <div class="lob" style="position: absolute; top: 0; background: red; z-index: 1000">{{ page.lob }}</div> -->
+<div class="lob-callout" style="position: absolute; top: 0; background: red; z-index: 1000; display: none;">{{ page.lob }}</div>
 
 
 <div class="style-shuffle-item playback"  >
@@ -59,118 +61,9 @@
 
 
 
-	<div class="playback-bubbles">
+{% include bubbles.html %}
 
-		{% for post in site.categories['senses'] reversed %} 
-
-			{% if post.lob contains page.lob %}
-
-				{% assign secondary_sense_name = post.title | downcase %}
-
-				{% assign sense_tag = post.url | date: "%d" %}
-
-				<div class="playback-bubble playback-bubble-{{ sense_tag }} playback-bubble-{{ secondary_sense_name }}" value='0' width='0' height='0'>
-
-					<span><span>{% if page.lob == 'men' and secondary_sense_name  == 'heritage' %}rugged{% else %}{{ post.title | downcase }}{% endif%}</span></span>
-					
-					<div class="sense-details">
-
-						<div class="sense-details-fadein">
-
-							<h5><span>{% if page.lob == 'men' and secondary_sense_name  == 'heritage' %}rugged{% else %}{{ post.title | downcase }}{% endif%}</span></h5>
-
-							{% if page.lob == 'women' %}
-
-								<p>{{ post.womens-description }}</p>
-
-							{% else %}
-								
-								<p>{{ post.mens-description }}</p>
-
-							{% endif %}
-
-							<a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a>
-
-						</div>
-
-					</div>
-				</div>
-
-			{% endif %}
-
-		{% endfor %}
-
-	</div>
-
-	<div class="personality">
-
-		{% for post in site.categories['senses'] %} 
-
-			{% if post.lob contains page.lob %}
-
-				{% assign main_sense_tag = post.url | date: "%d" %}
-
-				{% assign main_sense_name = post.title | downcase %}
-
-				{% assign sense_tag = post.url | date: "%d" %}
-
-				{% assign secondary_sense_name = post.title | downcase %}
-
-				<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }}">	
-
-					{% for post in site.categories['senses'] %} 
-
-						{% assign secondary_sense_name = post.title | downcase %}
-
-						{% assign sense_tag = post.url | date: "%d" %}
-
-						{% unless sense_tag contains main_sense_tag %}
-
-							<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }} {{ secondary_sense_name }}">
-
-								<!-- {{ main_sense_name }} {{ secondary_sense_name }} -->
-
-								{% for personality in site.data.personalities %}
-
-									{% assign primary_sense_downcase = personality.primary_sense | downcase %}
-									{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
-									
-										{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
-
-									      	{% include personality.html %}
-									      	{% include disclaimer.html %}
-								   	      	
-										{% else %}
-
-										{% assign secondary_sense_downcase = personality.primary_sense | downcase %}
-										{% assign primary_sense_downcase = personality.secondary_sense | downcase %}
-
-											{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
-
-									      	{% include personality.html %}
-									      	{% include disclaimer.html %}				      	
-												
-								      	{% endif %}	
-								      	{% endif %}			
-								    
-								{% endfor %}
-
-							</div>
-
-						{% endunless %}
-
-					{% endfor %}
-			
-				</div>
-
-			{% endif %}
-
-		{% endfor %}
-	
-	</div>
-
-</div>
-
+{% include personas.html %}
 
 {% include give-get.html %}
 

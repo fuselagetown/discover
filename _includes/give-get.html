@@ -2,171 +2,165 @@
 
 	{% if post.lob contains page.lob %}
 
-	{% assign pack_number = post.url | date: "%d" %}
+		{% assign pack_number = post.url | date: "%d" %}
 
-	{% assign sense_name = post.title | downcase %}
+		{% assign sense_name = post.title | downcase %}
 
-	{% assign sense_tag = post.url | date: "%d" %}
+		{% assign sense_tag = post.url | date: "%d" %}
 
-	{% for post in site.categories['senses-outfits'] %} 
+		{% for post in site.categories['senses-outfits'] %} 
 
-		{% if post.url contains sense_name %}
+			{% if post.url contains sense_name %}
 
-		{% assign outfit_tag = post.url | date: "%d" %}
+			{% assign outfit_tag = post.url | date: "%d" %}
 
-			<div class="style-shuffle-item  {{ sense_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} ">
+				<div class="style-shuffle-item  {{ sense_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} ">
 
-				<h5 class="style-shuffle-title">Would you wear this?</h5>
+					<h5 class="style-shuffle-title">Would you wear this?</h5>
 
-				<div class="style-shuffle-outfit-and-items">
+					<div class="style-shuffle-outfit-and-items">
 
-					{% if page.lob == 'women' %}
+						{% if page.lob == 'w' %}
 
-						{% assign outfit-image =  post.womens-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
-
-					{% else %}
-
-						{% if sense_name == 'bold' %}
-
-							{% assign outfit-image = '../assets/images/style-senses/bold/bold-outfit-' | append: outfit_tag | append : '.jpg' %}
+							{% assign outfit-image =  post.w-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
 
 						{% else %}
 
-							{% assign outfit-image =  post.mens-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
+							{% if sense_name == 'bold' %}
+
+								{% assign outfit-image = '../assets/images/style-senses/bold/bold-outfit-' | append: outfit_tag | append : '.jpg' %}
+
+							{% else %}
+
+								{% assign outfit-image =  post.m-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
+
+							{% endif %}
 
 						{% endif %}
 
-					{% endif %}
+						<img src="{{ outfit-image }}" alt="{{ post.title }} outfit" class="style-shuffle__outfit" />	
+						
+						<div class="style-shuffle-ratings">
 
-					<img src="{{ outfit-image }}" alt=" {{ post.title }}" class="style-shuffle__outfit" />	
+							<div>
+								<a href="#" class="style-shuffle-rating thumbs-down " data-diff='0'><span>Thumbs down</span></a>
+								<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ sense_tag }}" data-diff='30'><span>Thumbs up</span></a>
+							</div>
 
-					
-					<div class="style-shuffle-ratings">
+							<a href="#"class="only-some-items only-some-items-{{ sense_tag }}"><span>Only some items</span></a>
 
-						<div>
-							<a href="#" class="style-shuffle-rating thumbs-down " data-diff='0'><span>Thumbs down</span></a>
-							<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ sense_tag }}" data-diff='30'><span>Thumbs up</span></a>
 						</div>
 
-						<a href="#"class="only-some-items only-some-items-{{ sense_tag }}"><span>Only some items</span></a>
+						{% if page.lob == 'w' %}
 
-					</div>
-
-
-
-					{% if page.lob == 'women' %}
-
-						{% for sku in post.women-skus %} 
-
-							{% assign grid-length = forloop.length %} 
-
-						{% endfor %}						
-
-					{% else %}
-
-						{% if sense_name == 'bold' %}
-
-							{% assign grid-length = 4 %} 
-
-						{% else %}
-
-							{% for sku in post.mens-skus %} 
+							{% for sku in post.w-skus %} 
 
 								{% assign grid-length = forloop.length %} 
 
-							{% endfor %}							
+							{% endfor %}						
+
+						{% else %}
+
+							{% if sense_name == 'bold' %}
+
+								{% assign grid-length = 4 %} 
+
+							{% else %}
+
+								{% for sku in post.m-skus %} 
+
+									{% assign grid-length = forloop.length %} 
+
+								{% endfor %}							
+
+							{% endif %}
 
 						{% endif %}
 
-					{% endif %}
+						<div class="item-drilldown grid-of-{{ grid-length }}">
 
-					<div class="item-drilldown grid-of-{{ grid-length }}">
+							<h5 class="style-shuffle-title">Which items would you wear?</h5>
 
-						<h5 class="style-shuffle-title">Which items would you wear?</h5>
+							<div class="item-drilldown__items">
 
-						<div class="item-drilldown__items">
-
-							<div class="item-drilldown__items--column">
-
-								{% if page.lob == 'women' %}
-
-									{% for sku in post.womens-skus limit: 2 %}
-
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
-
-									{% endfor %}
+								<div class="item-drilldown__items--column">
 
 
-								{% else %}
+									{% if page.lob == 'w' %}
 
-									{% if sense_name == 'bold' %}
-
-									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-01.jpg" ></div>
-									<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-02.jpg" ></div>
-
-
-									{% else %}
-
-										{% for sku in post.mens-skus limit: 2 %}
+										{% for sku in post.w-skus limit: 2 %}
 
 											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
 
 										{% endfor %}
 
-									{% endif %}
-
-								{% endif %}
-
-								
-
-							</div>
-
-							<div class="item-drilldown__items--column">
-
-								{% if page.lob == 'women' %}
-
-									{% for sku in post.womens-skus offset: 2 %}
-
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
-
-									{% endfor %}
-
-								{% else %}
-
-									{% if sense_name == 'bold' %}
-
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-03.jpg" ></div>
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-04.jpg" ></div>
-
 									{% else %}
 
-										{% for sku in post.mens-skus offset: 2 %}
+										{% if sense_name == 'bold' %}
+
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-01.jpg" ></div>
+										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-02.jpg" ></div>
+
+										{% else %}
+
+											{% for sku in post.m-skus limit: 2 %}
+
+												<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+											{% endfor %}
+
+										{% endif %}
+
+									{% endif %}
+
+								</div>
+
+								<div class="item-drilldown__items--column">
+
+									{% if page.lob == 'w' %}
+
+										{% for sku in post.w-skus offset: 2 %}
 
 											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
 
 										{% endfor %}
 
+									{% else %}
+
+										{% if sense_name == 'bold' %}
+
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-03.jpg" ></div>
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-04.jpg" ></div>
+
+										{% else %}
+
+											{% for sku in post.m-skus offset: 2 %}
+
+												<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
+
+											{% endfor %}
+
+										{% endif %}
+
 									{% endif %}
 
-								{% endif %}
+								</div>
 
 							</div>
+
+							<a href="#" class="item-drilldown__next">Next</a>
+
+							<a href="" class="drilldown-close">Close</a>
 
 						</div>
-
-						<a href="#" class="item-drilldown__next">Next</a>
-
-						<a href="" class="drilldown-close">Close</a>
 
 					</div>
 
 				</div>
 
-			</div>
+			{% endif %}
 
-		{% endif %}
-
-	{% endfor %}
+		{% endfor %}
 
 	{% endif %}
 

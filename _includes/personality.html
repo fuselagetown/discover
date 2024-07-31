@@ -1,4 +1,4 @@
-{% if page.lob == 'women' %}
+{% if page.lob == 'w' %}
 
 	{% assign persona = personality.womens-name %}
 	{% assign description = personality.womens-blurb %}
@@ -10,7 +10,7 @@
 
 {% endif %}
 
-<h3>You're a {{ persona }} <span style="font-size: 0.8rem; display: none;">({{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
+<h3>You're a {{ persona }} <span style="font-size: 0.6rem; display: none;">(2 main styles: {{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
 
 <p>{{ description }}</p>
 

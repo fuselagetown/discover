@@ -687,14 +687,23 @@ a.playback-button {
 
 	&.playback-bubble-classic { background: #8DA6DD; .sense-details { background: #8DA6DD; } }
 	&.playback-bubble-active { background: #D2E137; .sense-details { background: #D2E137; } }
-	&.playback-bubble-boho { background: #DFE6A3; .sense-details { background: #DFE6A3; }  }
-	&.playback-bubble-coastal { background: #86C8BC; .sense-details { background: #86C8BC; }  }
-	&.playback-bubble-preppy { background: #001E60; color: #fff; .sense-details { background: #001E60; }  a { border-color: #fff !important; color: #fff !important; } }
-	&.playback-bubble-edgy { background: #2E6BF1; color: #fff; .sense-details { background: #2E6BF1; } a { border-color: #fff !important; color: #fff !important; } }
-	&.playback-bubble-bold { background: #FF5955; .sense-details { background: #FF5955; }  }
-	&.playback-bubble-heritage { background: #246358; color: #fff; .sense-details { background: #246358; } a { border-color: #fff !important; color: #fff !important; } }
+	&.playback-bubble-boho { background: #DFE6A3; .sense-details { background: #DFE6A3; } }
+	&.playback-bubble-coastal { background: #86C8BC; .sense-details { background: #86C8BC; } }
+	&.playback-bubble-preppy { background: #001E60; color: #fff; .sense-details { background: #001E60; }  }
+	&.playback-bubble-edgy { background: #2E6BF1; color: #fff; .sense-details { background: #2E6BF1; } }
+	&.playback-bubble-bold { background: #FF5955; .sense-details { background: #FF5955; } }
+	&.playback-bubble-heritage { background: #246358; color: #fff; .sense-details { background: #246358; } }
 	&.playback-bubble-romantic { background: #DCB6B5; .sense-details { background: #DCB6B5; } }
 	&.playback-bubble-contemporary { background: #F3ECD3; .sense-details { background: #F3ECD3; } }
+
+	&.playback-bubble-preppy,
+	&.playback-bubble-edgy,
+	&.playback-bubble-heritage {
+		a { border-color: #fff !important; color: #fff !important; } > span span:after { background-image: url("../../assets/images/plus-darkmode.svg"); }
+		&.expanded .sense-details h5 span:after {
+			background-image: url("../../assets/images/minus-darkmode.svg") ;
+		}
+	}
 
 	background-size: 100%;
 

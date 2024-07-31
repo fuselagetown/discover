@@ -248,7 +248,7 @@ Array.from(circularProgress).forEach((progressBar) => {
   $(".thumbs-up.style-shuffle-rating-10, .item-drilldown__item-10").click(function() { $(".playback-bubble-10").show();});
 
 
-$(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next, .men .preppy-04 .style-shuffle-rating, .men .preppy-04 .item-drilldown__next").click(function() {
+$(".romantic-05 .style-shuffle-rating, .romantic-05 .item-drilldown__next, .m .preppy-04 .style-shuffle-rating, .m .preppy-04 .item-drilldown__next").click(function() {
     $(".playback").addClass("interstital").show().delay(4000).queue(function(){
       $(this).addClass("im-offscreen").dequeue();
     });

@@ -1,0 +1,42 @@
+<div class="playback-bubbles">
+
+	{% for post in site.categories['senses'] reversed %} 
+
+		{% if post.lob contains page.lob %}
+
+			{% assign secondary_sense_name = post.title | downcase %}
+
+			{% assign sense_tag = post.url | date: "%d" %}
+
+			<div class="playback-bubble playback-bubble-{{ sense_tag }} {{ page.lob }} {{ post.lob }} playback-bubble-{{ secondary_sense_name }}" value='0' width='0' height='0'>
+
+				<span><span>{% if page.lob == 'm' and secondary_sense_name  == 'heritage' %}rugged{% else %}{{ post.title | downcase }}{% endif%}</span></span>
+				
+				<div class="sense-details">
+
+					<div class="sense-details-fadein">
+
+						<h5><span>{% if page.lob == 'm' and secondary_sense_name  == 'heritage' %}rugged{% else %}{{ post.title | downcase }}{% endif%}</span></h5>
+
+						{% if page.lob == 'w' %}
+
+							<p>{{ post.w-description }}</p>
+
+						{% else %}
+							
+							<p>{{ post.m-description }}</p>
+
+						{% endif %}
+
+						<a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a>
+
+					</div>
+
+				</div>
+			</div>
+
+		{% endif %}
+
+	{% endfor %}
+
+</div>

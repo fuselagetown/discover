@@ -1,0 +1,72 @@
+	<div class="personality">
+
+		{% for post in site.categories['senses'] %} 
+
+			{% if post.lob contains page.lob %}
+
+				{% assign main_sense_tag = post.url | date: "%d" %}
+
+				{% assign main_sense_name = post.title | downcase %}
+
+				{% assign sense_tag = post.url | date: "%d" %}
+
+				{% assign secondary_sense_name = post.title | downcase %}	
+
+				<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }}">	
+
+					{% for post in site.categories['senses'] %} 
+
+						{% assign secondary_sense_name = post.title | downcase %}
+
+						{% assign sense_tag = post.url | date: "%d" %}
+
+						{% unless sense_tag contains main_sense_tag %}
+
+							{% if post.lob contains page.lob %}							
+
+								<div class="style-sense personality-{{ sense_tag }} {{ main_sense_name }} {{ secondary_sense_name }} {{ post.lob }} {{ page.lob }} ">
+
+
+									{% for personality in site.data.personalities %}
+
+										{% assign primary_sense_downcase = personality.primary_sense | downcase %}
+										{% assign secondary_sense_downcase = personality.secondary_sense | downcase %}
+										
+											{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
+
+										      	{% include personality.html %}
+										      	{% include disclaimer.html %}
+									   	      	
+											{% else %}
+
+											{% assign secondary_sense_downcase = personality.primary_sense | downcase %}
+											{% assign primary_sense_downcase = personality.secondary_sense | downcase %}
+
+												{% if primary_sense_downcase == main_sense_name and secondary_sense_downcase == secondary_sense_name %}				      	
+
+										      		{% include personality.html %}
+										      		{% include disclaimer.html %}				      	
+													
+									      		{% endif %}	
+
+									      	{% endif %}			
+									    
+									{% endfor %}
+
+								</div>
+
+							{% endif %}	
+
+						{% endunless %}
+
+					{% endfor %}
+			
+				</div>
+
+			{% endif %}
+
+		{% endfor %}
+	
+	</div>
+
+</div>

@@ -2015,20 +2015,12 @@ a.playback-button {
 .playback-bubble.playback-bubble-preppy .sense-details {
   background: #001E60;
 }
-.playback-bubble.playback-bubble-preppy a {
-  border-color: #fff !important;
-  color: #fff !important;
-}
 .playback-bubble.playback-bubble-edgy {
   background: #2E6BF1;
   color: #fff;
 }
 .playback-bubble.playback-bubble-edgy .sense-details {
   background: #2E6BF1;
-}
-.playback-bubble.playback-bubble-edgy a {
-  border-color: #fff !important;
-  color: #fff !important;
 }
 .playback-bubble.playback-bubble-bold {
   background: #FF5955;
@@ -2043,10 +2035,6 @@ a.playback-button {
 .playback-bubble.playback-bubble-heritage .sense-details {
   background: #246358;
 }
-.playback-bubble.playback-bubble-heritage a {
-  border-color: #fff !important;
-  color: #fff !important;
-}
 .playback-bubble.playback-bubble-romantic {
   background: #DCB6B5;
 }
@@ -2058,6 +2046,16 @@ a.playback-button {
 }
 .playback-bubble.playback-bubble-contemporary .sense-details {
   background: #F3ECD3;
+}
+.playback-bubble.playback-bubble-preppy a, .playback-bubble.playback-bubble-edgy a, .playback-bubble.playback-bubble-heritage a {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+.playback-bubble.playback-bubble-preppy > span span:after, .playback-bubble.playback-bubble-edgy > span span:after, .playback-bubble.playback-bubble-heritage > span span:after {
+  background-image: url("../../assets/images/plus-darkmode.svg");
+}
+.playback-bubble.playback-bubble-preppy.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-edgy.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-heritage.expanded .sense-details h5 span:after {
+  background-image: url("../../assets/images/minus-darkmode.svg");
 }
 .playback-bubble > span {
   position: absolute;
