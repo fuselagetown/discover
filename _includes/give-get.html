@@ -25,16 +25,8 @@
 							{% assign outfit-image =  post.w-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
 
 						{% else %}
-
-							{% if sense_name == 'bold' %}
-
-								{% assign outfit-image = '../assets/images/style-senses/bold/bold-outfit-' | append: outfit_tag | append : '.jpg' %}
-
-							{% else %}
-
-								{% assign outfit-image =  post.m-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
-
-							{% endif %}
+							
+							{% assign outfit-image =  post.m-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}							
 
 						{% endif %}
 
@@ -96,20 +88,11 @@
 
 									{% else %}
 
-										{% if sense_name == 'bold' %}
+										{% for sku in post.m-skus limit: 2 %}
 
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-01.jpg" ></div>
-										<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-02.jpg" ></div>
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
 
-										{% else %}
-
-											{% for sku in post.m-skus limit: 2 %}
-
-												<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
-
-											{% endfor %}
-
-										{% endif %}
+										{% endfor %}									
 
 									{% endif %}
 
@@ -127,20 +110,11 @@
 
 									{% else %}
 
-										{% if sense_name == 'bold' %}
+										{% for sku in post.m-skus offset: 2 %}
 
-											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-03.jpg" ></div>
-											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="../assets/images/style-senses/bold/bold-outfit-{{ outfit_tag }}-item-04.jpg" ></div>
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
 
-										{% else %}
-
-											{% for sku in post.m-skus offset: 2 %}
-
-												<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ sku }}" ></div>
-
-											{% endfor %}
-
-										{% endif %}
+										{% endfor %}
 
 									{% endif %}
 
