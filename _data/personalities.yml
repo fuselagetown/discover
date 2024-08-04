@@ -22,8 +22,8 @@
   secondary_sense: Bold
   womens-name: Effortless Eclectic
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? An active-bold mix, complemented by hints of your supporting style facets. Daring yet comfortable, your winning wardrobe  blends easy styles in made-to-move fabrics with artsy patterns, vivid colors and metallics.'
-  mens-name: Energetic Assertive
-  mens-blurb: "Your fashion sense is a captivating fusion of active and bold elements, where the comfort of functional clothing meets the audacity of striking colors and patterns. This unique blend, whether it's the energetic assertiveness of your running shoes or the dynamic defiance of your statement jacket, speaks volumes about your spirited stalwart style."
+  mens-name: Bold Sport
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? An active-bold hybrid, complemented by hints of your supporting style facets. Equal parts sporty and statement, your ideal wardrobe is full of performance pieces in unexpected colors or prints. Think: A patterned button-down with commuter pants and colorful sneaks."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716492640/aii/style_shuffle/May_2024/22-10-19_Set_A_W_OLD_v8_1x1.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493911/aii/style_shuffle/May_2024/2023-10-18_W_OLD_A35_0778_1x1.jpg
@@ -40,8 +40,8 @@
   secondary_sense: Classic
   womens-name: Casual Classic
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A sporty-classic mix, complemented by hints of your supporting style facets. Relaxed yet elegant, your wardrobe blends timeless pieces with made-to-move essentials. Think: sophisticated styles in comfortable fabrics with elevated details.'
-  mens-name: Active Classicist  
-  mens-blurb: "Your style is a harmonious blend of the active and the classic, where comfort meets timeless elegance. The way you incorporate classic pieces like a well-tailored blazer or a crisp white shirt with the functionality of active wear, such as sneakers or joggers, showcases your unique taste."
+  mens-name: Classic Sport 
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A classic-active hybrid, complemented by hints of your supporting style facets. Sporty and versatile, your ideal wardrobe is all about functional essentials. Think: Go-to button-downs and chinos with hybrid sneaker-oxford hybrid shoes."
   gallery: 
 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718128948/onboarding/StyleFile/Womens/2023-05-11_Kids_And_Family_OF_V06_2108.jpg
@@ -57,8 +57,8 @@
   secondary_sense: Coastal
   womens-name: Carefree Casual
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? An active-coastal mix, complemented by hints of your supporting style facets. Effortless and casual, your ideal wardrobe is filled with relaxed essentials. Think: leggings and drawstring pants, knit hoodies, breezy fabrics and soft neutrals.'
-  mens-name: Active Coastliner  
-  mens-blurb: "Your style effortlessly bridges the gap between active and coastal, merging the comfort of sportswear with the relaxed vibe of beachwear."
+  mens-name: Coastal Sport 
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? An active-coastal hybrid, complemented by hints of your supporting style facets. Sporty with west-coast vibes, your ideal wardrobe leans into casual-cool. Think: Relaxed hoodies, drawstring pants, neutral sweaters and clean white sneakers."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1713563200/aii/da_refresh/US_Womens_FixSummer24/2024-02-14_W_OLD_A10_00176_1x1.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716492727/aii/style_shuffle/May_2024/2023-01-20_Set_A_W_OLD_V17_1x1.jpg
@@ -75,8 +75,8 @@
   secondary_sense: Contemporary
   womens-name: Casual Contemporary
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A contemporary-active mix, complemented by hints of your supporting style facets. Sporty and comfortable, your ideal closet is full of casual essentials elevated by modern, fashion-forward touches. Think: joggers with a blazer or a collarless jacket with drawstring pants.'
-  mens-name: Kinetic Modernist 
-  mens-blurb: "Your fashion sense is a unique blend of active and contemporary styles, where the practicality of sportswear meets the sophistication of modern fashion. The way you pair a streamlined track jacket with a crisp button-down shirt is a testament to your Kinetic Modernist style."
+  mens-name: Modern Sport
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? An active-contemporary hybrid, complemented by hints of your supporting style facets. Sporty and minimal, your ideal wardrobe blends comfort with cool. Think: A structured jacket over a lightweight hoodie paired with sleek joggers."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718129299/onboarding/StyleFile/Womens/2023-05-11_Kids_Family_BTS_1059_iR.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716492647/aii/style_shuffle/May_2024/22-11-18_Set_A_W_OLD_v17_1x1.jpg
@@ -116,8 +116,8 @@
   secondary_sense: Heritage
   womens-name: Rustic Casual
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? An active-heritage mix, complemented by hints of your supporting style facets. Casual and outdoorsy, your dream wardrobe is filled with pretty plaids, go-to denim and soft fleece. You prioritize comfort and functionality without compromising on style.'
-  mens-name: Active Adventurer 
-  mens-blurb: "Your style speaks volumes about your love for the outdoors and physical activities. The fusion of active and rugged elements in your wardrobe, from your durable boots to your functional jackets, showcases your readiness for any adventure while maintaining a certain robust charm."
+  mens-name: Adventure Sport
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? An active-rugged hybrid, complemented by hints of your supporting style facets. Sporty and functional, your ideal wardrobe is ready for the great outdoors. Think: plaid flannels over performance tees, utility pants and trail sneakers."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130268/onboarding/StyleFile/Womens/2023-09-12_W_ISOF_E29_4385.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716492727/aii/style_shuffle/May_2024/2023-01-20_Set_A_W_OLD_V17_1x1.jpg
@@ -135,8 +135,8 @@
   secondary_sense: Preppy
   womens-name: Casual Prep
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? An active-preppy mix, complemented by hints of your supporting style facets. Casual yet polished, your wardrobe is centered around comfortable, on-the-go essentials that pair easily with the classics. Think: a sharp blazer over a tee, plaid leggings and clean, white sneakers. '
-  mens-name: Active Aristocrat  
-  mens-blurb: "Your wardrobe effortlessly fuses the energy of active wear with the sophistication of preppy style, creating an aesthetic that is both dynamic and refined. As an Active Aristocrat, you navigate your day with an ease that is both engaging and elegant."
+  mens-name: Performance Prep 
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A preppy-active hybrid, complemented by hints of your supporting style facets. Your ideal wardrobe blends comfort with the classics. Think: performance fabric button-downs, casual blazers, crew-neck sweatshirts and boat sneakers."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130341/onboarding/StyleFile/Womens/2023-09-27_W_OLOF_G20_04567.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1670617863/aii/da_refresh/US_Womens_FixWinter22/22-10-19_Set_A_W_OLD_v11_1x1.jpg
@@ -331,8 +331,8 @@
   secondary_sense: Classic
   womens-name: Classic Individualist
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A bold-classic mix, complemented by hints of your supporting style facets. Elegant yet audacious, your dream wardrobe is a testament to timeless sophistication, punctuated by bright colors and eclectic prints. Think: blazers in vibrant colors, metallic shoes and printed button-downs.'
-  mens-name: Timeless Trailblazer
-  mens-blurb: "Your wardrobe, a harmonious blend of bold and classic elements, showcases your ability to push boundaries while still honoring time-honored fashion norms. Your daring use of color and texture complements your traditional pieces, creating a style that is distinctly yours."
+  mens-name: Statement Classic
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A classic-bold hybrid, complemented by hints of your supporting style facets. Combining both timeless and statement pieces, your ideal wardrobe helps you stand out in the crowd. Think: button-downs in unexpected prints, colored denim or chinos and striped sweaters."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130439/onboarding/StyleFile/Womens/2024-03-13_W_OLOF_J05_03414.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718128950/onboarding/StyleFile/Womens/2023-03-15_W_OF_V15_3348_Base.jpg
@@ -347,8 +347,8 @@
   secondary_sense: Coastal
   womens-name: Breezy Bold
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A bold-coastal mix, complemented by hints of your supporting style facets. Effortless yet daring, your ideal wardrobe is a statement-making fusion of vivacious prints and flamboyant color in relaxed fabrics and silhouettes.'
-  mens-name: Coastal Courage  
-  mens-blurb: "Your fashion sense, a unique blend of Bold and Coastal styles, speaks volumes about your personality. The audacious cuts and bold colors are beautifully tempered by the relaxed, breezy elements of the coastal style, creating a look that's as unique as you are."
+  mens-name: Beachside Bold 
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A bold-coastal hybrid, complemented by hints of your supporting style facets. Laidback with west-coast vibes, your ideal wardrobe blends the casual with the colorful. Think: relaxed styles in bright colors or unexpected patterns, drawstring pants and colorful crewnecks."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718128927/onboarding/StyleFile/Womens/2023-03-15_W_OF_V07_1003_Base.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493861/aii/style_shuffle/May_2024/2023-05-17_A06_W_OLD_19008_1x1.jpg
@@ -364,8 +364,8 @@
   secondary_sense: Contemporary
   womens-name: Modern Maximalist
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A bold-contemporary mix, complemented by hints of your supporting style facets. Modern and eclectic, your ideal wardrobe balances the maximal and minimal. Think: vivid colors in sleek silhouettes, artsy patterns with tailored solids and classic styles in unexpected fabrics.'
-  mens-name: Modern Trailblazer 
-  mens-blurb: "Your style effortlessly blends the audacity of bold fashion with the sleek lines of the contemporary, creating a unique fusion that sets you apart as a modern trailblazer, a forward-thinking visionary, and an innovative leader in the world of men's fashion."
+  mens-name: Bold Modernist
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A contemporary-bold hybrid, complemented by hints of your supporting style facets. Modern and bright, your ideal wardrobe is full of sleek pieces that help you stand out. Think: slim-cut button-downs in bright colors or prints, sleek trousers and knit polos."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130340/onboarding/StyleFile/Womens/2023-09-27_W_OLOF_G18_07446.jpg
 
@@ -398,8 +398,8 @@
   secondary_sense: Heritage
   womens-name: Bold Authentic
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A bold-heritage mix, complemented by hints of your supporting style facets. Eclectic and rustic, your dream wardrobe brings rustic charm to the daring. Think: plaids in unexpected colors, artsy patterns and embellished denim.'
-  mens-name: Sturdy Sophisticate  
-  mens-blurb: "Your style, a harmonious blend of bold and rugged, paints a picture of a Sturdy Sophisticate. You effortlessly combine the audacity of bold colors and patterns with the raw, earthy elements of rugged style. This approach to fashion creates a unique, unforgettable aesthetic that is undeniably yours."
+  mens-name: Bold Adventurer 
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A rugged-bold hybrid, complemented by hints of your supporting style facets. Functional yet full of color, your ideal wardrobe blends utility with statement pieces. Think: outdoorsy flannels, showy plaids and lots (and lots) of denim."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130263/onboarding/StyleFile/Womens/2023-09-12_W_ISOF_E18_3224.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493903/aii/style_shuffle/May_2024/2023-10-18_W_OLD_A30_0651_1x1.jpg
@@ -414,9 +414,8 @@
   secondary_sense: Preppy
   womens-name: Eclectic Prep
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A bold-preppy mix, complemented by hints of your supporting style facets. Vibrant and classic, your dream wardrobe is equal parts eye-catching and refined. Think: vivid stripes and color blocking, oversized blazers and leopard-print flats.'
-  mens-name: Bold Prepster  
-  mens-blurb: "Your style is a unique fusion, where the audacity of bold fashion meets the sophistication of preppy attire, resulting in a look that is both daring and traditional. Your wardrobe is filled with pieces that reflect your fearless approach to fashion, while still maintaining a respect for classic, timeless styles.
-"
+  mens-name: Statement Prep 
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A bold-preppy hybrid, complemented by hints of your supporting style facets. Traditional with a twist, your ideal wardrobe blends the classic with the colorful. Think: blazers and boat shoes plus bold patterns and bright hues."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716492726/aii/style_shuffle/May_2024/2023-01-20_Set_A_W_OLD_V16_1x1.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716492709/aii/style_shuffle/May_2024/2023-01-19_Set_A_W_OLD_V3_1x1.jpg
@@ -450,8 +449,8 @@
   secondary_sense: Coastal
   womens-name: Relaxed Classic
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A classic-coastal mix, complemented by hints of your supporting style facets. Serene and timeless, your ideal wardrobe blends polished, clean lines with beachy, breezy shapes and luxe fabrics.'
-  mens-name: Timeless Mariner 
-  mens-blurb: "Your fashion sense is a unique blend of Classic and Coastal styles, where the timeless elegance of traditional attire meets the relaxed comfort of the coast. You manage to combine the sophistication of well-tailored pieces with the laid-back ease of coastal wear, creating a harmonious blend that is both stylish and comfortable."
+  mens-name: Relaxed Classic
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A classic-coastal hybrid, complemented by hints of your supporting style facets. Timeless and laid back, your ideal wardrobe is full of classics with chill. Think: navy blazers, lightweight sweaters, striped button-downs and lived-in denim."
   gallery: 
 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718128916/onboarding/StyleFile/Womens/2023-03-14_W_OF_V12_3062_Base.jpg
@@ -467,8 +466,8 @@
   secondary_sense: Contemporary
   womens-name: Timeless Trendsetter
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A contemporary-classic mix, complemented by hints of your supporting style facets. Timeless yet modern, your dream wardrobe is full of clean lines and polished pieces elevated by trend-forward accents.'
-  mens-name: Timeless Innovator 
-  mens-blurb: "Your attire, a harmonious blend of the Classic and Contemporary, speaks volumes of your unique fashion sense. You effortlessly merge the enduring charm of classic styles with the fresh appeal of modern trends, creating a captivating ensemble that sets you apart. You balance the timeless elegance of classic pieces with the edgy allure of contemporary designs, resulting in a look that is both familiar and innovative. You demonstrate a deep appreciation for the enduring elegance of classic styles, while also embracing the dynamic nature of contemporary fashion trends, crafting a distinctive look that is both timeless and current."
+  mens-name: Modern Classic
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A classic-contemporary hybrid, complemented by hints of your supporting style facets. Timeless and minimal, your ideal wardrobe is full of modern essentials. Think: Slim-cut button-downs, sharp trousers, fine-gauge sweaters and polished oxfords."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718128925/onboarding/StyleFile/Womens/2023-03-15_W_OF_V01_0237_Base.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718128933/onboarding/StyleFile/Womens/2023-03-15_W_OF_V06_0713_Base.jpg
@@ -529,8 +528,8 @@
   secondary_sense: Heritage
   womens-name: Understated Original
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A classic-heritage mix, complemented by hints of your supporting style facets. Polished yet outdoorsy, your perfect look features rustic and versatile pieces. Think: flannel, plaid and timeless prints with classic denim and easy essentials.'
-  mens-name: Timeless Trailblazer
-  mens-blurb: "Your style effortlessly blends the polished sophistication of classic attire with the raw, unfiltered appeal of rugged elements, creating a look that is both enduring and adventurous. You're not just a timeless trailblazer or a symbol of unrefined elegance, you're an embodiment of both."
+  mens-name: Rugged Classic
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A classic-rugged hybrid, complemented by hints of your supporting style facets. Your ideal wardrobe centers on versatile essentials with an outdoorsy twist. Think: Plaid, flannels, barn jackets and denim in every shade of blue. "
   gallery:
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130252/onboarding/StyleFile/Womens/2023-09-14_W_ISOF_E19_10878.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493903/aii/style_shuffle/May_2024/2023-10-18_W_OLD_A30_0651_1x1.jpg
@@ -545,8 +544,8 @@
   secondary_sense: Preppy
   womens-name: Classic Prep
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A classic-preppy mix, complemented by hints of your supporting style facets. Timeless and sophisticated, your versatile wardrobe is filled with stripes, smart blazers, crisp button-ups, shiny loafers and clean-lines—truly traditional with a twist.'
-  mens-name: Timeless Scholar 
-  mens-blurb: "Your fashion sense is a harmonious blend of Classic and Preppy styles, where timeless elegance meets scholarly sophistication. The crisp lines of your tailored suits are complemented by the youthful charm of your argyle sweaters, creating a look that is both cultured and inviting."
+  mens-name: Classic Prep
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A classic-preppy hybrid, complemented by hints of your supporting style facets. Timeless and sophisticated, your wardrobe is filled with stripes, smart blazers, crisp button-ups, shiny loafers and clean-lines. You’re traditional, with a twist."
   gallery: 
 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130189/onboarding/StyleFile/Womens/2023-06-14_ISOF_FY24Q1_W_C18_10264.jpg
@@ -591,8 +590,8 @@
   secondary_sense: Contemporary
   womens-name: Modern Coastal
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A coastal-contemporary mix, complemented by hints of your supporting style facets. Timeless and beachy, your dream wardrobe blends natural colors and relaxed silhouettes with more polished pieces. Think: a flowing dress with a structured cardigan, or slim trousers with oversized knits.'
-  mens-name: Seashore Modernist
-  mens-blurb: "Your style is a harmonious blend of Coastal and Contemporary, where the laid-back, easy-going vibe of the seashore meets the sophisticated edge of the modern era. Your attire is a beautiful fusion of casual beachwear and sleek, innovative designs. You're not afraid to mix the relaxed, breezy elements of coastal style with the clean lines and neutral palette of contemporary fashion, creating an Oceanic Contemporary look that is uniquely yours."
+  mens-name: Modern Coastal
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A coastal-contemporary hybrid, complemented by hints of your supporting style facets. Timeless yet beachy, your wardrobe blends natural colors and relaxed silhouettes with more polished pieces. Think: breezy button-downs, lightweight sweaters, drawstring pants and sophisticated sneakers. "
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130288/onboarding/StyleFile/Womens/2023-09-26_GN_OLOF_G09_03130.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130300/onboarding/StyleFile/Womens/2023-09-26_W_OLOF_G02_00902.jpg
@@ -624,8 +623,8 @@
   secondary_sense: Heritage
   womens-name: Relaxed Rustic
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A coastal-heritage mix, complemented by hints of your supporting style facets. Relaxed and rustic, your ideal wardrobe is a mix of cozy and vacay. Think: flannels and plaids with breezy wide-leg pants or soft chambray.'
-  mens-name: Harbor Hardy
-  mens-blurb: "Your fashion taste, a fusion of Coastal and Rugged, brings a unique blend of elements that speaks to your adventurous spirit. The comfort and ease of your coastal style, paired with the robust and sturdy aspects of your rugged style, harmoniously merge to form your distinctive look. You effortlessly balance the soft, light fabrics and cool hues of the coast with the durable materials and earthy tones of the rugged outdoors, creating a style that is uniquely your own."
+  mens-name: Relaxed Adventurer
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A rugged-coastal hybrid, complemented by hints of your supporting style facets. Relaxed yet functional, your ideal wardrobe channels the great outdoors. Think: relaxed button-downs, textured henleys, flannels and vintage denim."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1707946535/aii/da_refresh/US_Womens_FixSpring24/2023-12-21_W_OLD_A26_00573_1x1.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493798/aii/style_shuffle/May_2024/2023-02-15_Set_A_W_OLD_V2_1x1.jpg
@@ -642,8 +641,8 @@
   secondary_sense: Preppy
   womens-name: Coastal Prep
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A coastal-preppy mix, complemented by hints of your supporting style facets. Relaxed and classic, your ideal closet features breezy silhouettes, natural fabrics and textures paired with timeless button-downs and blazers for added polish. '
-  mens-name: Harbor Gentleman
-  mens-blurb: "Your coastal style, with its soft hues and laid-back vibes, harmoniously intertwines with your preppy aesthetic, characterized by structured pieces and crisp lines. This unique blend gives birth to your distinctive look."
+  mens-name: Beachside Prep
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A coastal-preppy hybrid, complemented by hints of your supporting style facets. Laidback yet classic, your ideal closet features relaxed shapes and natural fabrics paired with timeless button-downs and smart blazers. Don’t forget the boat shoes!"
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130461/onboarding/StyleFile/Womens/2024-03-12_W_OLOF_BTS_J09_3784.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493846/aii/style_shuffle/May_2024/2023-04-19_Set_A_W_OLD_v8_1x1.jpg
@@ -712,8 +711,8 @@
   secondary_sense: Heritage
   womens-name: Modern Authentic
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A contemporary-heritage mix, complemented by hints of your supporting style facets. Modern yet rustic, your ideal wardrobe is full of simple, modern designs with cozy charm. Think: a sharp blazer over a prairie-print dress, wide-leg jeans with cozy plaids or a denim jacket with leather trousers.'
-  mens-name: Modern Mountaineer 
-  mens-blurb: "Your style, a harmonious blend of contemporary and rugged, speaks volumes of your spirit. You embrace the clean lines and sleek silhouettes of contemporary fashion, while you appreciates the raw, earthy appeal of durable materials and practical designs. You're seamlessly merging the best of both worlds to create a distinctive look that is all your own."
+  mens-name: Modern Adventurer
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A rugged-contemporary hybrid, complemented by hints of your supporting style facets. Versatile yet outdoorsy, your ideal wardrobe blends the timeless with the functional. Think: crisp tees, flannel shirts, slim cords and true-blue denim."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718129305/onboarding/StyleFile/Womens/2023-06-13_ISOF_FY24Q1_W_C14_2151.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493903/aii/style_shuffle/May_2024/2023-10-18_W_OLD_A30_0651_1x1.jpg
@@ -728,8 +727,8 @@
   secondary_sense: Preppy
   womens-name: Modern Prep
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A contemporary-preppy mix, complemented by hints of your supporting style facets. Modern yet classic, your ideal wardrobe is full of timelessness with a twist. Plaids, stripes and blazers paired with sharp trousers, sleek dresses and fashion-forward accents.'
-  mens-name: Modern Traditionalist 
-  mens-blurb: "Your style is a unique mix of the Contemporary and Preppy, seamlessly blending the modern lines and simplicity of contemporary fashion with the timeless elements of preppy style. This fusion creates a look that is effortlessly modern yet steeped in classic sophistication."
+  mens-name: Modern Prep
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A contemporary-preppy hybrid, complemented by hints of your supporting style facets. Modern yet classic, your ideal wardrobe is timeless with a twist. Think: plaids and stripes paired with slim-cut blazers and pants. "
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130360/onboarding/StyleFile/Womens/2023-12-15_W_OLOF_H02_02420_r0.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130310/onboarding/StyleFile/Womens/2023-09-27_W_OLOF_G14_06328.jpg
@@ -836,8 +835,8 @@
   secondary_sense: Preppy
   womens-name: Americana Prep
   womens-blurb: 'Your style is multi-layered, just like you. Your unique signature? A heritage-preppy mix complemented by hints of your supporting style facets. Classic and charming, your ideal wardrobe is built on rustic flannels, cozy plaids and jeans elevated with timeless elements like loafers and blazers.'
-  mens-name: Harbour Gentleman
-  mens-blurb: "Your style is a seamless blend of the clean, tailored lines of preppy fashion, combined with the sturdy, durable materials of rugged attire. You effortlessly balance the sophistication of an Oxford shirt and chinos with the ruggedness of a weathered leather jacket or sturdy boots, creating a look that is both polished and prepared for the elements."
+  mens-name: Rugged Prep
+  mens-blurb: "Your style is multi-layered, just like you. Your unique signature? A rugged-preppy hybrid, complemented by hints of your supporting style facets. Classic yet outdoorsy, your ideal wardrobe is classic and ready for adventure. Think: blazers, cords, tailored denim and a plethora of button-downs (probably in plaid)."
   gallery: 
     - https://res.cloudinary.com/stitch-fix/image/upload/v1718130199/onboarding/StyleFile/Womens/2023-06-14_ISOF_FY24Q1_W_C22_10706.jpg
     - https://res.cloudinary.com/stitch-fix/image/upload/v1716493901/aii/style_shuffle/May_2024/2023-10-18_W_OLD_A29_0627_1x1.jpg
