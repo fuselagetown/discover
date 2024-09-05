@@ -1,0 +1,75 @@
+---
+layout: page
+lob: w
+--- 
+
+
+<style type="text/css">
+	
+
+.prototype_tag {
+	font-size: 0.8rem;
+	background: #D8F7F1;
+	padding: 0.2rem 0.5rem;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 0.1rem 0.1rem 0.1rem 0;
+}
+
+</style>
+
+<div>
+
+{% for person in site.data.clients.client %}
+
+
+client {{ person.client_id }} {{site.data.clients.client.client_id}}
+
+
+       <!-- loping through the experience data -->
+      
+    
+<div class="playback-bubbles">
+
+	  {% for senses in person.senses %}
+    
+         {% assign size = senses.size | times: 100 %}
+
+			<div class="playback-bubble playback-bubble-{{ senses.sense }} {{ page.lob }} {{ post.lob }} playback-bubble-{{ secondary_sense_name }}" value='0' width='{{ size }}' height='{{ client.active}}' style="display: inline-block; height: {{ size }}px; width: {{ size }}px; min-width: 0px; min-height: 0px;">
+
+				<span><span>{% if page.lob == 'm' and senses.sense  == 'heritage' %}rugged{% else %}{{ senses.sense | downcase }}{% endif%}</span></span>
+				
+				<div class="sense-details">
+
+					<div class="sense-details-fadein">
+
+						<h5><span>{% if page.lob == 'm' and senses.sense  == 'heritage' %}rugged{% else %}{{ senses.sense | downcase }}{% endif%}</span></h5>
+
+						{% if page.lob == 'w' %}
+
+							<p>{{ post.w-description }}</p>
+
+						{% else %}
+							
+							<p>{{ post.m-description }}</p>
+
+						{% endif %}
+
+						<!-- <a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a> -->
+
+					</div>
+
+				</div>
+			</div>
+
+	
+
+	{% endfor %}
+
+</div>
+{% endfor %}
+
+
+Feedback? Ideas? Ping @torunn on slack! -->
+
+</div>
