@@ -2041,6 +2041,13 @@ a.playback-button {
 .playback-bubble.playback-bubble-heritage.m .sense-details {
   background: #595E2D;
 }
+.playback-bubble.playback-bubble-rugged {
+  background: #595E2D;
+  color: #fff;
+}
+.playback-bubble.playback-bubble-rugged .sense-details {
+  background: #595E2D;
+}
 .playback-bubble.playback-bubble-romantic {
   background: #DCB6B5;
 }
@@ -2053,14 +2060,14 @@ a.playback-button {
 .playback-bubble.playback-bubble-contemporary .sense-details {
   background: #F3ECD3;
 }
-.playback-bubble.playback-bubble-preppy a, .playback-bubble.playback-bubble-edgy a, .playback-bubble.playback-bubble-heritage a {
+.playback-bubble.playback-bubble-preppy a, .playback-bubble.playback-bubble-edgy a, .playback-bubble.playback-bubble-heritage a, .playback-bubble.playback-bubble-rugged a {
   border-color: #fff !important;
   color: #fff !important;
 }
-.playback-bubble.playback-bubble-preppy > span span:after, .playback-bubble.playback-bubble-edgy > span span:after, .playback-bubble.playback-bubble-heritage > span span:after {
+.playback-bubble.playback-bubble-preppy > span span:after, .playback-bubble.playback-bubble-edgy > span span:after, .playback-bubble.playback-bubble-heritage > span span:after, .playback-bubble.playback-bubble-rugged > span span:after {
   background-image: url("../../assets/images/plus-darkmode.svg");
 }
-.playback-bubble.playback-bubble-preppy.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-edgy.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-heritage.expanded .sense-details h5 span:after {
+.playback-bubble.playback-bubble-preppy.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-edgy.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-heritage.expanded .sense-details h5 span:after, .playback-bubble.playback-bubble-rugged.expanded .sense-details h5 span:after {
   background-image: url("../../assets/images/minus-darkmode.svg");
 }
 .playback-bubble > span {

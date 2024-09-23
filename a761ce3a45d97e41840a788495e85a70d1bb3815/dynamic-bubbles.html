@@ -1,6 +1,7 @@
 ---
 layout: page
 lob: w
+published: false
 --- 
 
 
@@ -18,12 +19,12 @@ lob: w
 
 </style>
 
-<div>
+<div style="padding: 50px;">
 
 {% for person in site.data.clients.client %}
 
 
-client {{ person.client_id }} {{site.data.clients.client.client_id}}
+client {{ person.client_id }} {{ person.client_name }} 
 
 
        <!-- loping through the experience data -->
@@ -31,38 +32,42 @@ client {{ person.client_id }} {{site.data.clients.client.client_id}}
     
 <div class="playback-bubbles">
 
-	  {% for senses in person.senses %}
+	{% assign senses = person.senses | sort: 'size'  %}
+
+	  
+	  {% for sense in senses reversed %}
+
     
-         {% assign size = senses.size | times: 100 %}
+         {% assign dimention = sense.size | plus: 1.087 | times: 50  %}
 
-			<div class="playback-bubble playback-bubble-{{ senses.sense }} {{ page.lob }} {{ post.lob }} playback-bubble-{{ secondary_sense_name }}" value='0' width='{{ size }}' height='{{ client.active}}' style="display: inline-block; height: {{ size }}px; width: {{ size }}px; min-width: 0px; min-height: 0px;">
 
-				<span><span>{% if page.lob == 'm' and senses.sense  == 'heritage' %}rugged{% else %}{{ senses.sense | downcase }}{% endif%}</span></span>
-				
-				<div class="sense-details">
+				<div class="playback-bubble playback-bubble-{{ sense.sense }} {{ page.lob }} {{ post.lob }} " value='0' style="display: inline-block; height: {{ dimention }}px; width: {{ dimention  }}px; min-width: 0px; min-height: 0px;">
 
-					<div class="sense-details-fadein">
+					<span><span>{{ sense.sense | downcase }}</span></span>
+					
+					<div class="sense-details">
 
-						<h5><span>{% if page.lob == 'm' and senses.sense  == 'heritage' %}rugged{% else %}{{ senses.sense | downcase }}{% endif%}</span></h5>
+						<div class="sense-details-fadein">
 
-						{% if page.lob == 'w' %}
+							<h5><span>{% if page.lob == 'm' and sense.sense  == 'heritage' %}rugged{% else %}{{ sense.sense | downcase }}{% endif%}</span></h5>
 
-							<p>{{ post.w-description }}</p>
+							{% if page.lob == 'w' %}
 
-						{% else %}
-							
-							<p>{{ post.m-description }}</p>
+								<p>{{ post.w-description }}</p>
 
-						{% endif %}
+							{% else %}
+								
+								<p>{{ post.m-description }}</p>
 
-						<!-- <a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a> -->
+							{% endif %}
+
+							<!-- <a href="https://www.stitchfix.com/search?q={{ post.title | downcase }}" target="_blank">Shop {{ post.title | downcase }}</a> -->
+
+						</div>
 
 					</div>
-
 				</div>
-			</div>
 
-	
 
 	{% endfor %}
 

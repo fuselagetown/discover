@@ -1,134 +1,126 @@
+---
+layout: page
+--- 
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<title></title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+	
 
-</head>
-
-<style>
-
-body {
-
-	background-image: url('grunge_patterns.jpg');
-	background-attachment: fixed;
-	color: #333;
-}
-
-.box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
-}
-
-.lightbox {
-	zoom: 1.5;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
-	text-align: center;
-	margin: auto;
-
-}
-
-div.horizontal {
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-div.vertical {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-}
-
-::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-::-moz-placeholder {
-   color: #955;
-   text-align: center;
-}
-
-:-ms-input-placeholder {
-   color: #955;
-   text-align: center;
+.prototype_tag {
+	font-size: 0.8rem;
+	background: #D8F7F1;
+	padding: 0.2rem 0.5rem;
+	border-radius: 20px;
+	display: inline-block;
+	margin: 0.1rem 0.1rem 0.1rem 0;
 }
 
 </style>
 
-<body>
-
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<div style="padding: 40px; font-weight: 300; color: #fff; background: #00625D; min-height: 1000px;">
 
 
+<!-- <p>Today we’ll be asking your thoughts as a Stitch Fix client about a new way to describe your style interests.</p> 
+<p>First, you’ll complete a short exercise that will show you personalized results describing your style!</p>
+<p>Second, you’ll log into your Stitch Fix account and answer questions about how those results might be included in your Stitch Fix experience. To protect your identity, we will not collect or document any of your personal or login information as a Stitch Fix client. </p>
+<p>Thanks in advance for sharing your thoughts! Please click the button to continue to the Style Quiz. </p> -->
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<!-- You're logged in.<br /> Please go to the next task. --><!-- 
+<h1 style="margin-bottom: 20px;">Prototypes with style studio assets:</h1> -->
 
+<!-- <p>(I will remove the names and details and old prototype links for the study)</p> -->
 
-	 <script type="text/javascript" src="https://rawcdn.githack.com/chrisveness/crypto/7067ee62f18c76dd4a9d372a00e647205460b62b/sha1.js"></script>
+<!-- <a href="give-get" class="prototype">
+	<span class="prototype_title">Prototype 1</span>
+	<span class="prototype_title"></span>
+</a>
+<a href="give-get-fullbleed" class="prototype">
+	<span class="prototype_title">Prototype 2</span>
+	<span class="prototype_title"><span class="prototype_tag">full bleed</span></span>
+</a> -->
 
-	<script type="text/javascript">
-	"use strict";
+<div style="display: block; clear: both; padding: 20px; margin: 30px 0; font-size: 0.8rem; background: #D2E137; color: #001E60; border: 2px dashed #fff;">
 
+<strong>This is a static prototype built by Torunn in order to run user research with a real data set. It's not using an algorithm, so the results may differ. <br /><br />Having said that, you're free to take the quiz and get your prototype result, because it's fun! </strong>
 
-	function loadPage(pwd) {
-
-		var hash= pwd;
-		hash= Sha1.hash(pwd);
-		var url= hash + "/index.html";
-
-		$.ajax({
-			url : url,
-			dataType : "html",
-			success : function(data) {
-
-				window.location= url;
-
-			},
-			error : function(xhr, ajaxOptions, thrownError) {
-
-
-				parent.location.hash= hash;
-
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
-				$("#password").val("");
-			}
-		});
-	}
+</div>
 
 
-	$("#loginbutton").on("click", function() {
-		loadPage($("#password").val());
-	});
-	$("#password").keypress(function(e) {
-		if (e.which == 13) {
+<h3>Take Your Style Quiz</h3>
 
-			loadPage($("#password").val());
-		}
-	});
-	$("#password").focus();
+<a href="stylefile-women" class="prototype">
+	<span class="prototype_title">Womens</span>
+</a>
 
-	</script>
 
-</body>
-</html>
+<a href="stylefile-men" class="prototype">
+	<span class="prototype_title">Mens</span>
+</a>
+
+
+
+<!-- <a href="#" class="prototype">
+	<span class="prototype_title" style="color: #aaa">Coming soon: Men's Style Quiz</span>
+</a> -->
+
+
+
+<!-- <a href="give-get-iconography" class="prototype">
+	<span class="prototype_title">Give/get with style studio assets <br /><br /> <span class="prototype_tag">heart/x</span></span>
+</a>
+<a href="give-get-iconography-fullbleed" class="prototype">
+	<span class="prototype_title">Give/get with style studio assets <br /><br /> <span class="prototype_tag">heart/x</span> <span class="prototype_tag">full bleed</span></span>
+</a>
+ -->
+<!-- 
+<a href="this-or-that" class="prototype">
+	<span class="prototype_title">This or that</span>
+	<span class="prototype_rationale">
+		<b>Concept:</b> Asking clients to rate looks against each other <br />
+	</span>
+</a>
+
+
+<a href="style-shuffle" class="prototype">
+	<span class="prototype_title">Style shuffle</span>
+	<span class="prototype_rationale">
+		<b>Concept:</b> Using the experience we currently have for Style Shuffle to bring packs of senses for clients to rate. <br />
+	</span>
+</a>
+
+<a href="scale" class="prototype">
+	<span class="prototype_title">Scale</span>
+	<span class="prototype_rationale">
+		<b>Concept:</b> Asking clients to place themselves on a scale for each sense. <br />
+	</span>
+</a>
+
+<a href="give-get" class="prototype">
+	<span class="prototype_title">Give/get</span>
+	<span class="prototype_rationale">
+		<b>Concept:</b> Rating outfits and items like in onboarding. <br />
+	</span>
+</a>
+ -->
+
+<!-- 
+<h1 style="margin-bottom: 20px;">Old shizzle..</h1>
+
+<a href="freestyle-shuffle-senses" class="prototype" style="opacity: 0.5">
+	<span class="prototype_title">Style senses on home</span>
+	<span class="prototype_rationale">
+		<b>Concept:</b> Using exisiting modules to create a more personalized AND varied client experience on home, so that clients feel like SFIX understands trends and fashion, how to apply it to their personal style, and with the ability to course-correct. 
+	</span>
+</a>
+
+<a href="nav" class="prototype" style="opacity: 0.5">
+	<span class="prototype_title">Freestyle reorg</span>
+	<span class="prototype_rationale">
+		<b>Concept:</b> Create a Freestyle experience that is easy and intriguing for clients to navigate, that align with trends and merch calendar, with streamlined actions across sections, that ties fix and freestyle together in a way that creates client value.
+
+</span>
+</a>
+
+Feedback? Ideas? Ping @torunn on slack! -->
+
+</div>

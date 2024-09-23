@@ -1,9 +1,1213 @@
 client:
+  - client_id: 24224503
+    client_name: Molly Eamon 
+    senses:
+      - sense: preppy
+        size:  0.136
+      - sense: contemporary
+        size: 0.516
+      - sense: heritage
+        size: 0.66
+      - sense: classic
+        size:  0.228
+      - sense: coastal
+        size: 0.568
+      - sense: active
+        size: 0.233
+      - sense: bold
+        size: 0.864
+      - sense: boho
+        size: 1.237
+      - sense: romantic
+        size: 0.709
+      - sense: edgy
+        size: 1.056
+  - client_id:  27111999
+    client_name: Alivia Norwood 
+    senses:
+      - sense: preppy
+        size:  1.114
+      - sense: contemporary
+        size: 1.36
+      - sense: heritage
+        size:  0.367
+      - sense: classic
+        size: 0.867
+      - sense: coastal
+        size: 0.095
+      - sense: active
+        size: -0.096
+      - sense: bold
+        size:  0.119
+      - sense: boho
+        size: 0.128
+      - sense: romantic
+        size: 0.319
+      - sense: edgy
+        size: 0.225
+  - client_id: 16520960
+    client_name: Sarah Cervinski 
+    senses:
+      - sense: preppy
+        size:  -0.067
+      - sense: contemporary
+        size:  1.377
+      - sense: heritage
+        size: 0.582
+      - sense: classic
+        size: -0.024
+      - sense: coastal
+        size:  -0.059
+      - sense: active
+        size:  0.628
+      - sense: bold
+        size: 0.034
+      - sense: boho
+        size: 0.031
+      - sense: romantic
+        size: -0.101
+      - sense: edgy
+        size:  1.475
+  - client_id: 37105459
+    client_name: Briana Harris 
+    senses:
+      - sense: preppy
+        size:  0.614
+      - sense: contemporary
+        size: 0.819
+      - sense: heritage
+        size: 0.493
+      - sense: classic
+        size: 0.426
+      - sense: coastal
+        size: 0.482
+      - sense: active
+        size: 0.227
+      - sense: bold
+        size: 0.719
+      - sense: boho
+        size: 0.707
+      - sense: romantic
+        size: 0.718
+      - sense: edgy
+        size: 0.559
+  - client_id:  3026841
+    client_name: Sara Creef 
+    senses:
+      - sense: preppy
+        size: 0.501
+      - sense: contemporary
+        size: 0.955
+      - sense: heritage
+        size: 0.732
+      - sense: classic
+        size: 0.586
+      - sense: coastal
+        size: 0.406
+      - sense: active
+        size: 0.467
+      - sense: bold
+        size: 0.439
+      - sense: boho
+        size: 0.319
+      - sense: romantic
+        size: 0.101
+      - sense: edgy
+        size: 0.806
+  - client_id: 37482404
+    client_name: Katie Eigel 
+    senses:
+      - sense: preppy
+        size:  0.983
+      - sense: contemporary
+        size: 1.052
+      - sense: heritage
+        size: 0.654
+      - sense: classic
+        size: 0.696
+      - sense: coastal
+        size: 0.522
+      - sense: active
+        size: 0.574
+      - sense: bold
+        size: 0.894
+      - sense: boho
+        size: 0.569
+      - sense: romantic
+        size: 1.058
+      - sense: edgy
+        size: 0.82
+  - client_id:  4226038
+    client_name: Nancy Arnold 
+    senses:
+      - sense: preppy
+        size: -0.721
+      - sense: contemporary
+        size:  -0.636
+      - sense: heritage
+        size:  -0.663
+      - sense: classic
+        size:  -0.425
+      - sense: coastal
+        size:  -0.548
+      - sense: active
+        size:  -0.597
+      - sense: bold
+        size:  -0.674
+      - sense: boho
+        size:  -0.596
+      - sense: romantic
+        size:  -0.796
+      - sense: edgy
+        size:  -0.596
+  - client_id:  15429882
+    client_name: Kelly Lang 
+    senses:
+      - sense: preppy
+        size:  -0.637
+      - sense: contemporary
+        size:  -0.6
+      - sense: heritage
+        size:  -0.54
+      - sense: classic
+        size: -0.496
+      - sense: coastal
+        size:  -0.606
+      - sense: active
+        size:  -0.367
+      - sense: bold
+        size:  -0.595
+      - sense: boho
+        size:  -0.658
+      - sense: romantic
+        size:  -0.756
+      - sense: edgy
+        size:  -0.487
+  - client_id:   5109369
+    client_name: Rachel Tringali-Pesdan
+    senses:
+      - sense: preppy
+        size: 0.432
+      - sense: contemporary
+        size: 0.759
+      - sense: heritage
+        size: 0.427
+      - sense: classic
+        size: 0.263
+      - sense: coastal
+        size: 0.171
+      - sense: active
+        size: 0.264
+      - sense: bold
+        size: 0.735
+      - sense: boho
+        size: 0.564
+      - sense: romantic
+        size: 0.806
+      - sense: edgy
+        size: 0.972
+  - client_id: 40297115
+    client_name: Sharon French 
+    senses:
+      - sense: preppy
+        size:  0.327
+      - sense: contemporary
+        size: 0.858
+      - sense: heritage
+        size: 0.956
+      - sense: classic
+        size: 0.406
+      - sense: coastal
+        size: 0.88
+      - sense: active
+        size:  0.777
+      - sense: bold
+        size: 0.825
+      - sense: boho
+        size: 0.937
+      - sense: romantic
+        size: 0.708
+      - sense: edgy
+        size: 1.098
+  - client_id:  13324042
+    client_name: Jess Leung 
+    senses:
+      - sense: preppy
+        size:  0.296
+      - sense: contemporary
+        size: 0.951
+      - sense: heritage
+        size: 0.472
+      - sense: classic
+        size: 0.306
+      - sense: coastal
+        size: -0.05
+      - sense: active
+        size: 0.427
+      - sense: bold
+        size: 0.328
+      - sense: boho
+        size: 0.049
+      - sense: romantic
+        size: 0.502
+      - sense: edgy
+        size: 1.05
+  - client_id:  38215240
+    client_name: Emily Dobies 
+    senses:
+      - sense: preppy
+        size:  0.1
+      - sense: contemporary
+        size: 0.682
+      - sense: heritage
+        size: 0.927
+      - sense: classic
+        size: 0.253
+      - sense: coastal
+        size: 0.419
+      - sense: active
+        size: 0.393
+      - sense: bold
+        size: 0.596
+      - sense: boho
+        size: 0.904
+      - sense: romantic
+        size: 0.181
+      - sense: edgy
+        size: 1.279
+  - client_id: 8727557
+    client_name: Lauren Barone 
+    senses:
+      - sense: preppy
+        size: -0.031
+      - sense: contemporary
+        size:  1.3
+      - sense: heritage
+        size: 0.546
+      - sense: classic
+        size: -0.092
+      - sense: coastal
+        size:  0.041
+      - sense: active
+        size: 0.682
+      - sense: bold
+        size: 0.173
+      - sense: boho
+        size: 0.029
+      - sense: romantic
+        size: 0.015
+      - sense: edgy
+        size: 1.455
+  - client_id:  25684703
+    client_name: Rachel baker 
+    senses:
+      - sense: preppy
+        size:  -0.756
+      - sense: contemporary
+        size:  -0.966
+      - sense: heritage
+        size:  -0.463
+      - sense: classic
+        size:  -0.512
+      - sense: coastal
+        size:  -0.274
+      - sense: active
+        size:  -0.239
+      - sense: bold
+        size:  -0.801
+      - sense: boho
+        size:  -0.663
+      - sense: romantic
+        size:  -1.062
+      - sense: edgy
+        size:  -0.863
+  - client_id: 8334477
+    client_name: Rachel Wood 
+    senses:
+      - sense: preppy
+        size: 0.186
+      - sense: contemporary
+        size: 0.887
+      - sense: heritage
+        size: 0.459
+      - sense: classic
+        size: 0.27
+      - sense: coastal
+        size:  0.116
+      - sense: active
+        size: 0.249
+      - sense: bold
+        size: 0.438
+      - sense: boho
+        size: 0.543
+      - sense: romantic
+        size: 0.523
+      - sense: edgy
+        size: 0.798
+  - client_id: 47883934
+    client_name: Isabel Strachan 
+    senses:
+      - sense: preppy
+        size:  0.665
+      - sense: contemporary
+        size: 0.781
+      - sense: heritage
+        size: 0.328
+      - sense: classic
+        size: 0.535
+      - sense: coastal
+        size: 0.345
+      - sense: active
+        size: 0.194
+      - sense: bold
+        size: 0.421
+      - sense: boho
+        size: 0.403
+      - sense: romantic
+        size: 0.589
+      - sense: edgy
+        size: 0.393
+  - client_id:  42170022
+    client_name: Mia Teilborg 
+    senses:
+      - sense: preppy
+        size:  0.404
+      - sense: contemporary
+        size: 1.02
+      - sense: heritage
+        size:  0.691
+      - sense: classic
+        size: 0.401
+      - sense: coastal
+        size: 0.09
+      - sense: active
+        size:  0.141
+      - sense: bold
+        size: 0.51
+      - sense: boho
+        size:  0.565
+      - sense: romantic
+        size: 0.33
+      - sense: edgy
+        size:  0.965
+  - client_id:  37288300
+    client_name: Sarah Tran 
+    senses:
+      - sense: preppy
+        size:  0.246
+      - sense: contemporary
+        size: 1.019
+      - sense: heritage
+        size: 0.453
+      - sense: classic
+        size: 0.123
+      - sense: coastal
+        size: 0.028
+      - sense: active
+        size: 0.21
+      - sense: bold
+        size:  0.67
+      - sense: boho
+        size:  0.351
+      - sense: romantic
+        size: 0.417
+      - sense: edgy
+        size: 1.284
+  - client_id:  20830128
+    client_name: Hina Ahmed 
+    senses:
+      - sense: preppy
+        size:  0.493
+      - sense: contemporary
+        size: 0.786
+      - sense: heritage
+        size: 0.278
+      - sense: classic
+        size: 0.382
+      - sense: coastal
+        size: 0.434
+      - sense: active
+        size: 0.562
+      - sense: bold
+        size: 0.34
+      - sense: boho
+        size:  0.239
+      - sense: romantic
+        size: 0.593
+      - sense: edgy
+        size: 0.326
+  - client_id: 7586905
+    client_name: Zack Horn 
+    senses:
+      - sense: preppy
+        size: 0.964
+      - sense: contemporary
+        size: 0.989
+      - sense: rugged
+        size: 0.336
+      - sense: classic
+        size: 0.832
+      - sense: coastal
+        size: 0.517
+      - sense: active
+        size: 0.778
+      - sense: bold
+        size: 0.042
+  - client_id:  6439622
+    client_name: Katherine Levy 
+    senses:
+      - sense: preppy
+        size: 1.148
+      - sense: contemporary
+        size: 1.132
+      - sense: heritage
+        size: 0.961
+      - sense: classic
+        size: 0.867
+      - sense: coastal
+        size: 0.942
+      - sense: active
+        size: 1.111
+      - sense: bold
+        size: 0.86
+      - sense: boho
+        size:  0.595
+      - sense: romantic
+        size: 1.024
+      - sense: edgy
+        size: 0.94
+  - client_id: 42566343
+    client_name: Alisa Flaum 
+    senses:
+      - sense: preppy
+        size:  -0.58
+      - sense: contemporary
+        size: -0.555
+      - sense: heritage
+        size:  -0.568
+      - sense: classic
+        size:  -0.399
+      - sense: coastal
+        size:  -0.597
+      - sense: active
+        size:  -0.523
+      - sense: bold
+        size:  -0.696
+      - sense: boho
+        size:  -0.634
+      - sense: romantic
+        size:  -0.817
+      - sense: edgy
+        size:  -0.371
+  - client_id: 9500167
+    client_name: Whitney Belba 
+    senses:
+      - sense: preppy
+        size: 0.845
+      - sense: contemporary
+        size: 0.867
+      - sense: heritage
+        size: 0.968
+      - sense: classic
+        size: 0.626
+      - sense: coastal
+        size: 0.954
+      - sense: active
+        size: 1.072
+      - sense: bold
+        size: 0.85
+      - sense: boho
+        size:  1.004
+      - sense: romantic
+        size: 1.005
+      - sense: edgy
+        size: 0.967
+  - client_id:  40606879
+    client_name: Steve McKinney 
+    senses:
+      - sense: preppy
+        size:  0.128
+      - sense: contemporary
+        size: 0.018
+      - sense: rugged
+        size: 0.1
+      - sense: classic
+        size: -0.075
+      - sense: coastal
+        size:  0.183
+      - sense: active
+        size: 0.09
+      - sense: bold
+        size:  0.463
+  - client_id: 16971311
+    client_name: Michelle Fang 
+    senses:
+      - sense: preppy
+        size:  0.037
+      - sense: contemporary
+        size: 0.904
+      - sense: heritage
+        size: 0.457
+      - sense: classic
+        size: 0.136
+      - sense: coastal
+        size: 0.024
+      - sense: active
+        size: 0.361
+      - sense: bold
+        size: 0.331
+      - sense: boho
+        size: 0.167
+      - sense: romantic
+        size: 0.202
+      - sense: edgy
+        size: 1.045
+  - client_id:  32825357
+    client_name: Tyler Jessop 
+    senses:
+      - sense: preppy
+        size:  0.965
+      - sense: contemporary
+        size: 1.054
+      - sense: rugged
+        size: 0.727
+      - sense: classic
+        size: 0.821
+      - sense: coastal
+        size: 0.428
+      - sense: active
+        size: 0.424
+      - sense: bold
+        size: 0.096
+  - client_id:  46369909
+    client_name: Tony Bacos 
+    senses:
+      - sense: preppy
+        size:  0.869
+      - sense: contemporary
+        size: 0.867
+      - sense: rugged
+        size: 0.868
+      - sense: classic
+        size: 0.886
+      - sense: coastal
+        size: 0.1
+      - sense: active
+        size: 0.494
+      - sense: bold
+        size: -0.363
+  - client_id:  37685419
+    client_name: Erin Russell 
+    senses:
+      - sense: preppy
+        size:  0.352
+      - sense: contemporary
+        size: 0.376
+      - sense: heritage
+        size: 1.039
+      - sense: classic
+        size: 0.416
+      - sense: coastal
+        size: 0.908
+      - sense: active
+        size: 0.824
+      - sense: bold
+        size: 0.739
+      - sense: boho
+        size: 0.924
+      - sense: romantic
+        size: 0.621
+      - sense: edgy
+        size: 0.666
+  - client_id:  38627048
+    client_name: Georgia Gallavin 
+    senses:
+      - sense: preppy
+        size:  0.91
+      - sense: contemporary
+        size:  0.991
+      - sense: heritage
+        size: 1.165
+      - sense: classic
+        size: 0.916
+      - sense: coastal
+        size: 1.272
+      - sense: active
+        size: 1.032
+      - sense: bold
+        size: 0.697
+      - sense: boho
+        size: 0.926
+      - sense: romantic
+        size: 0.742
+      - sense: edgy
+        size: 0.708
+  - client_id:  45713162
+    client_name: Annika Yan 
+    senses:
+      - sense: preppy
+        size:  1.15
+      - sense: contemporary
+        size:  1.26
+      - sense: heritage
+        size:  1.104
+      - sense: classic
+        size: 0.938
+      - sense: coastal
+        size: 0.814
+      - sense: active
+        size: 0.9
+      - sense: bold
+        size: 0.887
+      - sense: boho
+        size: 0.847
+      - sense: romantic
+        size: 1.015
+      - sense: edgy
+        size: 1.02
+  - client_id:  27765479
+    client_name: Christine Nguyen 
+    senses:
+      - sense: preppy
+        size:  0.141
+      - sense: contemporary
+        size: 0.995
+      - sense: heritage
+        size: 0.116
+      - sense: classic
+        size: 0.311
+      - sense: coastal
+        size: -0.115
+      - sense: active
+        size:  0.034
+      - sense: bold
+        size: 0.223
+      - sense: boho
+        size: 0.109
+      - sense: romantic
+        size: 0.538
+      - sense: edgy
+        size: 1.067
+  - client_id:  29758054
+    client_name: Kassandra Levett 
+    senses:
+      - sense: preppy
+        size:  -0.382
+      - sense: contemporary
+        size:  -0.496
+      - sense: heritage
+        size:  -0.7
+      - sense: classic
+        size:  -0.349
+      - sense: coastal
+        size:  -0.59
+      - sense: active
+        size: -0.518
+      - sense: bold
+        size:  -0.582
+      - sense: boho
+        size:  -0.661
+      - sense: romantic
+        size:  -0.589
+      - sense: edgy
+        size:  -0.665
+  - client_id:  19177761
+    client_name: Ryan Lentz 
+    senses:
+      - sense: preppy
+        size:  0.765
+      - sense: contemporary
+        size: 0.813
+      - sense: rugged
+        size: 1.344
+      - sense: classic
+        size: 0.771
+      - sense: coastal
+        size: 1.215
+      - sense: active
+        size: 1.053
+      - sense: bold
+        size: 0.501
+  - client_id:  6352512
+    client_name: Torunn Skrogstad 
+    senses:
+      - sense: preppy
+        size: 0.134
+      - sense: contemporary
+        size: 0.537
+      - sense: heritage
+        size: 1.459
+      - sense: classic
+        size: 0.461
+      - sense: coastal
+        size: 1.135
+      - sense: active
+        size: 1.396
+      - sense: bold
+        size: 0.504
+      - sense: boho
+        size: 0.723
+      - sense: romantic
+        size: -0.136
+      - sense: edgy
+        size:  1.094
+  - client_id: 38549050
+    client_name: Janina Mihr 
+    senses:
+      - sense: preppy
+        size:  -0.75
+      - sense: contemporary
+        size: -0.77
+      - sense: heritage
+        size: -0.747
+      - sense: classic
+        size:  -0.47
+      - sense: coastal
+        size: -0.58
+      - sense: active
+        size: -0.304
+      - sense: bold
+        size:  -0.885
+      - sense: boho
+        size:  -0.956
+      - sense: romantic
+        size:  -1.087
+      - sense: edgy
+        size:  -0.757
+  - client_id: 19247304
+    client_name: Celia Fenoy 
+    senses:
+      - sense: preppy
+        size:  0.446
+      - sense: contemporary
+        size: 0.786
+      - sense: heritage
+        size: 0.299
+      - sense: classic
+        size: 0.486
+      - sense: coastal
+        size: 0.252
+      - sense: active
+        size: 0.124
+      - sense: bold
+        size: 0.384
+      - sense: boho
+        size: 0.407
+      - sense: romantic
+        size: 0.557
+      - sense: edgy
+        size: 0.311
+  - client_id:  21191913
+    client_name: Mystery Person 
+    senses:
+      - sense: preppy
+        size:  0.466
+      - sense: contemporary
+        size: 0.845
+      - sense: heritage
+        size: 0.428
+      - sense: classic
+        size: 0.453
+      - sense: coastal
+        size: 0.545
+      - sense: active
+        size: 0.412
+      - sense: bold
+        size: 0.589
+      - sense: boho
+        size: 0.696
+      - sense: romantic
+        size: 0.762
+      - sense: edgy
+        size: 0.818
+  - client_id:  22784442
+    client_name: Megan Shea 
+    senses:
+      - sense: preppy
+        size:  0.399
+      - sense: contemporary
+        size: 1 
+      - sense: heritage
+        size: 0.642 
+      - sense: classic
+        size: 0.362 
+      - sense: coastal
+        size: 0.067 
+      - sense: active
+        size: 0.584 
+      - sense: bold
+        size: 0.446 
+      - sense: boho
+        size: 0.356 
+      - sense: romantic
+        size: 0.424 
+      - sense: edgy
+        size: 0.819
+  - client_id:  46852724
+    client_name: Leah Titus 
+    senses:
+      - sense: preppy
+        size:  0.036
+      - sense: contemporary
+        size: 0.773
+      - sense: heritage
+        size: 0.76
+      - sense: classic
+        size:  0.125
+      - sense: coastal
+        size: 0.449
+      - sense: active
+        size: 0.538
+      - sense: bold
+        size: 0.803
+      - sense: boho
+        size: 0.629
+      - sense: romantic
+        size: 0.278
+      - sense: edgy
+        size: 1.635
+  - client_id:  26471695
+    client_name: Darin Barnes 
+    senses:
+      - sense: preppy
+        size:  0.644
+      - sense: contemporary
+        size: 0.749
+      - sense: rugged
+        size: 0.745
+      - sense: classic
+        size: 0.599
+      - sense: coastal
+        size: 0.503
+      - sense: active
+        size: 0.432
+      - sense: bold
+        size: 0.005
+  - client_id:  4852537
+    client_name: Meaghan Paulosky 
+    senses:
+      - sense: preppy
+        size: 0.424
+      - sense: contemporary
+        size: 0.723
+      - sense: heritage
+        size: 0.93
+      - sense: classic
+        size:  0.41
+      - sense: coastal
+        size:  0.517
+      - sense: active
+        size: 0.565
+      - sense: bold
+        size: 0.465
+      - sense: boho
+        size: 0.737
+      - sense: romantic
+        size: 0.314
+      - sense: edgy
+        size: 0.638
+  - client_id: 45732503
+    client_name: Noah Zamansky 
+    senses:
+      - sense: preppy
+        size:  0.531
+      - sense: contemporary
+        size: 0.548
+      - sense: rugged
+        size: 0.942
+      - sense: classic
+        size: 0.725
+      - sense: coastal
+        size: 0.614
+      - sense: active
+        size: 1.03
+      - sense: bold
+        size:  0.105
+  - client_id: 29557647
+    client_name: Carla Kotzé 
+    senses:
+      - sense: preppy
+        size:  -0.843
+      - sense: contemporary
+        size:  -0.629
+      - sense: heritage
+        size:  -0.432
+      - sense: classic
+        size:  -0.471
+      - sense: coastal
+        size:  -0.403
+      - sense: active
+        size:  -0.141
+      - sense: bold
+        size:  -0.944
+      - sense: boho
+        size:  -0.683
+      - sense: romantic
+        size:  -0.929
+      - sense: edgy
+        size:  -0.75
+  - client_id: 5113948
+    client_name: Caroline Tambling 
+    senses:
+      - sense: preppy
+        size: 0.469
+      - sense: contemporary
+        size: 0.925
+      - sense: heritage
+        size: 0.508
+      - sense: classic
+        size: 0.549
+      - sense: coastal
+        size: 0.001
+      - sense: active
+        size: 0.118
+      - sense: bold
+        size: 0.142
+      - sense: boho
+        size: 0.307
+      - sense: romantic
+        size: 0.049
+      - sense: edgy
+        size: 0.561
+  - client_id: 36206452
+    client_name: Lisa Darger 
+    senses:
+      - sense: preppy
+        size:  0.568
+      - sense: contemporary
+        size: 0.883
+      - sense: heritage
+        size: 1.037
+      - sense: classic
+        size: 0.463
+      - sense: coastal
+        size: 0.858
+      - sense: active
+        size: 1.105
+      - sense: bold
+        size: 0.674
+      - sense: boho
+        size: 0.926
+      - sense: romantic
+        size: 0.706
+      - sense: edgy
+        size: 1.295
+  - client_id:  15951610
+    client_name: Peter Wilson 
+    senses:
+      - sense: preppy
+        size:  0.426
+      - sense: contemporary
+        size: 0.388
+      - sense: rugged
+        size: 0.878
+      - sense: classic
+        size: 0.594
+      - sense: coastal
+        size: 0.864
+      - sense: active
+        size: 0.883
+      - sense: bold
+        size: 0.341
+  - client_id:  41804530
+    client_name: Paige Griffeth 
+    senses:
+      - sense: preppy
+        size:  0.275
+      - sense: contemporary
+        size: 0.315
+      - sense: heritage
+        size: 0.947
+      - sense: classic
+        size: 0.301
+      - sense: coastal
+        size: 0.848
+      - sense: active
+        size: 0.946
+      - sense: bold
+        size: 0.425
+      - sense: boho
+        size: 0.643
+      - sense: romantic
+        size: -0.007
+      - sense: edgy
+        size:  0.492
+
+  - client_id: 48489359
+    client_name: Steve Annessa    
+    senses:
+      - sense: preppy
+        size:  0.97  
+      - sense: contemporary
+        size:  0.484 
+      - sense: rugged
+        size:  0.868 
+      - sense: classic
+        size:  0.788 
+      - sense: coastal
+        size:  1.009
+      - sense: active 
+        size:  1.095 
+      - sense: bold
+        size:  0.142                                 
+  - client_id: 48478796
+    client_name: Colin Jemmott    
+    senses:
+      - sense: preppy
+        size:  0.146 
+      - sense: rugged
+        size:  0.16  
+      - sense: heritage
+        size:  0.218 
+      - sense: classic
+        size:  0.248 
+      - sense: coastal
+        size:  0.13
+      - sense: active 
+        size:  0.126 -
+      - sense: bold
+        size:  0.062                                 
+  - client_id: 48491483
+    client_name: Hina’s Husband   
+    senses:
+      - sense: preppy
+        size:  0.749 
+      - sense: contemporary
+        size:  0.481 
+      - sense: heritage
+        size:  0.785 
+      - sense: classic
+        size:  0.756 
+      - sense: coastal
+        size:  1.111
+      - sense: active 
+        size:  1.086 
+      - sense: bold
+        size:  0.24                                  
+  - client_id: 48425125
+    client_name: Danielle Miller’s husband    
+    senses:
+      - sense: preppy
+        size:  0.923 
+      - sense: contemporary
+        size:  0.808 
+      - sense: heritage
+        size:  1.104 
+      - sense: classic
+        size:  0.934 
+      - sense: coastal
+        size:  1.121
+      - sense: active 
+        size:  1.195 
+      - sense: bold
+        size:  0.215                                 
+  - client_id: 48527631
+    client_name: Ryan Galloway    
+    senses:
+      - sense: preppy
+        size:  0.173 
+      - sense: contemporary
+        size:  0.16  
+      - sense: heritage
+        size:  0.135 
+      - sense: classic
+        size:  0.205 
+      - sense: coastal
+        size:  0.157
+      - sense: active 
+        size:  0.102 
+      - sense: bold
+        size:  0.005                                 
+  - client_id: 48526049
+    client_name: Don Frehulfer    
+    senses:
+      - sense: preppy
+        size:  0.109 
+      - sense: contemporary
+        size:  0.089 
+      - sense: heritage
+        size:  0.177 
+      - sense: classic
+        size:  0.132 
+      - sense: coastal
+        size:  0.196
+      - sense: active 
+        size:  0.207 
+      - sense: bold
+        size:  0.031                                 
+  - client_id: 48538320
+    client_name: Ryan Galloway    
+    senses:
+      - sense: preppy
+        size:  0.991 
+      - sense: contemporary
+        size:  1.016 
+      - sense: heritage
+        size:  0.983 
+      - sense: classic
+        size:  1.053 
+      - sense: coastal
+        size:  0.914
+      - sense: active 
+        size:  1.22  
+      - sense: bold
+        size:  0.255                                 
+  - client_id: 48493019
+    client_name: Darin Barnes   
+    senses:
+      - sense: preppy
+        size:  0.857 
+      - sense: contemporary
+        size:  0.546 
+      - sense: heritage
+        size:  0.889 
+      - sense: classic
+        size:  0.747 
+      - sense: coastal
+        size:  0.612
+      - sense: active 
+        size:  0.498 
+      - sense: bold
+        size:  0.044                                 
+  - client_id: 48524596
+    client_name: Zack Horn    
+    senses:
+      - sense: preppy
+        size:  1.316 
+      - sense: contemporary
+        size:  1.013 
+      - sense: heritage
+        size:  0.422 
+      - sense: classic
+        size:  1.028 
+      - sense: coastal
+        size:  0.469
+      - sense: active 
+        size:  0.549 
+      - sense: bold
+        size:  0.155                                 
+  - client_id: 48537240
+    client_name: Zack Horn take 2 AFTER preppy got demoted   
+    senses:
+      - sense: preppy
+        size:  1.329 
+      - sense: contemporary
+        size:  0.984 
+      - sense: heritage
+        size:  1.66  
+      - sense: classic
+        size:  1.263 
+      - sense: coastal
+        size:  2.018
+      - sense: active 
+        size:  1.938 
+      - sense: bold
+        size:  1.182                                 
   - client_id: 1
     senses:
       - sense: active
         size:  1.228
-      - sense: heritage_rugged
+      - sense: heritage_heritage
         size:  0.907
       - sense: contemporary
         size:  0.682
