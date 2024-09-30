@@ -118,7 +118,7 @@
     	padding: 70px 0px;
     	background: #fff;
 
-    	h6, h3, .playback-bubbles, p {
+    	h6, h3, .playback-bubbles, .persona_description {
     		padding-right: 20px;
     		padding-left: 20px;
     	}
@@ -1128,4 +1128,14 @@ a.playback-button {
 		text-transform: uppercase;
 		margin-bottom: 0;
 	}
+}
+
+.button {
+	
+    padding: 10px 20px;
+    border: 1px solid #001E60;
+    border-radius: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    color: #001E60;
 }
