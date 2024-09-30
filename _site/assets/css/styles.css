@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: area-normal, sans-serif;
   font-style: normal;
@@ -2538,3 +2539,5 @@ progress::-webkit-progress-value::before {
   right: 0;
   top: -125%;
 }
+
+/*# sourceMappingURL=styles.css.map */
