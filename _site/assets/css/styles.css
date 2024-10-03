@@ -1672,13 +1672,12 @@ a.prototype {
   margin-bottom: 0;
 }
 
-.tangetial_personas .carousel-item {
-  height: 253px;
-}
 .tangetial_personas .carousel-item img {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
+  max-width: fit-content;
 }
 .tangetial_personas .carousel-item a {
   position: absolute;
@@ -1689,7 +1688,7 @@ a.prototype {
   padding: 0.5rem 0.7rem;
   color: #001E60;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .tangetial_personas .carousel-item a span {
   display: none;

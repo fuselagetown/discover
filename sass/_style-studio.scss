@@ -370,11 +370,12 @@
 .carousel-item {
 	.tangetial_personas & {
 
-		        height: 253px; 
 		img {
 			position: absolute; 
 			top: 0; 
-			left: 0
+			left: 0;
+			height: 100%;
+    		max-width: fit-content;
 		}
 		a {
 			position: absolute; 
@@ -386,7 +387,7 @@
 			color: $charcoal;
 			text-decoration: none;
 			
-			font-size: 1.2rem;
+			font-size: 1.1rem;
 			span { display:none; }
 		}
 	}
