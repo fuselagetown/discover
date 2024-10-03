@@ -367,6 +367,29 @@
 
 }
 
+.carousel-item {
+	.tangetial_personas & {
+		img {
+			position: absolute; 
+			top: 0; 
+			left: 0
+		}
+		a {
+			position: absolute; 
+			bottom: 100px; 
+			left: 0;
+			right: 20px;
+			background: white;
+			padding: 0.5rem 0.7rem;
+			color: $charcoal;
+			text-decoration: none;
+			
+			font-size: 1.2rem;
+			span { display:none; }
+		}
+	}
+}
+
 
 @-webkit-keyframes transition-in {
     0% { opacity: 0; }
@@ -1131,7 +1154,7 @@ a.playback-button {
 }
 
 .button {
-	
+
     padding: 10px 20px;
     border: 1px solid #001E60;
     border-radius: 44px;

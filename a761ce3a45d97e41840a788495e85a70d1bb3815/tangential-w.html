@@ -23,7 +23,7 @@ lob: w
 
 {% unless persona == 'n/a' %}
 
-<div class="personality_and_gallery {{ persona }} ">
+<div class="tangetial_personas {{ persona }} ">
 
 {% assign primary_sense = personality.primary_sense %}
 {% assign secondary_sense = personality.secondary_sense %}
@@ -76,8 +76,8 @@ lob: w
 			{% if primary_sense == tangential_primary_sense or secondary_sense == tangential_secondary_sense or primary_sense == tangential_secondary_sense or secondary_sense == tangential_primary_sense %}
 
 				<div class="carousel-item">
-					<img src="{{ personality.gallery.first }}" style="position: absolute; top: 0; left: 0" >
-					<a href="https://www.stitchfix.com/search?q={{ tangetial_persona | downcase }}" target="_blank" style="position: absolute;: top: 100px; background: white;">Browse {{ tangetial_persona | downcase }} styles <br /><span style="font-size: 0.5rem">({{ tangential_primary_sense }}, {{ tangential_secondary_sense }}) </span></a>
+					<img src="{{ personality.gallery.first }}">
+					<a href="https://www.stitchfix.com/search?q={{ tangetial_persona | downcase }}" target="_blank">Browse {{ tangetial_persona | downcase }} styles <br /><span style="font-size: 0.5rem">({{ tangential_primary_sense }}, {{ tangential_secondary_sense }}) </span></a>
 				</div>
 
 			{% endif %}	

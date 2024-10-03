@@ -10,7 +10,7 @@
 
 {% endif %}
 
-<h3>You're a <a href="tangential-{{ page.lob }}#{{ persona }}">{{ persona }}</a><span style="font-size: 0.6rem; display: none;">(2 main styles: {{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
+<h3>You're a {{ persona }}<a href="tangential-{{ page.lob }}#{{ persona }}"></a><span style="font-size: 0.6rem; display: none;">(2 main styles: {{ main_sense_name }}, {{ secondary_sense_name }})</span> </h3>
 
 <div class="persona_description">
 
@@ -20,4 +20,84 @@
 
 
 </div>
-					
+		
+
+
+{% unless persona == 'n/a' %}
+
+<div class="tangetial_personas {{ persona }} " style="padding: 40px 0;">
+
+{% assign primary_sense = personality.primary_sense %}
+{% assign secondary_sense = personality.secondary_sense %}
+
+
+
+<!-- <p>{{ description }}</p> -->
+
+
+
+<div class="carousel">
+   <div class="carousel-container">
+
+{% assign n = site.data.personalities | size %}
+{% assign personalities = site.data.personalities | sample: n %}
+
+{% for personality in site.data.personalities %}
+
+	
+
+	{% if page.lob == 'w' %}
+
+		{% assign tangetial_persona = personality.womens-name %}
+		{% assign tangential_sense_description = personality.womens-blurb %}
+
+		{% else %}
+
+			{% assign tangetial_persona = personality.mens-name %}
+			{% assign tangential_sense_description = personality.mens-blurb %}
+
+		{% endif %}
+
+		{% assign tangential_primary_sense = personality.primary_sense %}
+		{% assign tangential_secondary_sense = personality.secondary_sense %}
+
+
+
+
+		{% unless tangetial_persona == 'n/a' %} 
+
+
+		{% endunless %}	
+
+		{% unless persona == tangetial_persona %}
+		
+
+			
+
+			{% if primary_sense == tangential_primary_sense or secondary_sense == tangential_secondary_sense or primary_sense == tangential_secondary_sense or secondary_sense == tangential_primary_sense %}
+
+				<div class="carousel-item">
+					<img src="{{ personality.gallery.first }}" >
+					<a href="https://www.stitchfix.com/search?q={{ tangetial_persona | downcase }}" target="_blank">Shop {{ tangetial_persona | downcase }} styles </a>
+				</div>
+
+			{% endif %}	
+			
+
+
+
+
+		{% endunless %}	
+
+
+{% endfor %}
+
+
+</div>
+
+</div>
+</div>
+  	
+{% endunless %}	
+	   	
+    

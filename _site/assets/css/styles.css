@@ -1672,6 +1672,26 @@ a.prototype {
   margin-bottom: 0;
 }
 
+.tangetial_personas .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tangetial_personas .carousel-item a {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 20px;
+  background: white;
+  padding: 0.5rem 0.7rem;
+  color: #001E60;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.tangetial_personas .carousel-item a span {
+  display: none;
+}
+
 @-webkit-keyframes transition-in {
   0% {
     opacity: 0;
