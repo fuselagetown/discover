@@ -1,0 +1,92 @@
+
+{% for personality in site.data.personalities %}
+
+
+
+{% if page.lob == 'w' %}
+
+	{% assign persona = personality.womens-name %}
+	{% assign description = personality.womens-blurb %}
+
+{% else %}
+
+	{% assign persona = personality.mens-name %}
+	{% assign description = personality.mens-blurb %}
+
+{% endif %}
+
+{% unless persona == 'n/a' %}
+
+<div class="tangetial_personas {{ persona }} " style="height: 1000px;">
+
+{% assign primary_sense = personality.primary_sense %}
+{% assign secondary_sense = personality.secondary_sense %}
+
+<h3 style="padding:15px; padding-top: 100px;">You're a <a name="{{ persona }}">{{ persona }}</a> <span style="font-size: 0.8rem;display: none">({{ primary_sense }}, {{ secondary_sense }})</span> </h3>
+
+<!-- <p>{{ description }}</p> -->
+
+
+<!-- <h3>Tangential personas </h3> -->
+
+<div class="carousel">
+   <div class="carousel-container">
+
+{% assign n = site.data.personalities | size %}
+{% assign personalities = site.data.personalities | sample: n %}
+
+{% for personality in site.data.personalities %}
+
+	
+
+	{% if page.lob == 'w' %}
+
+		{% assign tangetial_persona = personality.womens-name %}
+		{% assign tangential_sense_description = personality.womens-blurb %}
+
+		{% else %}
+
+			{% assign tangetial_persona = personality.mens-name %}
+			{% assign tangential_sense_description = personality.mens-blurb %}
+
+		{% endif %}
+
+		{% assign tangential_primary_sense = personality.primary_sense %}
+		{% assign tangential_secondary_sense = personality.secondary_sense %}
+
+
+
+
+
+		{% unless persona == tangetial_persona %}
+			
+
+			{% if primary_sense == tangential_primary_sense or secondary_sense == tangential_secondary_sense or primary_sense == tangential_secondary_sense or secondary_sense == tangential_primary_sense %}
+
+			{% unless tangetial_persona == 'n/a' %} 
+
+				<div class="carousel-item">
+					<img src="{{ personality.gallery.first }}">
+					<a href="https://www.stitchfix.com/search?q={{ tangetial_persona | downcase }}" target="_blank">Browse {{ tangetial_persona | downcase }} styles <br /><span style="font-size: 0.5rem">({{ tangential_primary_sense }}, {{ tangential_secondary_sense }}) </span></a>
+				</div>
+
+			{% endunless %}	
+
+			{% endif %}	
+			
+
+		{% endunless %}	
+
+
+{% endfor %}
+
+
+</div>
+
+</div>
+</div>
+  	
+{% endunless %}	
+	   	
+    
+{% endfor %}

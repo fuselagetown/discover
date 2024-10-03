@@ -393,7 +393,12 @@
 			span { display:none; }
 		}
 	}
+
+	.m & {
+		img { display:none; }
+	}
 }
+
 
 
 @-webkit-keyframes transition-in {
