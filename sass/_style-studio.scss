@@ -369,6 +369,8 @@
 
 .carousel-item {
 	.tangetial_personas & {
+
+		        height: 253px; 
 		img {
 			position: absolute; 
 			top: 0; 
@@ -376,9 +378,9 @@
 		}
 		a {
 			position: absolute; 
-			bottom: 100px; 
+			bottom: 30px; 
 			left: 0;
-			right: 20px;
+			right: 30px;
 			background: white;
 			padding: 0.5rem 0.7rem;
 			color: $charcoal;
