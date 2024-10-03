@@ -23,17 +23,17 @@ lob: w
 
 {% unless persona == 'n/a' %}
 
-<div class="tangetial_personas {{ persona }} ">
+<div class="tangetial_personas {{ persona }} " style="height: 1000px;">
 
 {% assign primary_sense = personality.primary_sense %}
 {% assign secondary_sense = personality.secondary_sense %}
 
-<h3 style="padding-top: 60px;">You're a <a name="{{ persona }}">{{ persona }}</a> <span style="font-size: 0.8rem; ">({{ primary_sense }}, {{ secondary_sense }})</span> </h3>
+<h3 style="padding:10px; padding-top: 100px;">You're a <a name="{{ persona }}">{{ persona }}</a> <span style="font-size: 0.8rem;display: none">({{ primary_sense }}, {{ secondary_sense }})</span> </h3>
 
 <!-- <p>{{ description }}</p> -->
 
 
-<h3>Tangential personas </h3>
+<!-- <h3>Tangential personas </h3> -->
 
 <div class="carousel">
    <div class="carousel-container">
