@@ -1696,9 +1696,6 @@ a.prototype {
 .tangetial_personas .carousel-item a span {
   display: none;
 }
-.m .carousel-item img {
-  display: none;
-}
 
 @-webkit-keyframes transition-in {
   0% {
