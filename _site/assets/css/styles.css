@@ -2211,11 +2211,28 @@ a.playback-button {
   padding: 40% 40px 0;
   -webkit-animation: drilldown-fading 0.5s ease-in forwards;
   -webkit-animation-delay: 3s;
+  display: none;
 }
 .interstitial h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 3.5rem;
+}
+.interstitial h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  text-align: center;
+}
+.interstitial h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+}
+.interstitial hr {
+  opacity: 0;
+  margin: 0.3rem;
 }
 .interstitial .progress {
   background: url("../../assets/images/progress.svg") no-repeat -30px;
@@ -2225,10 +2242,54 @@ a.playback-button {
   right: 0;
   height: 50px;
   font-size: 0;
-  -webkit-animation: progressbar 4s ease-in forwards;
+  -webkit-animation: progressbar 4s linear;
+  animation-iteration-count: infinite;
 }
 .im-offscreen .interstitial {
   display: none;
+}
+
+@-webkit-keyframes retrosepective-sliding {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -1000px;
+  }
+}
+.retrospective-slide {
+  display: block;
+  width: 100%;
+  background: #86C8BC;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 800px;
+  z-index: 200;
+  padding: 40% 40px 0;
+  -webkit-animation: retrosepective-sliding 0.5s ease-in forwards;
+}
+.retrospective-slide.retro-1 {
+  -webkit-animation-delay: 3s;
+}
+.retrospective-slide.retro-2 {
+  -webkit-animation-delay: 6s;
+}
+.retrospective-slide.retro-3 {
+  -webkit-animation-delay: 9s;
+}
+.retrospective-slide.retro-4 {
+  -webkit-animation-delay: 12s;
+}
+.retrospective-slide.retro-5 {
+  -webkit-animation-delay: 15s;
+}
+.retrospective-slide.retro-6 {
+  -webkit-animation-delay: 18s;
+}
+.retrospective-slide.retro-7 {
+  -webkit-animation-delay: 21s;
 }
 
 .round-2 .this-or-that-select,
@@ -2422,11 +2483,22 @@ a.playback-button {
 .fade-out .drilldown-close {
   -webkit-animation: drilldown-fading 0.5s ease-in forwards;
 }
+.fade-out .style-shuffle-title {
+  display: none;
+}
 .fade-out .item-drilldown__item {
   -webkit-animation: slide-left-item 0.7s ease-in forwards;
 }
 .fade-out .item-drilldown__item.liked {
   -webkit-animation: slide-right-item 0.7s ease-in forwards;
+}
+
+.only-1-left.im-fading .style-shuffle-title,
+.only-1-left.im-fading .style-shuffle-ratings {
+  display: none;
+}
+.only-1-left.im-fading .style-shuffle__outfit {
+  border-color: transparent;
 }
 
 .item-drilldown__next {

@@ -248,8 +248,8 @@ Array.from(circularProgress).forEach((progressBar) => {
   $(".thumbs-up.style-shuffle-rating-10, .item-drilldown__item-10").click(function() { $(".playback-bubble-10").show();});
 
 
-$(".romantic-04 .style-shuffle-rating, .romantic-04 .item-drilldown__next, .m .preppy-04 .style-shuffle-rating, .m .preppy-04 .item-drilldown__next").click(function() {
-    $(".playback").addClass("interstital").show().delay(4000).queue(function(){
+$(".only-1-left .style-shuffle-rating, .only-1-left .item-drilldown__next").click(function() {
+    $(this).closest(".style-shuffle-item").prevAll(".playback").addClass("interstital").show().delay(4000).queue(function(){
       $(this).addClass("im-offscreen").dequeue();
     });
       return(false); 
@@ -258,8 +258,10 @@ $(".romantic-04 .style-shuffle-rating, .romantic-04 .item-drilldown__next, .m .p
 
 
    
-  $(".style-shuffle-rating").click(function() {
+  $(".style-shuffle-rating, .item-drilldown__next").click(function() {
     $(this).addClass("active");
+    $(this).closest(".style-shuffle-item").addClass('im-fading');
+    $(this).closest(".style-shuffle-item").prevAll(".style-shuffle-item").first().addClass( "hello" );
     return(false); 
   });
 

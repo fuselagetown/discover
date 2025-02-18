@@ -1,3 +1,5 @@
+{% assign total = 0 %}
+
 {% for post in site.categories['senses']  %} 
 
 	{% if post.lob contains page.lob %}
@@ -8,13 +10,21 @@
 
 		{% assign sense_tag = post.url | date: "%d" %}
 
-		{% for post in site.categories['senses-outfits'] %} 
+		
+
+		{% for post in site.categories['senses-outfits'] limit: 3 %} 
 
 			{% if post.url contains sense_name %}
 
 			{% assign outfit_tag = post.url | date: "%d" %}
 
-				<div class="style-shuffle-item  {{ sense_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} ">
+			{% assign total-give-gets = total-give-gets | plus: 1 %}
+
+				<div class="style-shuffle-item  {{ sense_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} only-{{ total-give-gets }}-left ">
+
+					<div class="interstitial">
+						Finally, let’s rate some outfits for the upcoming season
+					</div>
 
 					<h5 class="style-shuffle-title">Would you wear this?</h5>
 

@@ -1,0 +1,80 @@
+{% for post in site.categories['trends']  %} 
+
+	{% assign total-trends = total-trends | plus: 1 %}
+
+	{% if post.lob contains page.lob %}
+
+		{% assign pack_number = post.url | date: "%d" %}
+
+		{% assign trend_name = post.title | downcase %}
+
+		{% assign trend_tag = post.url | date: "%d" %}
+
+				<div class="style-shuffle-item {{ trend_name  }} {{ post.title | downcase }}-{{ post.url | date: '%d' }} ">
+
+					
+					<h5 class="style-shuffle-title">Would you try this trend?</h5>
+
+					<div class="style-shuffle-outfit-and-items">
+
+
+						<img src="{{ site.baseurl }}/assets/images/trends/{{ post.title | downcase | replace: " ", "-" }}.jpg" alt="{{ post.title }} cover" class="style-shuffle__outfit" />	
+						
+						<div class="style-shuffle-ratings">
+
+							<div>
+								<a href="#" class="style-shuffle-rating thumbs-down " data-diff='0'><span>Thumbs down</span></a>
+								<a href="#" class="style-shuffle-rating thumbs-up style-shuffle-rating-{{ trend_tag }}" data-diff='30'><span>Thumbs up</span></a>
+							</div>
+
+							<a href="#"class="only-some-items only-some-items-{{ trend_tag }}"><span>Only some aspects</span></a>
+
+						</div>
+
+												<div class="item-drilldown grid-of-{{ grid-length }}">
+
+							<h5 class="style-shuffle-title">Which aspects would you try?</h5>
+
+							<div class="item-drilldown__items">
+
+								<div class="item-drilldown__items--column">
+
+
+									{% for aspect in post.aspects limit: 3 %} 
+
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ site.baseurl }}/assets/images/trends/{{ aspect | downcase | replace: " ", "-" }}.jpg" > {{ aspect }}
+											</div>
+
+									{% endfor %}
+
+								</div>
+
+								<div class="item-drilldown__items--column">
+
+
+									{% for aspect in post.aspects offset: 3 %} 
+
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ site.baseurl }}/assets/images/trends/{{ aspect | downcase | replace: " ", "-"  }}.jpg" >{{ aspect }}
+											</div>
+
+									{% endfor %}
+
+								</div>
+
+							</div>
+
+							<a href="#" class="item-drilldown__next">Next</a>
+
+							<a href="" class="drilldown-close">Close</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+	{% endif %}
+
+{% endfor %}
+

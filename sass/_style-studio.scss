@@ -858,7 +858,7 @@ a.playback-button {
 }
 
 
-.interstitial {
+.interstitial{
 	background: $mint;
 	position: absolute;
 	top: 0;
@@ -870,12 +870,29 @@ a.playback-button {
 	padding: 40% 40px 0;
 	-webkit-animation: drilldown-fading 0.5s ease-in forwards;
 	-webkit-animation-delay: 3s;
+	display: none;
 
 	h1 {
 		font-size: 3rem;
 		font-weight: 700;
 		line-height: 3.5rem;
 	}
+
+	h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		line-height: 2.5rem;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 700;
+		line-height: 2rem;
+		text-align: center;
+	}
+
+	hr { opacity:0; margin:0.3rem; }
 
 	.progress {
 
@@ -886,12 +903,55 @@ a.playback-button {
 			right: 0;
 			height: 50px;
 			font-size: 0;
-			-webkit-animation: progressbar 4s ease-in forwards;
+			-webkit-animation: progressbar 4s linear;
+			animation-iteration-count: infinite;
+
 
 	}
 
 	.im-offscreen & {
 		display: none;
+	}
+}
+
+@-webkit-keyframes retrosepective-sliding {
+    0% { top: 0 }
+    100% { top: -1000px; }
+}
+
+.retrospective-slide {
+	display: block;
+	width: 100%;
+	background: $mint;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 800px;
+	z-index: 200;
+	padding: 40% 40px 0;
+	-webkit-animation: retrosepective-sliding 0.5s ease-in forwards;
+
+	&.retro-1 {
+		-webkit-animation-delay: 3s;
+	}
+	&.retro-2 {
+		-webkit-animation-delay: 6s;
+	}
+	&.retro-3 {
+		-webkit-animation-delay: 9s;
+	}
+	&.retro-4 {
+		-webkit-animation-delay: 12s;
+	}
+	&.retro-5 {
+		-webkit-animation-delay: 15s;
+	}
+	&.retro-6 {
+		-webkit-animation-delay: 18s;
+	}
+	&.retro-7 {
+		-webkit-animation-delay: 21s;
 	}
 }
 
@@ -1097,6 +1157,10 @@ a.playback-button {
 
 	}
 
+	.style-shuffle-title {
+		display: none;
+	}
+
 	.item-drilldown__item {
 
 		-webkit-animation: slide-left-item 0.7s ease-in forwards;
@@ -1108,6 +1172,19 @@ a.playback-button {
 	}
 
 
+}
+
+.only-1-left {
+	&.im-fading {
+		.style-shuffle-title,
+		.style-shuffle-ratings {
+			display: none;
+		}
+
+		.style-shuffle__outfit {
+			border-color: transparent;
+		}
+	}
 }
 
 .item-drilldown__next {

@@ -1,7 +1,7 @@
 ---
 layout: page
 lob: w
-published: false
+published: true
 --- 
 
 
@@ -38,7 +38,7 @@ client {{ person.client_id }} {{ person.client_name }}
 	  {% for sense in senses reversed %}
 
     
-         {% assign dimention = sense.size | plus: 1.087 | times: 50  %}
+         {% assign dimention = sense.size | plus: 2 | times: 50  %}
 
 
 				<div class="playback-bubble playback-bubble-{{ sense.sense }} {{ page.lob }} {{ post.lob }} " value='0' style="display: inline-block; height: {{ dimention }}px; width: {{ dimention  }}px; min-width: 0px; min-height: 0px;">

@@ -1,4 +1,27 @@
 client:
+  - client_id: xxx
+    client_name: Test
+    senses:
+      - sense: preppy
+        size:  -2.0
+      - sense: contemporary
+        size: -1.5
+      - sense: heritage
+        size: -1.0
+      - sense: classic
+        size: -0.5
+      - sense: coastal
+        size: 0
+      - sense: active
+        size: 0.5
+      - sense: bold
+        size: 1
+      - sense: boho
+        size: 1.5
+      - sense: romantic
+        size: 2
+      - sense: edgy
+        size: 2.5
   - client_id: 24224503
     client_name: Molly Eamon 
     senses:
