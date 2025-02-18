@@ -1045,6 +1045,8 @@ a.playback-button {
 	}
 }
 
+
+
 .grid-of-5,
 .grid-of-3 {
 
@@ -1118,6 +1120,28 @@ a.playback-button {
 		}
 	}
 }
+
+.grid-of-6 {
+
+	.item-drilldown__items {
+		max-width: 100%;
+	}
+
+	.item-drilldown__items--column {
+		width: 50%;
+		float: left;
+
+
+		
+	}
+
+	.item-drilldown__item {
+		width: 100%;
+	}
+
+}
+
+
 
 .iconography {
 

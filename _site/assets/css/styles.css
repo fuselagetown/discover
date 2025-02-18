@@ -619,6 +619,10 @@ a.round-3-done-button, a.style-shuffle-summary-button, a.wrap-up-button, a.playb
 .grid-of-2 .item-drilldown__item { width: 55%; border: 5px solid #f2f3f4; }
 .grid-of-2 .item-drilldown__item:nth-child(2) { position: absolute; right: 0; bottom: 0; }
 
+.grid-of-6 .item-drilldown__items { max-width: 100%; }
+.grid-of-6 .item-drilldown__items--column { width: 50%; float: left; }
+.grid-of-6 .item-drilldown__item { width: 100%; }
+
 .iconography .item-drilldown__item:after { background-image: url("../../assets/images/heart.svg"); }
 .iconography .item-drilldown__item.liked:after { background-image: url("../../assets/images/heart-active.svg"); }
 
