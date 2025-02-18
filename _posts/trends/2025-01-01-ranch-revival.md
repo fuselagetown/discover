@@ -8,7 +8,7 @@ aspects:
 - Cowboy Boots
 - Denim
 - Western Shirts
-- Leather or Suede Jackets
+- Leather Jackets
 - Prairie Dresses
 - Cowboy Hats
 

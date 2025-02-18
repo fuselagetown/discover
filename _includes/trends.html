@@ -42,7 +42,7 @@
 
 									{% for aspect in post.aspects limit: 3 %} 
 
-											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ site.baseurl }}/assets/images/trends/{{ aspect | downcase | replace: " ", "-" }}.jpg" > {{ aspect }}
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ site.baseurl }}/assets/images/trends/{{ aspect | downcase | replace: " ", "-" }}.jpg" > <div class="item-drilldown__item__label">{{ aspect }}</div>
 											</div>
 
 									{% endfor %}
@@ -54,7 +54,7 @@
 
 									{% for aspect in post.aspects offset: 3 %} 
 
-											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ site.baseurl }}/assets/images/trends/{{ aspect | downcase | replace: " ", "-"  }}.jpg" >{{ aspect }}
+											<div class="item-drilldown__item item-drilldown__item-{{ sense_tag }}"   data-diff='7'><img src="{{ site.baseurl }}/assets/images/trends/{{ aspect | downcase | replace: " ", "-"  }}.jpg" ><div class="item-drilldown__item__label">{{ aspect }}</div>
 											</div>
 
 									{% endfor %}

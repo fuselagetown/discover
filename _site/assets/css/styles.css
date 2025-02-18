@@ -603,6 +603,7 @@ a.round-3-done-button, a.style-shuffle-summary-button, a.wrap-up-button, a.playb
 .item-drilldown__item { width: 50%; display: inline-flex; border: 2.5px solid #f2f3f4; float: left; position: relative; }
 .item-drilldown__item:after { content: ' '; position: absolute; top: 5px; right: 5px; width: 24px; height: 24px; z-index: 1; background: url("../../assets/images/thumb.svg") no-repeat center; background-size: 16px; }
 .item-drilldown__item.liked:after { background-image: url("../../assets/images/thumb-active.svg"); -webkit-animation: heart 0.4s ease-out; -webkit-animation-delay: 0s; }
+.item-drilldown__item .item-drilldown__item__label { position: absolute; bottom: 10px; left: 0; background: #fff; padding: 0.15rem 0.4rem; font-size: 0.7rem; text-align: left; }
 
 .grid-of-5 .item-drilldown__items, .grid-of-3 .item-drilldown__items { max-width: 260px; }
 .grid-of-5 .item-drilldown__items--column, .grid-of-3 .item-drilldown__items--column { width: 59%; display: block; float: left; }

@@ -1033,6 +1033,16 @@ a.playback-button {
 		}
 
 	}
+
+	.item-drilldown__item__label {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
+		background: #fff;
+		padding: 0.15rem 0.4rem;
+		font-size: 0.7rem;
+		text-align: left;
+	}
 }
 
 .grid-of-5,

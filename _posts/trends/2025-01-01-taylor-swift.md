@@ -6,10 +6,10 @@ lob:
 - w
 aspects: 
 - Fit-and-Flare Dresses
-- High-Waisted Shorts & Pants
-- Preppy Sweaters & Cardigans
-- Classic Button-Down Shirts
+- High-Waisted Shorts
+- Preppy Sweaters
+- Classic Button-Downs
 - Statement Outerwear
-- Vintage-Inspired Footwear
+- Vintage-Inspired Shoes
 ---
 
