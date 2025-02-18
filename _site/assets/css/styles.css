@@ -418,7 +418,7 @@ a.prototype { display: block; color: #25282D !important; text-decoration: none; 
 .fullbleed .style-shuffle-item.thumbs-up img { -webkit-animation: slide-right-fullbleed 0.7s ease-in forwards; }
 .fullbleed .style-shuffle-item.thumbs-down img { -webkit-animation: slide-left-fullbleed 0.7s ease-in forwards; }
 
-.style-shuffle-ratings { position: absolute; bottom: 170px; left: 0; right: 0; text-align: center; bottom: 100px; height: 140px; background: #fff; }
+.style-shuffle-ratings { position: absolute; bottom: 170px; left: 0; right: 0; text-align: center; bottom: 40px; height: 140px; background: #fff; }
 .style-shuffle-ratings div { left: calc(50% - 70px); right: calc(50% - 70px); width: 140px; margin: 0 auto; height: 80px; }
 
 .only-some-items { text-align: center; bottom: -30px; text-decoration: none; font-size: 1rem; color: #fff; clear: both; display: block; padding: 0.5rem 0; background: rgba(255, 255, 255, 0.4); }
@@ -576,7 +576,7 @@ a.round-3-done-button, a.style-shuffle-summary-button, a.wrap-up-button, a.playb
 
 @-webkit-keyframes retrosepective-sliding { 0% { top: 0; }
   100% { top: -1000px; } }
-.retrospective-slide { display: block; width: 100%; background: #86C8BC; position: absolute; top: 0; right: 0; left: 0; height: 800px; z-index: 200; padding: 40% 40px 0; -webkit-animation: retrosepective-sliding 0.5s ease-in forwards; }
+.retrospective-slide { display: block; width: 100%; background: #86C8BC; position: absolute; top: 0; right: 0; left: 0; height: 700px; z-index: 200; padding: 40% 40px 0; -webkit-animation: retrosepective-sliding 0.5s ease-in forwards; }
 .retrospective-slide.retro-1 { -webkit-animation-delay: 3s; }
 .retrospective-slide.retro-2 { -webkit-animation-delay: 6s; }
 .retrospective-slide.retro-3 { -webkit-animation-delay: 9s; }
