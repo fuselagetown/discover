@@ -16,7 +16,7 @@ body {
 	height: 600px;
 	opacity: 0;
 	animation: lazy-load 0.4s ease-out forwards;
-    animation-delay: 6s;
+    animation-delay: 5.5s;
 
 	.style-shuffle-title { display:none; }
 	.style-shuffle-item { height:100%; overflow: hidden; }
@@ -30,10 +30,20 @@ body {
 		.thumbs-up { float:right; }
 		.only-some-items {  
 			position: absolute;
-			top: 20px;
+			top: 4px;
 			left: calc(100%/2 - 75px);
 			width: 150px;
+			span {
+				line-height: 38px;
+    			display: block;
+			}
 		}
+	}
+
+	.style-shuffle-rating {
+		width: 50px;
+		height: 50px;
+		margin: 12px;
 	}
 
 	.drilldown-close { top: 0; right:0; }

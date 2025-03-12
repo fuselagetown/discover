@@ -678,7 +678,7 @@ progress::-webkit-progress-value::before { content: '80%'; position: absolute; r
   100% { opacity: 1; } }
 @keyframes typing { from { width: 0; }
   to { width: 100%; } }
-.style-shuffle { position: relative; height: 600px; opacity: 0; animation: lazy-load 0.4s ease-out forwards; animation-delay: 6s; }
+.style-shuffle { position: relative; height: 600px; opacity: 0; animation: lazy-load 0.4s ease-out forwards; animation-delay: 5.5s; }
 .style-shuffle .style-shuffle-title { display: none; }
 .style-shuffle .style-shuffle-item { height: 100%; overflow: hidden; }
 .style-shuffle .style-shuffle__outfit { top: 0; }
@@ -686,7 +686,9 @@ progress::-webkit-progress-value::before { content: '80%'; position: absolute; r
 .style-shuffle .item-drilldown__items { max-width: 300px; height: 400px; }
 .style-shuffle .style-shuffle-ratings div { width: 300px; }
 .style-shuffle .style-shuffle-ratings .thumbs-up { float: right; }
-.style-shuffle .style-shuffle-ratings .only-some-items { position: absolute; top: 20px; left: calc(100%/2 - 75px); width: 150px; }
+.style-shuffle .style-shuffle-ratings .only-some-items { position: absolute; top: 4px; left: calc(100%/2 - 75px); width: 150px; }
+.style-shuffle .style-shuffle-ratings .only-some-items span { line-height: 38px; display: block; }
+.style-shuffle .style-shuffle-rating { width: 50px; height: 50px; margin: 12px; }
 .style-shuffle .drilldown-close { top: 0; right: 0; }
 
 .chat { margin: 2rem 0; }
