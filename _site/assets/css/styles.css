@@ -673,3 +673,28 @@ progress::-webkit-progress-bar { background: #FFC6C9; }
 progress[value] { /* Reset the default appearance */ -webkit-appearance: none; appearance: none; }
 
 progress::-webkit-progress-value::before { content: '80%'; position: absolute; right: 0; top: -125%; }
+
+@-webkit-keyframes lazy-load { 0% { opacity: 0; }
+  100% { opacity: 1; } }
+@keyframes typing { from { width: 0; }
+  to { width: 100%; } }
+.style-shuffle { position: relative; height: 600px; opacity: 0; animation: lazy-load 0.4s ease-out forwards; animation-delay: 6s; }
+.style-shuffle .style-shuffle-title { display: none; }
+.style-shuffle .style-shuffle-item { height: 100%; overflow: hidden; }
+.style-shuffle .style-shuffle__outfit { top: 0; }
+.style-shuffle .item-drilldown { height: 600px; padding-top: 40px; }
+.style-shuffle .item-drilldown__items { max-width: 300px; height: 400px; }
+.style-shuffle .style-shuffle-ratings div { width: 300px; }
+.style-shuffle .style-shuffle-ratings .thumbs-up { float: right; }
+.style-shuffle .style-shuffle-ratings .only-some-items { position: absolute; top: 20px; left: calc(100%/2 - 75px); width: 150px; }
+.style-shuffle .drilldown-close { top: 0; right: 0; }
+
+.chat { margin: 2rem 0; }
+.chat p { margin: 0 10px 10px; line-height: 30px; opacity: 0; animation: lazy-load 0.4s ease-out forwards; animation-delay: 0.5s; }
+.chat p:nth-child(2) { animation-delay: 1s; }
+.chat p:nth-child(3) { animation-delay: 2s; }
+.chat p:nth-child(4) { animation-delay: 3s; }
+.chat p:nth-child(5) { animation-delay: 4s; }
+.chat p:before { content: " "; width: 30px; height: 30px; display: block; float: left; background: url("../../assets/images/monogram-stitchfix.png") no-repeat center; background-size: 100%; margin: 0 10px 0 0; }
+.chat p.client { text-align: right; }
+.chat p.client:before { float: right; background-image: url("../../assets/images/monogram-client.png"); margin: 0 0 0 10px; }

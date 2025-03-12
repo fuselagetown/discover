@@ -1,4 +1,5 @@
 name: discover
+title: discover
 sass:
   sass_dir: sass
 permalink: /:categories/:month/:day/:title
