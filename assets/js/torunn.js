@@ -34,6 +34,13 @@ Array.from(circularProgress).forEach((progressBar) => {
   }, speed);
 });
 
+  $(".teaser__image").click(function() {
+    $(".immersive-view").fadeIn("slow");
+    return(false); 
+  });
+
+
+
 
   $(".carousel-item__actions--ratings--like").click(function() {
     $(this).closest( ".carousel-item__actions--ratings" ).find(".carousel-item__actions--ratings--dislike").removeClass('active');

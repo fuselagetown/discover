@@ -694,7 +694,7 @@ progress::-webkit-progress-value::before { content: '80%'; position: absolute; r
 .style-shuffle .style-shuffle-rating { width: 50px; height: 50px; margin: 12px; }
 .style-shuffle .drilldown-close { top: 0; right: 0; }
 
-.chat { margin: 2rem 0; }
+.chat { padding: 2rem 0; }
 .chat p { margin: 0 10px 10px; line-height: 30px; opacity: 0; animation: lazy-load 0.4s ease-out forwards; animation-delay: 0.5s; }
 .chat p:nth-child(2) { animation-delay: 1s; }
 .chat p:nth-child(3) { animation-delay: 2s; }
@@ -711,3 +711,22 @@ progress::-webkit-progress-value::before { content: '80%'; position: absolute; r
 .carousel-item__actions--bookmark { top: 5px !important; right: 5px !important; }
 
 .carousel-item__actions--ratings { bottom: 5px; right: 5px; }
+
+.teaser { background: red; position: relative; }
+
+.teaser__image { width: 80px; position: absolute; right: 10px; transform: rotate(20deg); }
+.teaser__image:nth-child(11) { transform: rotate(10deg); right: 20px; width: 100px; }
+.teaser__image:nth-child(10) { transform: rotate(5deg); right: 30px; width: 98px; }
+.teaser__image:nth-child(9) { transform: rotate(0deg); right: 40px; width: 96px; }
+.teaser__image:nth-child(8) { transform: rotate(-5deg); right: 50px; width: 94px; }
+.teaser__image:nth-child(7) { transform: rotate(-10deg); right: 60px; width: 92px; }
+.teaser__image:nth-child(6) { transform: rotate(-15deg); right: 70px; width: 90px; }
+.teaser__image:nth-child(5) { transform: rotate(-20deg); right: 80px; width: 88px; }
+.teaser__image:nth-child(4) { transform: rotate(-25deg); right: 90px; width: 86px; }
+.teaser__image:nth-child(3) { transform: rotate(-30deg); right: 100px; width: 84px; }
+.teaser__image:nth-child(2) { transform: rotate(-35deg); right: 110px; width: 82px; }
+.teaser__image:nth-child(1) { transform: rotate(-40deg); right: 120px; width: 80px; }
+.teaser__image img { border-radius: 5px; box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.02); }
+
+.immersive-view { display: none; background: #fff; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 1000px; width: 100%; }
+.immersive-view.open { display: block; }

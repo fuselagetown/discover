@@ -23,7 +23,13 @@ published: true
 			
 	<div class="carousel-container">
 
-			{% for post in site.categories['senses-outfits'] %} 		
+			{% for post in site.categories['senses']  %} 
+
+		{% assign sense_name = post.title | downcase %}
+
+		{% for post in site.categories['senses-outfits'] %} 
+
+				{% if post.url contains sense_name %}
 
 
 			<div class="carousel-item {% if post.category == 'shop-similar-items' %} shop-similar-item {% endif %} ">
@@ -100,9 +106,10 @@ published: true
 
 			</div>
 
-
+{% endif %}
 
 			
+			{% endfor %}
 			{% endfor %}
 
 	</div>
