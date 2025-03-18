@@ -1,0 +1,77 @@
+---
+layout: page
+lob: w
+--- 
+
+<div class="chat">
+
+		<p class="stitchfix"><span>What are you looking for today?</span></p>
+
+		<p class="client"><span>I’m going on a vacation</span></p>
+
+		<p class="stitchfix"><span>Nice! Where are you headed?</span></p>
+
+		<p class="client"><span>Hawaii</span></p>
+
+		<p class="stitchfix"><span>Aloha! That will be wonderful this time of year, and we’ll get you styled. Is the vacation more casual or more formal? Let’s do a vibe check.</span></p>
+
+	</div>
+
+<div class="vibe-check this-or-that" style="position: relative;">
+
+
+	{% include wrap-up.html %}
+
+		{% assign i = 0 %}
+
+
+		{% for post in site.categories['senses']  %} 
+
+		{% assign sense_name = post.title | downcase %}
+
+		{% for post in site.categories['senses-outfits'] %} 
+
+			
+
+		{% if post.url contains sense_name %}
+
+				{% assign i = i | plus:1 %}
+
+				{% if page.lob == 'w' %}
+
+					{% assign outfit-image =  post.w-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
+
+				{% else %}
+					
+					{% assign outfit-image =  post.m-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}							
+
+				{% endif %}
+
+
+				{% if i == 1 or i == 3 or i == 5 or i == 7 or i == 9 %}
+				<div class="this-or-that-page round-1 {{ i }} ">
+
+					<div class="this-or-that-selects">
+
+				{% endif %}
+
+				<a class="this-or-that-select  ">
+
+					
+					<img src="{{ outfit-image }}" alt="{{ post.title }} outfit" class="style-shuffle__outfit" />	
+
+					<span class="this-or-that-rating"><span class="this-or-that-label">{% if i == 1 or i == 3 or i == 5 or i == 7 or i == 9 %}This{% else %}That{% endif %}</span></span>
+
+				</a>
+
+
+				
+
+		{% endif %}
+
+{% endfor %}
+
+{% endfor %}
+
+
+</div>
