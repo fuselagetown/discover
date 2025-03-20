@@ -730,3 +730,5 @@ progress::-webkit-progress-value::before { content: '80%'; position: absolute; r
 
 .immersive-view { display: none; background: #fff; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 1000px; width: 100%; }
 .immersive-view.open { display: block; }
+
+.carousel-item__action.carousel-item__actions--bookmark { display: none; }
