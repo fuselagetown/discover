@@ -1,0 +1,117 @@
+---
+layout: page
+lob: w
+published: true
+
+--- 
+
+<div class="chat">
+
+	<p class="stitchfix"><span>What are you looking for today?</span></p>
+
+	<p class="client"><span>I’m going on a vacation</span></p>
+
+	<p class="stitchfix"><span>Nice! Where are you headed?</span></p>
+
+	<p class="client"><span>Hawaii</span></p>
+
+	<p class="stitchfix"><span>Aloha! That will be wonderful this time of year, and we’ll get you styled. Is the vacation more casual or more formal? Let’s do a vibe check.</span></p>
+
+</div>
+
+<div class="vibe-check grid thumbs-up-shop-similar thumbs-down-playback">
+			
+	<div class="grid-container">
+
+			{% for post in site.categories['senses']  %} 
+
+		{% assign sense_name = post.title | downcase %}
+
+		{% for post in site.categories['senses-outfits'] %} 
+
+				{% if post.url contains sense_name %}
+
+
+			<div class="carousel-item {% if post.category == 'shop-similar-items' %} shop-similar-item {% endif %} ">
+
+			<!-- <div style="position: absolute; z-index: 3;">{{ tip_tag }} {{ post.url | date: "%m" }}	</div> -->
+
+
+				<svg class="carousel-item--loading" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: rgb(242, 243, 244); display: block; shape-rendering: auto;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><circle cx="50" cy="50" fill="none" stroke="#81E6D3" stroke-width="10" r="35" stroke-dasharray="164.93361431346415 56.97787143782138"><animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform></circle></svg>
+					
+
+				<div class="carousel-item-content">
+
+					<div class="carousel-item__image">
+
+						{% if page.lob == 'w' %}
+
+							{% assign outfit-image =  post.w-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}
+
+						{% else %}
+							
+							{% assign outfit-image =  post.m-outfit  | replace: 'upload/', 'upload/w_600,q_auto/' %}							
+
+						{% endif %}
+
+						<img src="{{ outfit-image }}" alt="{{ post.title }} outfit" class="style-shuffle__outfit" />	
+
+					</div>
+
+
+						<a href="#" class="carousel-item__action carousel-item__actions--bookmark">Bookmark</a>
+
+						<div class="carousel-item__actions--ratings">
+							<a href="#" class="carousel-item__action carousel-item__actions--ratings--dislike clicky">Dislike</a>
+							<a href="#" class="carousel-item__action carousel-item__actions--ratings--like">Like</a>
+						</div>
+
+
+						<a href="#" class="carousel-item__button carousel-item__button--see-similar">See similar</a>
+
+					<div class="overlay overlay--thumbsdown">
+
+						<p class="clicky"></p>
+
+					</div>
+
+					<div class="overlay overlay--added-to-fix">
+
+						Added to your January fix
+
+						<a href="#" class="carousel-item__button carousel-item__button--cta">Manage Fix</a>
+
+					</div>
+
+					<div class="overlay overlay--added-to-closet">
+
+						Added to your closet. <br />We'll start pairing it with new exciting trends. 
+
+						<a href="#" class="carousel-item__button carousel-item__button--cta">Browse closet</a>
+
+					</div>
+
+				</div> 
+
+
+			<div class="bottom-sheet">
+
+				<div class="bottom-sheet-content">
+							<a href="#" class="carousel-item__action carousel-item__actions--add-to-fix">Add to next Fix</a>
+							<a href="#" class="carousel-item__action carousel-item__actions--already-own">I already own this</a>
+							<a href="#" class="carousel-item__action carousel-item__actions--save-for-later">Save for later</a>
+			</div>
+
+			</div>
+
+			</div>
+
+{% endif %}
+
+			
+			{% endfor %}
+			{% endfor %}
+
+	</div>
+
+</div>

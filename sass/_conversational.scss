@@ -170,3 +170,10 @@ body {
 }
 
 .carousel-item__action.carousel-item__actions--bookmark { display:none; }
+
+.grid {
+	.carousel-item {
+        width: 50%;
+        height: inherit;
+    }
+}

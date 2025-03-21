@@ -732,3 +732,5 @@ progress::-webkit-progress-value::before { content: '80%'; position: absolute; r
 .immersive-view.open { display: block; }
 
 .carousel-item__action.carousel-item__actions--bookmark { display: none; }
+
+.grid .carousel-item { width: 50%; height: inherit; }
