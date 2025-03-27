@@ -175,5 +175,9 @@ body {
 	.carousel-item {
         width: 50%;
         height: inherit;
+
+        img {
+        	border-bottom: 4px solid #fff;
+        }
     }
 }
